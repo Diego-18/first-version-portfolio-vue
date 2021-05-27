@@ -31,11 +31,15 @@
 	</head>
 
 	<body >
-		<div id="app" itemscope itemtype="https://schema.org/Person">
-			<template style="display: none;">
-				<span itemprop="name"> Diego J Chavez </span>
+		<div id="app">
+			<div style="display: none;" itemscope itemtype="https://schema.org/Person">
+				<img src="src/public/img/profile.jpeg" alt="photo" itemprop="image">
+				<span itemprop="name"> Diego Jose Chavez Chirinos </span>
 				<span itemprop="jobTitle">💻 Ingeniero en Informatica | 💻 Desarrollador Web Fullstack | 💻 Analista Digital</span>
-			</template>
+				<span itemprop="telephone"> +58412-5264207</span>
+				<span itemprop="email"> ingdiegochavez18@gmail.com </span>
+				<span itemprop="url"> www.dev.diegochavez-dc.com</span>				
+			</div>
 			<!-- 
 				PRELOADER
 			-->
@@ -59,7 +63,7 @@
 				<div class="myself__container__menu">
 					<div class="myself__data">
 						<div class="myself__data__container-avatar">
-							<div class="myself__data__avatar" itemprop="image"></div>
+							<div class="myself__data__avatar"></div>
 						</div>
 						<div class="myself__data__info">
 							<h4 class="myself__data__info__fullname">{{name}} | {{lastName}}</h4>
@@ -445,7 +449,7 @@
 					            <div class="blog-card" v-for="project in projects">
 					                <div class="meta">
 					                    <div class="photo" :style="project.img"></div>
-					                    <ul class="details" itemscope itemtype="https://schema.org/Person">
+					                    <ul class="details">
 					                        <li class="author"><a href="#">Diego Chavez</a></li>
 					                        <li class="tags">
 					                            <ul v-for="tag in project.tag">
@@ -495,27 +499,26 @@
         								<i class="fa fa-mobile" aria-hidden="true"></i>
         								Telefono:
 	        						</p>
-	        						<span itemprop="telephone">
-	        							+584125264207
+	        						<span>
+	        							{{ phone }}
 	        						</span>
 
-	        						<p class="contact__label">
+									<p class="contact__label">
 	        							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 	        							Email:
 	        						</p>
-	        						<span itemprop="email">
-	        							ingdiegochavez18@gmail.com
+	        						<span>
+	        							{{ email }}
 	        						</span>
 
 									<p class="contact__label">
 	        							Sitio Web:
 	        						</p>
 	        						<span >
-										<a href="https://www.dev.diegochavez-dc.com" itemprop="url">
-											www.dev.diegochavez-dc.com
+										<a :href="url" >
+											{{ url }}
 										</a>
 	        						</span>
-
 
 									<p class="contact__label">
 										Mensajeria Instantanea:
