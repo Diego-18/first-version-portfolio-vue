@@ -21,6 +21,7 @@ new Vue({
         whatsapp: 'https://wa.link/9nyu80',
         url: 'www.dev.diegochavez-dc.com',
         phone: '+584125264207',
+
         from_name: '',
         from_email: '',
         from_phone: '',
