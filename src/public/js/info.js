@@ -19,6 +19,8 @@ new Vue({
         dribble: 'https://dribbble.com/diegochavez20',
         behance: 'https://www.behance.net/ingdiegoch1a44',
         whatsapp: 'https://wa.link/9nyu80',
+        url: 'www.dev.diegochavez-dc.com',
+        phone: '+584125264207',
         from_name: '',
         from_email: '',
         from_phone: '',
