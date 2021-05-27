@@ -31,7 +31,11 @@
 	</head>
 
 	<body >
-		<div id="app">
+		<div id="app" itemscope itemtype="https://schema.org/Person">
+			<template style="display: none;">
+				<span itemprop="name"> Diego J Chavez </span>
+				<span itemprop="jobTitle">💻 Ingeniero en Informatica | 💻 Desarrollador Web Fullstack | 💻 Analista Digital</span>
+			</template>
 			<!-- 
 				PRELOADER
 			-->
@@ -150,14 +154,10 @@
 					<span class="myself__menu__action"><i class="fas fa-align-justify"></i></span>
 		
 					<article class="myself">
-						<div class="myself__profile" itemscope itemtype="https://schema.org/Person">
+						<div class="myself__profile">
 							<div class="myself__container__avatar">
 								<div class="myself__avatar"></div>
 							</div>
-							<template style="display: none;">
-								<span itemprop="name"> Diego J Chavez </span>
-								<span itemprop="hasOccupation">💻 Ingeniero en Informatica | 💻 Desarrollador Web Fullstack | 💻 Analista Digital</span>
-							</template>
 							<h1 class="myself__fullname"> {{name}} | <span class="myself_lastname">{{lastName}}</span></h1>
 							<p class="myself__description">{{ profession }}</p>
 						</div>
@@ -490,7 +490,7 @@
 
         				<div class="contact__container">
         					<div class="contact__info">
-        						<div class="contact__data" itemscope itemtype="https://schema.org/Person">
+        						<div class="contact__data">
         							<p class="contact__label">
         								<i class="fa fa-mobile" aria-hidden="true"></i>
         								Telefono:
