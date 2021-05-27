@@ -2,11 +2,12 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
+
 		<meta property="og:title" content="Diego Chavez"/>
     	<meta property="og:description" content="Personal Site"/>
 		<meta property="og:url" content="https://www.dev.diegochavez-dc.com" />
 		<meta property="og:image" content="https://avatars.githubusercontent.com/u/40433474?v=4"/>
-		
+
 		<meta name="description" content="Soy un desarrollador de software y analista digital, apasionado por la creación y desarrollo de interfaces web y marketing digital.">
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -30,7 +31,7 @@
 	</head>
 
 	<body >
-		<div id="app" itemscope itemtype="https://schema.org/Person">
+		<div id="app">
 			<!-- 
 				PRELOADER
 			-->
@@ -145,11 +146,11 @@
 				<!-- 
 					PERSONAL INFORMATION
 				-->
-				<section class="container__myself">
+				<section class="container__myself" >
 					<span class="myself__menu__action"><i class="fas fa-align-justify"></i></span>
 		
 					<article class="myself">
-						<div class="myself__profile">
+						<div class="myself__profile" itemscope itemtype="https://schema.org/Person">
 							<div class="myself__container__avatar">
 								<div class="myself__avatar"></div>
 							</div>
@@ -485,7 +486,7 @@
 
         				<div class="contact__container">
         					<div class="contact__info">
-        						<div class="contact__data">
+        						<div class="contact__data" itemscope itemtype="https://schema.org/Person">
         							<p class="contact__label">
         								<i class="fa fa-mobile" aria-hidden="true"></i>
         								Telefono:
