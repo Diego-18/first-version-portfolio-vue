@@ -154,8 +154,12 @@
 							<div class="myself__container__avatar">
 								<div class="myself__avatar"></div>
 							</div>
-							<h1 class="myself__fullname" itemprop="name"> {{name}} | <span class="myself_lastname">{{lastName}}</span></h1>
-							<p class="myself__description" itemprop="roleName">{{ profession }}</p>
+							<template style="display: none;">
+								<span itemprop="name"> Diego J Chavez </span>
+								<span itemprop="hasOccupation">💻 Ingeniero en Informatica | 💻 Desarrollador Web Fullstack | 💻 Analista Digital</span>
+							</template>
+							<h1 class="myself__fullname"> {{name}} | <span class="myself_lastname">{{lastName}}</span></h1>
+							<p class="myself__description">{{ profession }}</p>
 						</div>
 						<div class="myself__footer">
 							<div class="myself__footer__by">
@@ -441,7 +445,7 @@
 					            <div class="blog-card" v-for="project in projects">
 					                <div class="meta">
 					                    <div class="photo" :style="project.img"></div>
-					                    <ul class="details">
+					                    <ul class="details" itemscope itemtype="https://schema.org/Person">
 					                        <li class="author"><a href="#">Diego Chavez</a></li>
 					                        <li class="tags">
 					                            <ul v-for="tag in project.tag">
