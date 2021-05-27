@@ -219,7 +219,7 @@ body {
 }
 
 .container-master .container__myself {
-	background: url("../img/background.jpg") center/cover;
+	background: url("../img/background.jpeg") center/cover;
 	color: #fff;
 	height: 100vh;
 	position: relative;
@@ -344,7 +344,7 @@ body {
 }
 
 .myself__avatar {
-	background-image: url("../img/profile.jpg");
+	background-image: url("../img/profile.jpeg");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1079,7 +1079,7 @@ textarea {
 		width: 4rem
 	}
 	.myself__data__avatar {
-		background-image: url("../img/profile.jpg");
+		background-image: url("../img/profile.jpeg");
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		background-size: cover;
