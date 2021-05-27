@@ -4,7 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta property="og:title" content="Diego Chavez"/>
     	<meta property="og:description" content="Personal Site"/>
+		<meta name="description" content="Soy un desarrollador de software y analista digital, apasionado por la creación y desarrollo de interfaces web y marketing digital.">
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="canonical" href="https://dev.diegochavez-dc.com">
 
 		<link rel="shortcut icon" type="image/x-icon" href="src/public/image/favicon.ico">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
@@ -24,7 +27,7 @@
 	</head>
 
 	<body >
-		<div id="app">
+		<div id="app" itemscope itemtype="https://schema.org/Person">
 			<!-- 
 				PRELOADER
 			-->
@@ -48,7 +51,7 @@
 				<div class="myself__container__menu">
 					<div class="myself__data">
 						<div class="myself__data__container-avatar">
-							<div class="myself__data__avatar"></div>
+							<div class="myself__data__avatar" itemprop="image"></div>
 						</div>
 						<div class="myself__data__info">
 							<h4 class="myself__data__info__fullname">{{name}} | {{lastName}}</h4>
@@ -147,8 +150,8 @@
 							<div class="myself__container__avatar">
 								<div class="myself__avatar"></div>
 							</div>
-							<h1 class="myself__fullname"> {{name}} | <span class="myself_lastname">{{lastName}}</span></h1>
-							<p class="myself__description">{{ profession }}</p>
+							<h1 class="myself__fullname" itemprop="name"> {{name}} | <span class="myself_lastname">{{lastName}}</span></h1>
+							<p class="myself__description" itemprop="roleName">{{ profession }}</p>
 						</div>
 						<div class="myself__footer">
 							<div class="myself__footer__by">
@@ -362,7 +365,7 @@
 					                    <div class="photo" :style="study.img"></div>
 					                </div>
 					                <div class="description">
-					                    <h1>{{ study.name }}</h1>
+					                    <h1 itemprop="colleague">{{ study.name }}</h1>
 					                    <h2>{{ study.profession }}</h2>
 					                    <p> {{ study.period }}</p>
 					                    <p class="read-more">
@@ -484,7 +487,7 @@
         								<i class="fa fa-mobile" aria-hidden="true"></i>
         								Telefono:
 	        						</p>
-	        						<span>
+	        						<span itemprop="telephone">
 	        							+584125264207
 	        						</span>
 
@@ -492,9 +495,20 @@
 	        							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 	        							Email:
 	        						</p>
-	        						<span>
+	        						<span itemprop="email">
 	        							ingdiegochavez18@gmail.com
 	        						</span>
+
+									<p class="contact__label">
+	        							Sitio Web:
+	        						</p>
+	        						<span >
+										<a href="https://www.dev.diegochavez-dc.com" itemprop="url">
+											www.dev.diegochavez-dc.com
+										</a>
+	        						</span>
+
+
 									<p class="contact__label">
 										Mensajeria Instantanea:
 									</p>
