@@ -2,11 +2,18 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
+
 		<meta property="og:title" content="Diego Chavez"/>
     	<meta property="og:description" content="Personal Site"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta property="og:url" content="https://www.dev.diegochavez-dc.com" />
+		<meta property="og:image" content="https://avatars.githubusercontent.com/u/40433474?v=4"/>
 
-		<link rel="shortcut icon" type="image/x-icon" href="src/public/image/favicon.ico">
+		<meta name="description" content="Soy un desarrollador de software y analista digital, apasionado por la creación y desarrollo de interfaces web y marketing digital.">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="canonical" href="https://dev.diegochavez-dc.com">
+
+		<link rel="shortcut icon" type="image/x-icon" href="src/public/img/favicon.ico">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
 		<link rel="stylesheet" href="src/public/css/sty_General.css" />
 		<link rel="stylesheet" href="src/public/css/sty_Card.css" />
@@ -25,6 +32,14 @@
 
 	<body >
 		<div id="app">
+			<div style="display: none;" itemscope itemtype="https://schema.org/Person">
+				<img src="src/public/img/profile.jpeg" alt="photo" itemprop="image">
+				<span itemprop="name"> Diego Jose Chavez Chirinos </span>
+				<span itemprop="jobTitle">💻 Ingeniero en Informatica | 💻 Desarrollador Web Fullstack | 💻 Analista Digital</span>
+				<span itemprop="telephone"> +58412-5264207</span>
+				<span itemprop="email"> ingdiegochavez18@gmail.com </span>
+				<span itemprop="url"> www.dev.diegochavez-dc.com</span>				
+			</div>
 			<!-- 
 				PRELOADER
 			-->
@@ -139,7 +154,7 @@
 				<!-- 
 					PERSONAL INFORMATION
 				-->
-				<section class="container__myself">
+				<section class="container__myself" >
 					<span class="myself__menu__action"><i class="fas fa-align-justify"></i></span>
 		
 					<article class="myself">
@@ -485,16 +500,26 @@
         								Telefono:
 	        						</p>
 	        						<span>
-	        							+584125264207
+	        							{{ phone }}
 	        						</span>
 
-	        						<p class="contact__label">
+									<p class="contact__label">
 	        							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 	        							Email:
 	        						</p>
 	        						<span>
-	        							ingdiegochavez18@gmail.com
+	        							{{ email }}
 	        						</span>
+
+									<p class="contact__label">
+	        							Sitio Web:
+	        						</p>
+	        						<span >
+										<a :href="url" >
+											{{ url }}
+										</a>
+	        						</span>
+
 									<p class="contact__label">
 										Mensajeria Instantanea:
 									</p>
