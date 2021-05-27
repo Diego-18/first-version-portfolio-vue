@@ -8,9 +8,8 @@
 
 		<link rel="shortcut icon" type="image/x-icon" href="src/public/image/favicon.ico">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
-		<link rel="stylesheet" href="src/public/css/style.css" />
-		<link rel="stylesheet" href="src/public/css/sty_stack.css" />
-		<link rel="stylesheet" href="src/public/css/sty_portfolio.css" />
+		<link rel="stylesheet" href="src/public/css/sty_General.css" />
+		<link rel="stylesheet" href="src/public/css/sty_Card.css" />
 		
 		<title>.: Diego | Chavez :.</title>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -125,7 +124,7 @@
 								Contáctame
 							</li>
 						</a>
-						<a href="https://diegochavez18.medium.com/" target="_blank" class="myself__menu__link">
+						<a :href="medium" target="_blank" class="myself__menu__link">
 							<li class="myself__menu__item">
 								<span class="fa-stack fa-2x">
 									<i class="fas fa-square fa-stack-2x"></i>
@@ -466,29 +465,9 @@
     					<h2 class="contact__title">CONTACTAME</h2>
     					<p class="contact__description"> ¿Necesitas soluciones tecnológicas para ti o tu empresa?
         					Has llegado al lugar indicado. No dudes en ponerte en contacto conmigo. 
-
-        					<!-- Estoy dispuesto a solucionar tu problema usando las mejores técnicas de: 
-        					<ul class="contact__services">
-            					<li v-for="item in services">
-                					{{ item.service }}
-            					</li>
-        					</ul> -->
     					</p>
 
-					    <!-- <div class="contact__social">
-					        <a class="contact__social__link" :href="instagram" target="_blank">
-					            <i class="fab fa-instagram" style="color: palevioletred;"></i>
-					        </a>
-					        <a class="contact__social__link" :href="twitter" target="_blank">
-					            <i class="fab fa-twitter-square" style="color: #2196F3;"></i>
-					        </a>
-					        <a class="contact__social__link" :href="github" target="_blank">
-					            <i class="fab fa-github-square" style="color: #2d2d2d;"></i>
-					        </a>
-					    </div> -->
-
         				<div class="contact__container">
-
         					<div class="contact__info">
         						<div class="contact__data">
         							<p class="contact__label">
