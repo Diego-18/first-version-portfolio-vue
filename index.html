@@ -169,6 +169,15 @@
 								<a class="myself__footer__link" :href="github" target="_blank">
 									<i class="fab fa-github-square"></i>
 								</a>
+								<a class="myself__footer__link" :href="facebook" target="_blank">
+									<i class="fab fa-facebook-square"></i>
+								</a>
+								<a class="myself__footer__link" :href="dribble" target="_blank">
+									<i class="fab fa-dribbble"></i>
+								</a>
+								<a class="myself__footer__link" :href="behance" target="_blank">
+									<i class="fab fa-behance-square"></i>
+								</a>
 							</div>
 						</div>
 					</article>
@@ -237,7 +246,7 @@
 					        <a :href="mediun" target="_blank" class="menu-list__link">
 					        	<span class="fa-stack icon-item">
 									<i class="fas fa-square fa-stack-2x"></i>
-									<i class="fa fa-th fa-stack-1x fa-inverse"></i>
+									<i class="fa fa-medium fa-stack-1x fa-inverse"></i>
 								</span>
 								<div class="menu__description">
 					        		<li class="menu-list__item">Blog</li>
@@ -418,7 +427,8 @@
 					    <div v-if="project">
 					        <h2 class="portfolio__title">Mi Portafolio</h2>
 					        <p class="portfolio__description">En esta sección encontrarás los proyectos en los que he trabajado, también encontrarás algunas pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
-					        <blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong> o <strong>GitLab</strong>.</blockquote>
+					        <blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong>, <strong>GitLab</strong>, <strong>Dribble</strong> o <strong>
+								Behance</strong>.</blockquote>
 					            
 					        <template v-if="stack_project">
 					            <div class="blog-card" v-for="project in projects">
@@ -485,6 +495,17 @@
 	        						<span>
 	        							ingdiegochavez18@gmail.com
 	        						</span>
+									<p class="contact__label">
+										Mensajeria Instantanea:
+									</p>
+									<span class="contact__im">
+										<a class="contact__link" :href="whatsapp" target="_blank">
+											<span class="fa-stack fa-2x">
+												<i class="fas fa-square fa-stack-2x"></i>
+												<i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+											</span>
+										</a>
+									</span>
         						</div>
         					</div>
 
