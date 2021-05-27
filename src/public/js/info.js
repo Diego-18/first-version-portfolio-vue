@@ -160,7 +160,7 @@ new Vue({
                 university: 'UPTP "Juan de Jesus Montilla"',
                 profession: 'Ing. en Informatica',
                 period: '2013 - 2019',
-                img:'background-image: url("src/public/img/uptp.jpg")',
+                img:'background-image: url("src/public/img/uptp.jpeg")',
                 study_country: 'Venezuela',
                 icon_country: 'https://image.flaticon.com/icons/png/512/2412/2412432.png'
             }
@@ -177,7 +177,7 @@ new Vue({
                 company_position: 'Coordinador de Soporte Tecnico',
                 company_start: '2017',
                 company_find: '2018',
-                company_img: 'background-image: url("src/public/img/galepso1.jpg"); width: 100%;',
+                company_img: 'background-image: url("src/public/img/galepso1.jpeg"); width: 100%;',
                 company_country: 'Venezuela',
                 icon_country: 'https://image.flaticon.com/icons/png/512/2412/2412432.png'
             },
@@ -187,7 +187,7 @@ new Vue({
                 company_position: 'Especialista en Sistemas de Información',
                 company_start: '2018',
                 company_find: 'Actualidad',
-                company_img: 'background-image: url("src/public/img/lpa.jpg"); width: 100%;',
+                company_img: 'background-image: url("src/public/img/lpa.jpeg"); width: 100%;',
                 company_country: 'Venezuela',
                 icon_country: 'https://image.flaticon.com/icons/png/512/2412/2412432.png'
             },
@@ -198,7 +198,7 @@ new Vue({
         projects: [
             {
                 name: 'KeyframesAnimations',
-                img: 'background-image: url("src/public/img/image-2.jpg")',
+                img: 'background-image: url("src/public/img/image-2.jpeg")',
                 description: 'Librería con animacionaciones usables en elementos de un portal web.',
                 rol: 'Front-End',
                 demo:'https://keyframes-animations.netlify.app',
@@ -225,7 +225,7 @@ new Vue({
 
             {
                 name: 'Photografic-Filter',
-                img: 'background-image: url("src/public/img/image-2.jpg")',
+                img: 'background-image: url("src/public/img/image-2.jpeg")',
                 description: 'Librería con filtros usados en fotografías aplicables para mejores efectos en tus imágenes en tu sitio web.',
                 rol: 'Front-End',
                 demo:'https://diego-18.github.io/photografic-filter/',
