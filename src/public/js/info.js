@@ -215,12 +215,12 @@ new Vue({
                 tools:[
                     {
                         icon:'fab fa-html5',
-                        style:'color:#f16529;',
+                        style:'color:#f16529; margin-right:3%;',
                         img:''
                     },
                     {
                         icon:'fab fa-css3-alt',
-                        style:'color:#0170ba;',
+                        style:'color:#0170ba; margin-right:3%;',
                         img:''
                     }
                 ]
@@ -242,12 +242,12 @@ new Vue({
                 tools:[
                     {
                         icon:'fab fa-html5',
-                        style:'color:#f16529;',
+                        style:'color:#f16529; margin-right:3%;',
                         img:''
                     },
                     {
                         icon:'fab fa-css3-alt',
-                        style:'color:#0170ba;',
+                        style:'color:#0170ba; margin-right:3%;',
                         img:''
                     }
                 ]
@@ -269,27 +269,27 @@ new Vue({
                 tools:[
                     {
                         icon:'fab fa-php',
-                        style:'color:#4f1379;',
+                        style:'color:#4f1379; margin-right:3%;',
                         img:''
                     },
                     {
                         icon:'fab fa-css3-alt',
-                        style:'color:#0170ba;',
+                        style:'color:#0170ba; margin-right:3%;',
                         img:''
                     },
                     {
                         icon:'fab fa-html5',
-                        style:'color:#f16529;',
+                        style:'color:#f16529; margin-right:3%;',
                         img:''
                     },
                     {
                         icon:'fab fa-bootstrap',
-                        style:'color:#563d7c;',
+                        style:'color:#563d7c; margin-right:3%;',
                         img:''
                     },
                     {
                         icon:'fab fa-js',
-                        style:'color:#ffe629; background-color: #2d2d2d;',
+                        style:'color:#ffe629; background-color: #2d2d2d; margin-right:3%;',
                         img:''
                     }
                 ]
