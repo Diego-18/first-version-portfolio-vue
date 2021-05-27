@@ -2,16 +2,16 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-
 		<meta property="og:title" content="Diego Chavez"/>
     	<meta property="og:description" content="Personal Site"/>
-
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
 		<link rel="shortcut icon" type="image/x-icon" href="src/public/image/favicon.ico">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
 		<link rel="stylesheet" href="src/public/css/style.css" />
 		<link rel="stylesheet" href="src/public/css/sty_stack.css" />
 		<link rel="stylesheet" href="src/public/css/sty_portfolio.css" />
+		
 		<title>.: Diego | Chavez :.</title>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ8VHN3Y3G"></script>
@@ -158,16 +158,16 @@
 								<p class="myself_footer_years">© {{ years }}</p>
 							</div>
 							<div class="myself__footer__social">
-								<a class="myself__footer__link" href="https://www.linkedin.com/in/diego-jose-chavez-chirinos-9a7034a6/" target="_blank">
+								<a class="myself__footer__link" :href="linkedin" target="_blank">
 									<i class="fab fa-linkedin"></i>
 								</a>
-								<a class="myself__footer__link" href="https://twitter.com/djchvz18" target="_blank">
+								<a class="myself__footer__link" :href="twitter" target="_blank">
 									<i class="fab fa-twitter-square"></i>
 								</a>
-								<a class="myself__footer__link" href="https://www.instagram.com/djchvz18" target="_blank">
+								<a class="myself__footer__link" :href="instagram" target="_blank">
 									<i class="fab fa-instagram-square"></i>
 								</a>
-								<a class="myself__footer__link" href="https://github.com/Diego-18" target="_blank">
+								<a class="myself__footer__link" :href="github" target="_blank">
 									<i class="fab fa-github-square"></i>
 								</a>
 							</div>
