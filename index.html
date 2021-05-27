@@ -439,13 +439,13 @@
 						PROJECTS SECTION
 					-->
 					<article class="portfolio" id="portfolio">
-					    <div v-if="project">
+					    <div class="container__portfolio" v-if="project">
 					        <h2 class="portfolio__title">Mi Portafolio</h2>
 					        <p class="portfolio__description">En esta sección encontrarás los proyectos en los que he trabajado, también encontrarás algunas pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
 					        <blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong>, <strong>GitLab</strong>, <strong>Dribble</strong> o <strong>
 								Behance</strong>.</blockquote>
 					            
-					        <template v-if="stack_project">
+					        <div class="container__item" v-if="stack_project">
 					            <div class="blog-card" v-for="project in projects">
 					                <div class="meta">
 					                    <div class="photo" :style="project.img"></div>
@@ -461,7 +461,10 @@
 					                <div class="description">
 					                    <h1>{{ project.name }}</h1>
 					                    <h2>{{ project.rol }}</h2>
-					                    <p> {{ project.description }}</p>
+					                    <div class="text__description">
+					                    	<p> {{ project.description }}</p>
+					                    </div>
+					                    	
 					                    <p class="read-more">
 						                    <span v-for="tools in project.tools">
 						                        <i :class="tools.icon" :style='tools.style'></i>
@@ -474,7 +477,7 @@
 					                	</p>
 					            	</div>
 					        	</div>
-        					</template>
+        					</div>
 
 	        				<template v-else>
 	                			<h2 class="portfolio__title">En Construcción</h2>
@@ -512,15 +515,16 @@
 	        						</span>
 
 									<p class="contact__label">
+										<i class="fa fa-globe" aria-hidden="true"></i>
 	        							Sitio Web:
-	        						</p>
-	        						<span >
-										<a :href="url" >
-											{{ url }}
+	        				</p>
+	        				<span >
+								    <a :href="url" class="direction__web">
+										    {{ url }}
 										</a>
-	        						</span>
-
+	        				</span>
 									<p class="contact__label">
+										<i class="fa fa-comments-o" aria-hidden="true"></i>
 										Mensajeria Instantanea:
 									</p>
 									<span class="contact__im">
@@ -563,7 +567,7 @@
 				                            <textarea class="textarea" required id="textarea" v-model="message"> 
 				                            </textarea>
 				                            <label class="label" for="textarea">  
-				                                <i class="fa fa-comments-o" aria-hidden="true"></i>
+				                                <i class="fa fa-commenting-o" aria-hidden="true"></i>
 				                                Mensaje
 				                            </label>
 				                        </div>
