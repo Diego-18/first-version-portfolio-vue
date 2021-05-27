@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+
+		<meta property="og:title" content="Diego Chavez"/>
+    	<meta property="og:description" content="Personal Site"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" type="image/x-icon" href="src/public/image/favicon.ico">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
+		<link rel="stylesheet" href="src/public/css/style.css" />
+		<link rel="stylesheet" href="src/public/css/sty_stack.css" />
+		<link rel="stylesheet" href="src/public/css/sty_portfolio.css" />
+		<title>.: Diego | Chavez :.</title>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ8VHN3Y3G"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-GJ8VHN3Y3G');
+		</script>
+	</head>
+
+	<body >
+		<div id="app">
+			<!-- 
+				PRELOADER
+			-->
+			<div class="loader">
+				<div class="loader__container">
+					<div class="loader__hexagon"></div>
+					<p class="loader__message" >Cargando Portafolio...</p>
+				</div>
+			</div>
+		
+			<div class="blanketBody"></div>
+		
+			<div class="control-actions">
+				<span class="control-actions__menu"><i class="fas fa-align-justify"></i></span>
+			</div>
+		
+			<div class="container-master">
+				<!-- 
+					MENU FOR MOBILE AND TABLET
+				-->
+				<div class="myself__container__menu">
+					<div class="myself__data">
+						<div class="myself__data__container-avatar">
+							<div class="myself__data__avatar"></div>
+						</div>
+						<div class="myself__data__info">
+							<h4 class="myself__data__info__fullname">{{name}} | {{lastName}}</h4>
+							<p class="myself__data__info__role">{{ profession }}</p>
+						</div>
+					</div>
+		
+					<ul class="myself__menu">
+						<a href="#home" class="myself__menu__link myself__menu__link--active">
+							<li class="myself__menu__item">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-home fa-stack-1x fa-inverse"></i>
+								</span>
+								Inicio
+							</li>
+						</a>
+						<a href="#welcome" class="myself__menu__link">
+							<li class="myself__menu__item">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-lightbulb fa-stack-1x fa-inverse"></i>
+								</span>
+								Acerca de Mi
+							</li>
+						</a>
+						<a href="#stack" class="myself__menu__link">
+							<li class="myself__menu__item">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+								</span>
+								Stack
+							</li>
+						</a>
+
+						<a href="#academic" class="myself__menu__link">
+							<li class="myself__menu__item">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+								</span>
+								Estudios
+							</li>
+						</a>
+
+						<a href="#work" class="myself__menu__link">
+							<li class="myself__menu__item">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+								</span>
+								Trabajos
+							</li>
+						</a>
+
+
+						<a href="#portfolio" class="myself__menu__link">
+							<li class="myself__menu__item">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-folder-open fa-stack-1x fa-inverse"></i>
+								</span>
+								Portafolio
+							</li>
+						</a>
+						<a href="#contact" class="myself__menu__link">
+							<li class="myself__menu__item">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-address-book fa-stack-1x fa-inverse"></i>
+								</span>
+								Contáctame
+							</li>
+						</a>
+						<a href="https://diegochavez18.medium.com/" target="_blank" class="myself__menu__link">
+							<li class="myself__menu__item">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fab fa-medium-m fa-stack-1x fa-inverse"></i>
+								</span>
+								Blog
+							</li>
+						</a>
+					</ul>
+				</div>
+		
+				<!-- 
+					PERSONAL INFORMATION
+				-->
+				<section class="container__myself">
+					<span class="myself__menu__action"><i class="fas fa-align-justify"></i></span>
+		
+					<article class="myself">
+						<div class="myself__profile">
+							<div class="myself__container__avatar">
+								<div class="myself__avatar"></div>
+							</div>
+							<h1 class="myself__fullname"> {{name}} | <span class="myself_lastname">{{lastName}}</span></h1>
+							<p class="myself__description">{{ profession }}</p>
+						</div>
+						<div class="myself__footer">
+							<div class="myself__footer__by">
+								<p>{{ phrase }}</p>
+            					<p><em>{{ author }}</em></p>
+								<p class="myself_footer_years">© {{ years }}</p>
+							</div>
+							<div class="myself__footer__social">
+								<a class="myself__footer__link" href="https://www.linkedin.com/in/diego-jose-chavez-chirinos-9a7034a6/" target="_blank">
+									<i class="fab fa-linkedin"></i>
+								</a>
+								<a class="myself__footer__link" href="https://twitter.com/djchvz18" target="_blank">
+									<i class="fab fa-twitter-square"></i>
+								</a>
+								<a class="myself__footer__link" href="https://www.instagram.com/djchvz18" target="_blank">
+									<i class="fab fa-instagram-square"></i>
+								</a>
+								<a class="myself__footer__link" href="https://github.com/Diego-18" target="_blank">
+									<i class="fab fa-github-square"></i>
+								</a>
+							</div>
+						</div>
+					</article>
+				</section>
+		
+				<!-- 
+					CONTENTS
+				-->
+				<section class="container__articles">
+					<nav class="menu">
+					    <ul class="menu-list">
+					        <a href="#welcome" class="menu-list__link menu-list__link--active">
+					        	<span class="fa-stack icon-item">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-address-card fa-stack-1x fa-inverse"></i>
+								</span>
+					        	<div class="menu__description">
+					        		<li class="menu-list__item">Acerca de Mi</li>
+					        	</div>
+					        </a>
+					        <a href="#stack" class="menu-list__link">
+					        	<span class="fa-stack icon-item">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-stack-exchange fa-stack-1x fa-inverse"></i>
+								</span>
+					        	<div class="menu__description">
+					        		<li class="menu-list__item">Stack</li>
+					        	</div>
+					        </a>
+					        <a href="#academic" class="menu-list__link">
+					        	<span class="fa-stack icon-item">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+								</span>
+								<div class="menu__description">
+									<li class="menu-list__item">Estudios</li>
+					        	</div>
+					        </a>
+					        <a href="#work" class="menu-list__link">
+					        	<span class="fa-stack icon-item">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+								</span>
+								<div class="menu__description">
+					        		<li class="menu-list__item">Trabajos</li>
+					        	</div>
+					        </a>
+					        <a href="#portfolio" class="menu-list__link">
+					        	<span class="fa-stack icon-item">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-folder-open fa-stack-1x fa-inverse"></i>
+								</span>
+								<div class="menu__description">
+					        		<li class="menu-list__item">Portafolio</li>
+					        	</div>
+					        </a>
+					        <a href="#contact" class="menu-list__link">
+					        	<span class="fa-stack icon-item">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+								</span>
+								<div class="menu__description">
+					        		<li class="menu-list__item">Contáctame</li>
+					        	</div>
+					        </a>
+					        <a :href="mediun" target="_blank" class="menu-list__link">
+					        	<span class="fa-stack icon-item">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-th fa-stack-1x fa-inverse"></i>
+								</span>
+								<div class="menu__description">
+					        		<li class="menu-list__item">Blog</li>
+					        	</div>
+					        </a>
+					    </ul>
+					</nav>
+
+					<article class="welcome article--show" id="welcome">
+					    <h2 class="welcome__title">¡Bienvenido!</h2>
+					    <p class="welcome__description">{{ description }} 
+					    </p>
+					    <div class="services_wrap">
+					    	<section class="service" v-for="service in services">
+					            <span class="service__title">{{ service.name }}</span>
+					            <div id="service">
+					                <i :class="service.icon" aria-hidden="true"></i>
+					            </div>
+
+					            <div>
+					                <div>
+					                    <span class="text-stack">{{ service.description }}</span> 
+					                </div>
+					            </div>
+					        </section>
+					    </div>
+					</article>
+
+					<!-- 
+						STACK SECTION
+					-->
+					<article class="stack" id="stack">
+					    <h2 class="stack__title">Stack</h2>
+					    <p class="stack__description">A lo largo de los años en los que me he desempeñado como desarrollador he trabajado con diferentes tecnologías. A continuación quiero mostrarte mi stack de desarrollo actual y las herramientas con las que he trabajado.</p>
+					    <div class="record_wrap">
+					        <section class="record">
+					            <span class="record__title">FRONT-END</span>
+					            <div id="record" class="record-display">
+					                <i class="icon fa fa-desktop" aria-hidden="true"></i>
+					            </div>
+					            <div class="record-desc">
+					                <div class="welcome__stack__tool" v-for="tools in frontend" @mouseover="show = true" @mouseleave="show = false">
+					                	<img :src='tools.img' alt="tools.name" class="stack__log"/>
+					                    <p class="text-stack" v-show="show">{{tools.name}}</p> 
+					                </div>
+					            </div>
+					        </section>
+					        
+					        <section class="record">
+					            <span class="record__title">BACK-END</span>
+					            <div id="record" class="record-display">
+					                <i class="icon fa fa-file-code-o" aria-hidden="true"></i>
+					            </div>
+					            <div class="record-desc">
+					                <div class="welcome__stack__tool" v-for="tools in backend" @mouseover="show = true" @mouseleave="show = false">
+					                	<img :src='tools.img' alt="tools.name" class="stack__log"/>
+					                    <p class="text-stack" v-show="show">{{tools.name}}</p> 
+					                </div>
+					            </div>
+					        </section>
+					        
+					        <section class="record">
+					            <span class="record__title">HERRAMIENTAS</span>
+					            <div id="record" class="record-display">
+					                <i class="icon fa fa-cogs" aria-hidden="true"></i>
+					            </div>
+					            <div class="record-desc">
+					            	<div class="welcome__stack__tool" v-for="tools in tools" @mouseover="show = true" @mouseleave="show = false">
+					                	<img :src='tools.img' alt="tools.name" class="stack__log"/>
+					                    <p class="text-stack" v-show="show">{{tools.name}}</p> 
+					                </div>
+					            </div>
+					        </section>
+
+					        <section class="record">
+					            <span class="record__title">BASE DE DATOS</span>
+					            <div id="record" class="record-display">
+					                <i class="icon fa fa-database" aria-hidden="true"></i>
+					            </div>
+					            <div class="record-desc">
+					            	<div class="welcome__stack__tool" v-for="tools in bd" @mouseover="show = true" @mouseleave="show = false">
+					                	<img :src='tools.img' alt="tools.name" class="stack__log" />
+					                    <p class="text-stack" v-show="show">{{tools.name}}</p> 
+					                </div>
+					            </div>
+					        </section>
+
+					        <section class="record">
+					            <span class="record__title">SERVIDORES</span>
+					            <div id="record" class="record-display">
+					                <i class="icon fa fa-tasks" aria-hidden="true"></i>
+					            </div>
+					            <div class="record-desc">
+					            	<div class="welcome__stack__tool" v-for="tools in server" @mouseover="show = true" @mouseleave="show = false">
+					                	<img :src='tools.img' alt="tools.name" class="stack__log" />
+					                    <p class="text-stack" v-show="show">{{tools.name}}</p> 
+					                </div>
+					            </div>
+					        </section>
+					    </div>
+					</article>
+
+					<!-- 
+						ACADEMY SECTION
+					-->
+					<article class="academic" id="academic">
+					    <div v-if="academic" class="academic_container">
+					        <h2 class="academic__title">Estudios Realizados</h2>
+					        					            
+					        <template v-if="stack_academic">
+					            <div class="blog-card" v-for="study in study">
+					                <div class="meta">
+					                    <div class="photo" :style="study.img"></div>
+					                </div>
+					                <div class="description">
+					                    <h1>{{ study.name }}</h1>
+					                    <h2>{{ study.profession }}</h2>
+					                    <p> {{ study.period }}</p>
+					                    <p class="read-more">
+						                    <span>
+						                        <p> {{ study.study_country }}</p>
+						                       	<img :src="study.icon_country" class="study_country">
+						                    </span>
+					                	</p>
+					                </div>
+					            </div>
+					        </template>
+        				</div>
+
+        				<template v-else>
+                			<h2 class="portfolio__title">En Construcción</h2>
+                			<img src="public/img/programming.svg" class="img_construct">
+        				</template>
+					</article>
+
+					<!-- 
+						JOBS SECTION
+					-->
+					<article class="work" id="work">
+					    <div v-if="work" class="work_container">
+					        <h2 class="work__title">Experiencia Laboral</h2>
+					        <p class="work__description"></p>
+					        					        					            
+					        <template v-if="stack_work">
+					            <div class="blog-card" v-for="work in work">
+					                <div class="meta">
+					                    <div class="photo" :style="work.company_img"></div>
+					                    <ul class="details">
+					                        
+					                    </ul>
+					                </div>
+					                <div class="description">
+					                    <h1>{{ work.company_name }}</h1>
+					                    <h2>{{ work.company_description }}</h2>
+					                    <h2>{{ work.company_position }}</h2>
+					                    <p> {{ work.company_start }} -  {{ work.company_find }}</p>
+					                    <p class="read-more">
+						                    <span v-for="tools in work.tools">
+						                        <p> {{ work.company_country }}</p>
+						                       	<img :src="work.icon_country" class="work_country">
+						                    </span>
+					                	</p>
+					            	</div>
+					            </div>
+					        </template>
+
+					        <template v-else>
+                				<h2 class="portfolio__title">En Construcción</h2>
+                				<img src="public/img/programming.svg" class="img_construct">
+        					</template>
+        				</div>
+					</article>
+
+					<!-- 
+						PROJECTS SECTION
+					-->
+					<article class="portfolio" id="portfolio">
+					    <div v-if="project">
+					        <h2 class="portfolio__title">Mi Portafolio</h2>
+					        <p class="portfolio__description">En esta sección encontrarás los proyectos en los que he trabajado, también encontrarás algunas pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
+					        <blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong> o <strong>GitLab</strong>.</blockquote>
+					            
+					        <template v-if="stack_project">
+					            <div class="blog-card" v-for="project in projects">
+					                <div class="meta">
+					                    <div class="photo" :style="project.img"></div>
+					                    <ul class="details">
+					                        <li class="author"><a href="#">Diego Chavez</a></li>
+					                        <li class="tags">
+					                            <ul v-for="tag in project.tag">
+					                                <li>{{tag.name}}</li>
+					                            </ul>
+					                        </li>
+					                    </ul>
+					                </div>
+					                <div class="description">
+					                    <h1>{{ project.name }}</h1>
+					                    <h2>{{ project.rol }}</h2>
+					                    <p> {{ project.description }}</p>
+					                    <p class="read-more">
+						                    <span v-for="tools in project.tools">
+						                        <i :class="tools.icon" :style='tools.style'></i>
+						                    </span>
+						                    <br/>
+						                    <template v-if="project.code">
+						                        <a :href="project.gh" title="Codigo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+						                    </template>
+						                    <a :href="project.demo" title="Demo" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+					                	</p>
+					            	</div>
+					        	</div>
+        					</template>
+
+	        				<template v-else>
+	                			<h2 class="portfolio__title">En Construcción</h2>
+	                			<img src="public/img/programming.svg" class="img_construct">
+	        				</template>
+	        			</div>
+					</article>
+
+					<!-- 
+						CONTACTS SECTION
+					-->
+					<article class="contact" id="contact">
+    					<h2 class="contact__title">CONTACTAME</h2>
+    					<p class="contact__description"> ¿Necesitas soluciones tecnológicas para ti o tu empresa?
+        					Has llegado al lugar indicado. No dudes en ponerte en contacto conmigo. 
+
+        					<!-- Estoy dispuesto a solucionar tu problema usando las mejores técnicas de: 
+        					<ul class="contact__services">
+            					<li v-for="item in services">
+                					{{ item.service }}
+            					</li>
+        					</ul> -->
+    					</p>
+
+					    <!-- <div class="contact__social">
+					        <a class="contact__social__link" :href="instagram" target="_blank">
+					            <i class="fab fa-instagram" style="color: palevioletred;"></i>
+					        </a>
+					        <a class="contact__social__link" :href="twitter" target="_blank">
+					            <i class="fab fa-twitter-square" style="color: #2196F3;"></i>
+					        </a>
+					        <a class="contact__social__link" :href="github" target="_blank">
+					            <i class="fab fa-github-square" style="color: #2d2d2d;"></i>
+					        </a>
+					    </div> -->
+
+        				<div class="contact__container">
+
+        					<div class="contact__info">
+        						<div class="contact__data">
+        							<p class="contact__label">
+        								<i class="fa fa-mobile" aria-hidden="true"></i>
+        								Telefono:
+	        						</p>
+	        						<span>
+	        							+584125264207
+	        						</span>
+
+	        						<p class="contact__label">
+	        							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+	        							Email:
+	        						</p>
+	        						<span>
+	        							ingdiegochavez18@gmail.com
+	        						</span>
+        						</div>
+        					</div>
+
+
+            				<div class="content__form">
+                				<div class="form">
+                    				<div class="form__container">
+                        				<div class="form__item">
+                            				<input class="input" type="text" required id="name" v-model="from_name"/>
+				                            <label class="label" for="name"> 
+				                                <i class="fa fa-id-card-o" aria-hidden="true"></i>
+				                                Nombre y Apellido
+				                            </label>
+                        				</div>
+				                        <div class="form__item">
+				                            <input class="input" type="email" required id="email" v-model="from_email"/>
+				                            <label class="label" for="email"> 
+				                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+				                                Correo
+				                            </label>
+				                        </div>
+				                        <div class="form__item">
+				                            <input class="input" type="phone" required id="phone" v-model="from_phone"/>
+				                            <label class="label" for="phone"> 
+				                                <i class="fa fa-mobile" aria-hidden="true"></i>
+				                                Telefono
+				                            </label>
+				                        </div>
+				                        <div class="form__item">
+				                            <textarea class="textarea" required id="textarea" v-model="message"> 
+				                            </textarea>
+				                            <label class="label" for="textarea">  
+				                                <i class="fa fa-comments-o" aria-hidden="true"></i>
+				                                Mensaje
+				                            </label>
+				                        </div>
+				                        <div class="form__item">
+				                            <button class="btn__send" @click="sendMessage">
+				                                Enviar Mensaje
+				                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+				                            </button>
+				                        </div>
+                    				</div>
+                				</div>
+            				</div>
+    					</div>   
+					</article>
+				</section>
+			</div>
+		</div>
+		
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+		<script src="src/public/js/info.js"></script>
+		<script src="https://kit.fontawesome.com/74a0a4aba0.js"></script>
+		<script src="src/public/js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			(function(){
+    			emailjs.init("user_Gki1y2uTpaE1X71KX5xko");
+			})();
+		</script>
+	</body>
+</html>
