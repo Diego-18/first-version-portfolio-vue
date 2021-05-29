@@ -19,7 +19,7 @@
 }
 
 .record, .service{
-	height: 25vw;
+	height: 20vw;
 }
 
 .record:hover .record-arrow {
