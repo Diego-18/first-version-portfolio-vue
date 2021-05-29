@@ -475,32 +475,32 @@
 					            
 					        <div class="container__item" v-if="stack_project">
 					            <div class="blog-card record" v-for="project in projects">
-									<div id="record" class="record-display card_photo effect-blur" :style="project.img">
-									</div>
-									<div class="container__title">
-										<span class="card__title shadow-text">{{ project.name }}</span>
-									</div>
+									      <div id="record" class="record-display card_photo effect-blur" :style="project.img">
+									      </div>
+									      <div class="container__title">
+										      <span class="card__title shadow-text">{{ project.name }}</span>
+									      </div>
 									
-									<div class="record-desc" >
-										<div class="card_description">
-											<p> {{ project.description }}</p>
-											<p class="card_rol"> {{ project.rol }} </p>
-										</div>
+									       <div class="record-desc" >
+										      <div class="card_description">
+											      <p> {{ project.description }}</p>
+											      <p class="card_rol"> {{ project.rol }} </p>
+										      </div>
 
-										<div class="card_link shadow-text">
-											<div class="card_tools">
-												<span v-for="tools in project.tools">
-													<i :class="tools.icon" :style='tools.style' :title="tools.name"></i>
-												</span>
-											</div>
-											<div class="card_more">
-												<template v-if="project.code">
-													<a :href="project.gh" title="Codigo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-												</template>
-												<a :href="project.demo" title="Demo" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
-											</div>
-										</div>
-									</div>
+										      <div class="card_link shadow-text">
+											      <div class="card_tools">
+												      <span v-for="tools in project.tools">
+													      <i :class="tools.icon" :style='tools.style' :title="tools.name"></i>
+												      </span>
+											      </div>
+											      <div class="card_more">
+												      <template v-if="project.code">
+													      <a :href="project.gh" title="Codigo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+												      </template>
+												      <a :href="project.demo" title="Demo" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+											      </div>
+										      </div>
+									      </div>
 					        	</div>
         					</div>
 
@@ -542,12 +542,12 @@
 									<p class="contact__label">
 										<i class="fa fa-globe" aria-hidden="true"></i>
 	        							Sitio Web:
-	        						</p>
-	        						<p>
-								    	<a :href="url" class="direction__web">
+	        				</p>
+	        				<p>
+								    <a :href="url" class="direction__web">
 										    {{ url }}
 										</a>
-	        						</p>
+	        				</p>
 									<p class="contact__label">
 										<i class="fa fa-comments-o" aria-hidden="true"></i>
 										Mensajeria Instantanea:
