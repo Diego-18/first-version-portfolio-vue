@@ -152,7 +152,7 @@ new Vue({
             },
             {
                 name: 'MySQL',
-                img: 'https://cdn.worldvectorlogo.com/logos/mysql-6.svg'
+                img: 'https://image.flaticon.com/icons/png/512/528/528260.png'
             }
         ],
 
