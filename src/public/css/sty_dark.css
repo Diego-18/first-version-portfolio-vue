@@ -25,18 +25,11 @@ a, .contact__label,
 .academic__title,
 .work__title, .blog-card, 
 .description, .read-more, 
-.blog-card{
-	color: rgba(0, 123, 181, 1);
-}
-
+.blog-card, .icon-item,
 .menu-list__link:hover,
 .myself_lastname, .form__item .btn__send,
-.tagline {
-	color: #33bccd;
-}
-
-.icon-item {
-	color: rgba(0, 123, 181, 1);
+.tagline, .welcome__community  {
+	color: #007BB5;
 }
 
 .myself__footer__social{
@@ -63,10 +56,6 @@ a, .contact__label,
 .fa-dribbble:hover,
 .fa-behance-square:hover {
 	color: #4392f1;
-}
-
-.welcome__community {
-	color: #33bccd;
 }
 
 .welcome__community:hover, .stack__repos:hover {
@@ -115,7 +104,7 @@ a, .contact__label,
 
 .loader__hexagon, .form__item 
 .btn__send:hover {
-	background-color: #33bccd;
+	background-color: #007BB5;
 }
 
 .form__item .btn__send,
@@ -138,7 +127,7 @@ a, .contact__label,
 }
 
 .myself__avatar, .myself__container__avatar {
-	border: 1.5px solid #33bccd;
+	border: 1.5px solid #007BB5;
 }
 
 .portfolio__works__item, .stack__works__item {
@@ -154,11 +143,11 @@ a, .contact__label,
 }
 
 .loader__hexagon:after {
-	border-top: 28.87px solid #33bccd;
+	border-top: 28.87px solid #007BB5;
 }
 
 .portfolio__blockquote {
-	border-left: 4px solid #33bccd;
+	border-left: 4px solid #007BB5;
 }
 
 .menu-list__link:nth-child(n+0) {
@@ -173,7 +162,7 @@ a, .contact__label,
 }
 
 .loader__hexagon:before {
-	border-bottom: 28.87px solid #33bccd;
+	border-bottom: 28.87px solid #007BB5;
 }
 
 input, textarea,
@@ -187,7 +176,7 @@ input, textarea,
 }
 
 .menu-list__link--active{
-    text-shadow: 2px 2px 5px rgba(0, 123, 181, 1);
+    text-shadow: 2px 2px 5px #007BB5;
     text-decoration: underline;
 }
 
@@ -253,59 +242,10 @@ input, textarea,
 		color: #e3e3e3;
 	}
     .myself__menu__link--active {
-		color: #33bccd;
+		color: #007BB5;
 	}
     .myself__menu__link--active__soon {
-		background-color: #33bccd;
+		background-color: #007BB5;
 		color: #fff;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -35,7 +35,7 @@ body{
 }
 
 .menu-list__link:hover, .myself_lastname {
-	color: #33bccd;
+	color: #007BB5;
 }
 
 .menu-list__link--active .menu-list__item {
@@ -48,12 +48,12 @@ body{
 }
 
 .myself__container__avatar {
-	border: 1.5px inset #33bccd;
+	border: 1.5px inset #007BB5;
 	box-shadow: 2px 1px 2px #002;
 }
 
 .myself__avatar {
-	border: 1.5px solid #33bccd;
+	border: 1.5px solid #007BB5;
 }
 
 .container__myself {
@@ -65,7 +65,7 @@ body{
 }
 
 .portfolio__blockquote {
-	border-left: 4px solid #33bccd;
+	border-left: 4px solid #007BB5;
 	color: #555;
 	background-color: rgba(17, 157, 164, 0.1);
 }
@@ -109,7 +109,7 @@ body{
 
 
 .welcome__community {
-	color: #33bccd;
+	color: #007BB5;
 }
 
 .welcome__community:hover {
@@ -129,15 +129,15 @@ body{
 }
 
 .loader__hexagon {
-	background-color: #33bccd;
+	background-color: #007BB5;
 }
 
 .loader__hexagon:after {
-	border-top: 28.87px solid #33bccd;
+	border-top: 28.87px solid #007BB5;
 }
 
 .loader__hexagon:before {
-	border-bottom: 28.87px solid #33bccd;
+	border-bottom: 28.87px solid #007BB5;
 }
 
 .stack__repos {
@@ -179,7 +179,7 @@ textarea {
 .form {
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 	background: rgb(0, 123, 181);
-	background: linear-gradient(180deg, #33bccd 0%, rgba(0, 123, 181, 1) 35%, rgba(255, 255, 255, 1) 100%);
+	background: linear-gradient(180deg, #007BB5 0%, rgba(0, 123, 181, 1) 35%, rgba(255, 255, 255, 1) 100%);
 }
 
 .form__item .input,
@@ -204,17 +204,17 @@ textarea {
 .form__item .btn__send {
 	background-color: #fff;
 	box-shadow: 0 0 0 2px #fff;
-	color: #33bccd;
+	color: #007BB5;
 }
 
 .form__item .btn__send:hover {
-	background: #33bccd;
+	background: #007BB5;
 	color: white;
 	box-shadow: 0 0 0 0 transparent;
 }
 
 .form__item .btn__send:active {
-	background: #33bccd;
+	background: #007BB5;
 }
 
 .contact__data {
@@ -244,7 +244,7 @@ textarea {
 
 .record-display {
     background: rgb(0, 123, 181);
-    background: linear-gradient(180deg, #33bccd 0%, rgba(0, 123, 181, 1) 35%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(180deg, #007BB5 0%, rgba(0, 123, 181, 1) 35%, rgba(255, 255, 255, 1) 100%);
 }
 
 .icon {
@@ -257,11 +257,11 @@ textarea {
 
 #service {
     background: rgb(0, 123, 181);
-    background: linear-gradient(180deg, #33bccd 0%, rgba(0, 123, 181, 1) 35%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(180deg, #007BB5 0%, rgba(0, 123, 181, 1) 35%, rgba(255, 255, 255, 1) 100%);
 }
 
 .tagline {
-    color: #33bccd;
+    color: #007BB5;
 }
 
 @media screen and (max-width:950px) {
@@ -273,8 +273,8 @@ textarea {
 		color: #fff;
 	}
 
-    .control-actions {
-		background-color: #33bccd;
+  .control-actions {
+		background-color: #007BB5;
 		-webkit-box-shadow: 0 1px 7px #454545;
 		box-shadow: 0 1px 7px #454545;
 		color: #fff;
@@ -285,8 +285,8 @@ textarea {
 		-webkit-box-shadow: 2px 0 15px #333;
 		box-shadow: 2px 0 15px #333;
 	}
-    .myself__data {
-		background-color: #33bccd;
+  .myself__data {
+		background-color: #007BB5;
 		border-bottom: 1px solid #f5f0f6;
 	}
 
@@ -297,10 +297,10 @@ textarea {
 		color: #545454;
 	}
     .myself__menu__link--active {
-		color: #33bccd;
+		color: #007BB5;
 	}
     .myself__menu__link--active__soon {
-		background-color: #33bccd;
+		background-color: #007BB5;
 		color: #f5f0f6;
 	}
 }
