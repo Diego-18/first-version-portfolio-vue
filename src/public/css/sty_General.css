@@ -212,6 +212,7 @@ body {
 .stack__description,
 .work__description {
 	margin: .5rem 0 0;
+	text-align: justify;
 }
 
 .container-master {
@@ -745,6 +746,7 @@ textarea {
 
 .text-stack {
 	margin: 4%;
+	text-align: justify;
 }
 
 .stack__log:hover {
