@@ -214,11 +214,13 @@ new Vue({
                 ],
                 tools:[
                     {
+                        name: "html5",
                         icon:'fab fa-html5',
                         style:'color:#f16529; margin-right:3%;',
                         img:''
                     },
                     {
+                        name: "CSS-3",
                         icon:'fab fa-css3-alt',
                         style:'color:#0170ba; margin-right:3%;',
                         img:''
@@ -241,11 +243,13 @@ new Vue({
                 ],
                 tools:[
                     {
+                        name: "html5",
                         icon:'fab fa-html5',
                         style:'color:#f16529; margin-right:3%;',
                         img:''
                     },
                     {
+                        name: "CSS-3",
                         icon:'fab fa-css3-alt',
                         style:'color:#0170ba; margin-right:3%;',
                         img:''
@@ -268,26 +272,31 @@ new Vue({
                 ],
                 tools:[
                     {
+                        name:"php",
                         icon:'fab fa-php',
                         style:'color:#4f1379; margin-right:3%;',
                         img:''
                     },
                     {
+                        name: "CSS-3",
                         icon:'fab fa-css3-alt',
                         style:'color:#0170ba; margin-right:3%;',
                         img:''
                     },
                     {
+                        name: "html5",
                         icon:'fab fa-html5',
                         style:'color:#f16529; margin-right:3%;',
                         img:''
                     },
                     {
+                        name: "Bootstrap",
                         icon:'fab fa-bootstrap',
                         style:'color:#563d7c; margin-right:3%;',
                         img:''
                     },
                     {
+                        name:"Javascript",
                         icon:'fab fa-js',
                         style:'color:#ffe629; background-color: #2d2d2d; margin-right:3%;',
                         img:''
