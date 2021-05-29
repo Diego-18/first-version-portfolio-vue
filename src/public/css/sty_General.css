@@ -963,8 +963,9 @@ textarea {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+		border-radius: 50px;
 		width: 100%;
-		height: 100%
+		height: 70%
 	}
 	
 	.myself__data__info__fullname,
