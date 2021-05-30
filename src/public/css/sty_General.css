@@ -776,7 +776,7 @@ textarea {
 }
 
 .content__form {
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	padding-top: 10px;
 	/* padding-left: 10px; */
 	position: relative;
@@ -1043,7 +1043,9 @@ textarea {
 
 
 
-@media (min-width: 992px) and (max-width: 1199px){
+@media (min-width: 992px) 
+/* and (max-width: 1199px) */
+{
 	.record_wrap, .services_wrap {
 		width: 100%;
 		display: flex;
@@ -1077,7 +1079,7 @@ textarea {
 	.stack,
 	.work,
 	.academic {
-		padding: 0 4rem
+		padding: 0 4rem;
 	}
 
 	.myself__profile {
@@ -1120,13 +1122,21 @@ textarea {
 	.blog-card {
 		margin: 0.6%;
 	}
+	
+	.contact__info, .contact__form{
+		float: left;
+	}
 
-	.contact__container{
-		margin-bottom: 3%;
+	.contact__container {
+		display: inherit;
+	}
+
+	.content__form {
+		margin-left: 10px;
 	}
 }
 
-@media and (min-width: 1200px){
+/* @media and (min-width: 1200px){
 	.header__menu-list__link {
 		padding: 1.5rem 2rem
 	}
@@ -1145,4 +1155,4 @@ textarea {
 	.myself__footer__social .myself__footer__link {
 		font-size: 3rem
 	}
-}
+} */
