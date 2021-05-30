@@ -439,6 +439,7 @@ body {
 
 .container__description{
 	margin: 20px 0 0 10px;
+	padding: 15px;
 }
 
 .portfolio {
@@ -816,50 +817,19 @@ textarea {
 	text-decoration: none;
 }
 
-@media (min-width: 576px) and (max-width:767px){
-	.welcome__stack {
-		align-items: flex-start;
-		flex-direction: column;
-	}
-	.welcome__stack__title {
-		font-size: 1rem;
-		margin-bottom: .2rem;
-		padding-bottom: .2rem
+@media (min-width:768px) and (max-width:991px){
+	
+	.record_wrap, .services_wrap {
+		width: 100%;
 	}
 
-	.myself__container__menu {
-		width: 70%
-	}
-
-	.record, .service{
-		height: 15rem;
-	}
-
-	.card_tools, .card_more {
-		width: 80%;
-	}
-
-	.card_link{
-		display: inline-flex;
-	}
-
-	.card_tools{
-		width: 70%;
-	}
-
-	.card_more{
-		width: 20%;
-	}
-
-	.welcome__stack__tool {
-		width: 12%;
-		margin: 0.5rem 0.5rem;
-		text-align: center;
+	.contact__data {
+		width: 85%;
 	}
 }
 
 @media screen and (max-width:991px) {
-	body {
+	body{
 		overflow: hidden;
 		position: relative
 	}
@@ -929,13 +899,13 @@ textarea {
 		height: 70%
 	}
 	
-	.myself__data__info__fullname,
-	.myself__data__info__role {
+	.myself__data__info__fullname, .myself__data__info__role {
 		margin: 0;
 		letter-spacing: .8px
 	}
 	.myself__data__info__role {
 		font-size: .8rem;
+		padding: 15px;
 	}
 	.myself__menu {
 		padding: 1.5rem 1rem;
@@ -993,12 +963,10 @@ textarea {
 	.container__articles {
 		display: none
 	}
-	.welcome,
-	.portfolio,
-	.contact,
-	.stack,
-	.work,
-	.academic {
+
+	.welcome, .portfolio,
+	.contact, .stack,
+	.work, .academic {
 		display: none;
 		margin-top: 3.6rem
 	}
@@ -1006,8 +974,7 @@ textarea {
 		display: none
 	}
 
-	.record_wrap,
-    .services_wrap {
+	.record_wrap,.services_wrap {
       margin: 1rem auto;
       margin-bottom: 1.6%;
       line-height: 1.4;
@@ -1016,36 +983,68 @@ textarea {
       overflow: hidden;
       z-index: 0;
       display: inline-block;
+	  width: 100%;
     }
-    .record,
-    .service {
-      /* position: relative; */
-      width: 100%;
-      /* overflow: hidden; */
-      /* cursor: pointer; */
-      /* transition: box-shadow 300ms; */
-      /* margin-bottom: 1.6%; */
-      display: inline-block;
+
+    .record,.service {
       flex-direction: column;
       margin: 1rem auto;
       margin-bottom: 1.6%;
       line-height: 1.4;
       font-family: sans-serif;
       border-radius: 5px;
-      /* overflow: hidden; */
       z-index: 0;
     }
 
 	.contact__container{
 		margin-bottom: 3%;
 	}
+
+	.record, .service{
+		height: 15rem;
+	}
+
+	.welcome__stack__tool {
+		width: 12%;
+		margin: 0.5rem 0.5rem;
+		text-align: center;
+	}
+
+	.welcome__stack {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	.welcome__stack__title {
+		font-size: 1rem;
+		margin-bottom: .2rem;
+		padding-bottom: .2rem
+	}
+
+	.myself__container__menu {
+		width: 70%
+	}
+
+	.card_tools, .card_more {
+		width: 80%;
+	}
+
+	.card_link{
+		display: inline-flex;
+	}
+
+	.card_tools{
+		width: 70%;
+	}
+
+	.card_more{
+		width: 20%;
+	}
 }
 
 
 
 @media and (min-width: 992px){
-	.record_wrap,
-	.services_wrap {
+	.record_wrap, .services_wrap {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
@@ -1062,8 +1061,7 @@ textarea {
 		height: 20vw;
 	}
 
-	.record,.service,
-	.blog-card{
+	.record,.service, .blog-card{
   		width: 30%;
 	}
 
