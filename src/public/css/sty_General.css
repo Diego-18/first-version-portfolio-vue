@@ -968,8 +968,8 @@ textarea {
 	.work, .academic {
 		display: none;
 		margin-top: 3.6rem;
-		/* padding: 0 1rem; */
 	}
+	
 	.menu {
 		display: none
 	}
@@ -1071,15 +1071,6 @@ textarea {
 	.contact__form{
 		padding-left: 10px;
 		margin-bottom: 3%;
-	}
-
-	.welcome,
-	.portfolio,
-	.contact,
-	.stack,
-	.work,
-	.academic {
-		padding: 0 4rem;
 	}
 
 	.myself__profile {
