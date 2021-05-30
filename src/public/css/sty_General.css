@@ -545,10 +545,8 @@ body {
 
 .welcome__stack__tool {
 	align-self: center;
-	/* display: flex; */
 	font-size: 12px;
 	margin: 0 .5rem;
-	/* width: 35%; */
 	min-height: 20%;
 	display: inline-block;
 }
@@ -768,7 +766,6 @@ textarea {
 	margin: 0 auto;
 	padding-left: 10px;
 	padding-top: 10px;
-	/* float: left; */
 	position: relative;
 	height: auto;
 	padding-top: 10px;
@@ -776,11 +773,8 @@ textarea {
 }
 
 .content__form {
-	/* margin: 0 auto; */
 	padding-top: 10px;
-	/* padding-left: 10px; */
 	position: relative;
-	/* float: left; */
 	height: auto;
 }
 
@@ -1043,9 +1037,7 @@ textarea {
 
 
 
-@media (min-width: 992px) 
-/* and (max-width: 1199px) */
-{
+@media (min-width: 992px){
 	.record_wrap, .services_wrap {
 		width: 100%;
 		display: flex;
@@ -1126,24 +1118,3 @@ textarea {
 		margin-left: 10px;
 	}
 }
-
-/* @media and (min-width: 1200px){
-	.header__menu-list__link {
-		padding: 1.5rem 2rem
-	}
-	.welcome,
-	.portfolio,
-	.contact,
-	.stack,
-	.work,
-	.academic {
-		padding: 0 2rem;
-		margin: 1rem 0
-	}
-	.myself__footer__by {
-		font-size: 1.2rem
-	}
-	.myself__footer__social .myself__footer__link {
-		font-size: 3rem
-	}
-} */
