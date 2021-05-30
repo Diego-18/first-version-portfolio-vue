@@ -219,8 +219,7 @@ body {
 	display: flex;
 }
 
-.service__title,
-.text-stack{
+.service__title{
 	margin: 2%;
 }
 
@@ -968,7 +967,8 @@ textarea {
 	.contact, .stack,
 	.work, .academic {
 		display: none;
-		margin-top: 3.6rem
+		margin-top: 3.6rem;
+		/* padding: 0 1rem; */
 	}
 	.menu {
 		display: none
@@ -1001,7 +1001,7 @@ textarea {
 	}
 
 	.record, .service{
-		height: 15rem;
+		height: 15rem; 
 	}
 
 	.welcome__stack__tool {
@@ -1043,11 +1043,12 @@ textarea {
 
 
 
-@media and (min-width: 992px){
+@media (min-width: 992px) and (max-width: 1199px){
 	.record_wrap, .services_wrap {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		margin: 2%;
 	}
 
 	.blog-card {
@@ -1058,18 +1059,90 @@ textarea {
 		display: flex;
 	}
 	.record, .service{
-		height: 20vw;
+		height: 16rem;
 	}
 
 	.record,.service, .blog-card{
-  		width: 30%;
-	}
-
-	.contact__info, .content__form  {
-		float: left;
+  		width: 48%;
 	}
 
 	.contact__form{
 		padding-left: 10px;
+		margin-bottom: 3%;
+	}
+
+	.welcome,
+	.portfolio,
+	.contact,
+	.stack,
+	.work,
+	.academic {
+		padding: 0 4rem
+	}
+
+	.myself__profile {
+		font-size: .9rem
+	}
+
+	.myself__fullname {
+		font-size: 1.6rem
+	}
+	.menu-list__link {
+		font-size: .85rem
+	}
+
+	.menu-list {
+		width: 100%;
+	}
+
+	.welcome__stack__tool {
+		width: 22%;
+		margin: 0.5rem 0.5rem;
+		text-align: center;
+	}
+
+	.card_tools, .card_more {
+		width: 80%;
+	}
+
+	.card_link{
+		display: inline-flex;
+	}
+
+	.card_tools{
+		width: 70%;
+	}
+
+	.card_more{
+		width: 20%;
+	}
+
+	.blog-card {
+		margin: 0.6%;
+	}
+
+	.contact__container{
+		margin-bottom: 3%;
+	}
+}
+
+@media and (min-width: 1200px){
+	.header__menu-list__link {
+		padding: 1.5rem 2rem
+	}
+	.welcome,
+	.portfolio,
+	.contact,
+	.stack,
+	.work,
+	.academic {
+		padding: 0 2rem;
+		margin: 1rem 0
+	}
+	.myself__footer__by {
+		font-size: 1.2rem
+	}
+	.myself__footer__social .myself__footer__link {
+		font-size: 3rem
 	}
 }
