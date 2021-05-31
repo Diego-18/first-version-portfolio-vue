@@ -41,7 +41,6 @@
 .record-desc{
   opacity: 0;
   transition: opacity 400ms ease-in-out 190ms;
-  width: 100%;
 }
 
 .record-desc h1 {
@@ -72,7 +71,6 @@
   font-size: 12px;
   text-align: center;
 }
-/* Medium devices (desktops, 992px and up) */
 
 .tags-tools {
 	float: left;
@@ -81,13 +79,11 @@
 }
 
 .blog-card {
-	margin: 1.6%;
 	line-height: 1.4;
 	font-family: sans-serif;
 	border-radius: 5px;
 	overflow: hidden;
-	margin-right: 1%;
-	/* height: 15vw; */
+	margin: 0 1 rem;
 }
 
 .card_photo{
@@ -131,7 +127,6 @@
 }
 
 .card_tools, .card_more{
-	/* width: 40%; */
 	font-size: 1rem;
 }
 

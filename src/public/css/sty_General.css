@@ -187,7 +187,7 @@ body {
 .work {
 	display: none;
 	position: relative;
-	padding: 0 4rem;
+	padding: 0 1rem;
 	align-items: center;
 }
 
@@ -219,8 +219,7 @@ body {
 	display: flex;
 }
 
-.service__title,
-.text-stack{
+.service__title{
 	margin: 2%;
 }
 
@@ -546,10 +545,8 @@ body {
 
 .welcome__stack__tool {
 	align-self: center;
-	/* display: flex; */
 	font-size: 12px;
 	margin: 0 .5rem;
-	/* width: 35%; */
 	min-height: 20%;
 	display: inline-block;
 }
@@ -769,7 +766,6 @@ textarea {
 	margin: 0 auto;
 	padding-left: 10px;
 	padding-top: 10px;
-	/* float: left; */
 	position: relative;
 	height: auto;
 	padding-top: 10px;
@@ -777,11 +773,8 @@ textarea {
 }
 
 .content__form {
-	margin: 0 auto;
 	padding-top: 10px;
-	/* padding-left: 10px; */
 	position: relative;
-	/* float: left; */
 	height: auto;
 }
 
@@ -968,8 +961,9 @@ textarea {
 	.contact, .stack,
 	.work, .academic {
 		display: none;
-		margin-top: 3.6rem
+		margin-top: 3.6rem;
 	}
+	
 	.menu {
 		display: none
 	}
@@ -1001,11 +995,11 @@ textarea {
 	}
 
 	.record, .service{
-		height: 15rem;
+		height: 16rem; 
 	}
 
 	.welcome__stack__tool {
-		width: 12%;
+		width: 15%;
 		margin: 0.5rem 0.5rem;
 		text-align: center;
 	}
@@ -1043,11 +1037,12 @@ textarea {
 
 
 
-@media and (min-width: 992px){
+@media (min-width: 992px){
 	.record_wrap, .services_wrap {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		margin: 2%;
 	}
 
 	.blog-card {
@@ -1058,18 +1053,68 @@ textarea {
 		display: flex;
 	}
 	.record, .service{
-		height: 20vw;
+		height: 16rem;
 	}
 
 	.record,.service, .blog-card{
-  		width: 30%;
-	}
-
-	.contact__info, .content__form  {
-		float: left;
+  		width: 48%;
 	}
 
 	.contact__form{
 		padding-left: 10px;
+		margin-bottom: 3%;
+	}
+
+	.myself__profile {
+		font-size: .9rem
+	}
+
+	.myself__fullname {
+		font-size: 1.6rem
+	}
+	.menu-list__link {
+		font-size: .85rem
+	}
+
+	.menu-list {
+		width: 100%;
+	}
+
+	.welcome__stack__tool {
+		width: 22%;
+		margin: 0.5rem 0.5rem;
+		text-align: center;
+	}
+
+	.card_tools, .card_more {
+		width: 80%;
+	}
+
+	.card_link{
+		display: inline-flex;
+	}
+
+	.card_tools{
+		width: 70%;
+	}
+
+	.card_more{
+		width: 20%;
+	}
+
+	.blog-card {
+		margin: 0.6%;
+	}
+	
+	.contact__info, .contact__form{
+		float: left;
+	}
+
+	.contact__container {
+		display: inherit;
+	}
+
+	.content__form {
+		margin-left: 10px;
 	}
 }
