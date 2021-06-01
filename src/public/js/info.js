@@ -3,7 +3,9 @@ new Vue({
     data: {
         name: 'Diego J.',
         lastName: 'Chavez Ch.',
-        profession: '💻 Ingeniero en Informatica | 💻 Desarrollador Web Fullstack | 💻 Analista Digital',
+        profession: `💻 Ingeniero en Informática |
+                     👨🏻‍💻 Desarrollador Web Fullstack |
+                     📱 Analista Digital`,
         phrase: '"Vive cada día como si fuera el último, porque un día tendrás razón"',
         author: 'Steve Jobs', 
         years: '2021',
@@ -160,7 +162,7 @@ new Vue({
         study:[
             {
                 university: 'UPTP "Juan de Jesus Montilla"',
-                profession: 'Ing. en Informatica',
+                profession: 'Ing. en Informática',
                 period: '2013 - 2019',
                 img:'background-image: url("src/public/img/uptp.jpeg")',
                 study_country: 'Venezuela',
@@ -176,7 +178,7 @@ new Vue({
             {
                 company_name:'DW Comercializadora ',
                 company_description: 'Galepso ERP',
-                company_position: 'Coordinador de Soporte Tecnico',
+                company_position: 'Coordinador de Soporte Técnico',
                 company_start: '2017',
                 company_find: '2018',
                 company_img: 'background-image: url("src/public/img/galepso1.jpeg"); width: 100%;',
@@ -330,7 +332,7 @@ new Vue({
                     Swal.fire({
                         icon: 'error',
                         title: '',
-                        text: 'Introduzca un correo electronico valido.'
+                        text: 'Introduzca un correo electrónico valido.'
                     });
                 }
                 else{
@@ -346,7 +348,7 @@ new Vue({
                             Swal.fire({
                                 position: 'center',
                                 icon: 'success',
-                                title: 'Tu mensaje fué enviado correctamente, pronto me pondré en contacto con usted.',
+                                title: 'Su mensaje fue enviado correctamente, pronto me pondré en contacto con usted.',
                                 showConfirmButton: false
                                 // timer: 2000
                             });
@@ -364,7 +366,7 @@ new Vue({
                 Swal.fire({
                     icon: 'error',
                     title: '',
-                    text: 'Existe algun campo vacio. Llena todos los campos y vuelve a intentarlo.'
+                    text: 'Existe algún campo vació. Llena todos los campos y vuelve a intentarlo.'
                 }); 
             }
         },
