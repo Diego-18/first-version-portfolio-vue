@@ -894,14 +894,17 @@ textarea {
 	
 	.myself__data__info__fullname, .myself__data__info__role {
 		margin: 0;
-		letter-spacing: .8px
+		letter-spacing: .8px;
+		font-size: 1rem;
+	}
+	.myself__data__info__fullname{
+		padding-left: 15px;
 	}
 	.myself__data__info__role {
-		font-size: .8rem;
 		padding: 15px;
 	}
 	.myself__menu {
-		padding: 1.5rem 1rem;
+		padding: .5rem 1rem;
 		margin: 0;
 	}
 	.myself__menu__item {
@@ -917,7 +920,7 @@ textarea {
 	.myself__menu__link {
 		display: block;
 		font-size: 1rem;
-		padding: 1rem 0;
+		padding: .5rem 0.5rem 0rem 0rem;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
@@ -1015,7 +1018,7 @@ textarea {
 	}
 
 	.myself__container__menu {
-		width: 70%
+		width: 40%
 	}
 
 	.card_tools, .card_more {
