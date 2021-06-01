@@ -1005,7 +1005,7 @@ textarea {
 	.record, .service{
 		height: 16rem; 
 	}
-
+  
 	.welcome__stack__tool {
 		width: 15%;
 		margin: 0.5rem 0.5rem;
@@ -1037,6 +1037,7 @@ textarea {
 	.card_tools{
 		width: 70%;
 	}
+  
 	.card_more{
 		width: 20%;
 	}
@@ -1127,5 +1128,4 @@ textarea {
   
 	.text-stack{
 		margin: 0%;
-	}
 }
