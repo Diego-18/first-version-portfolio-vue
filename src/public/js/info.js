@@ -201,6 +201,40 @@ new Vue({
         project: true,
         projects: [
             {
+                name: 'Social Link',
+                img: 'background-image: url("src/public/img/sociallink.png")',
+                description: 'Es un proyecto basado en el listado de enlace que ofrece la herramienta linktree.',
+                rol: 'Front-End',
+                demo:'https://social-link.diegochavez-dc.com/',
+                code: true,
+                gh:'https://github.com/Diego-18/social.link/',
+                tag:[
+                    {
+                        name:'Front-End'
+                    }
+                ],
+                tools:[
+                    {
+                        name: "CSS-3",
+                        icon:'fab fa-css3-alt',
+                        style:'color:#0170ba; margin-right:3%;',
+                        img:''
+                    },
+                    {
+                        name: "html5",
+                        icon:'fab fa-html5',
+                        style:'color:#f16529; margin-right:3%;',
+                        img:''
+                    },
+                    {
+                        name:"Javascript",
+                        icon:'fab fa-js',
+                        style:'color:#ffe629; background-color: #2d2d2d; margin-right:3%;',
+                        img:''
+                    }
+                ]
+            },
+            {
                 name: 'KeyframesAnimations',
                 img: 'background-image: url("src/public/img/image-2.jpeg")',
                 description: 'Librería con animacionaciones usables en elementos de un portal web.',
@@ -303,40 +337,6 @@ new Vue({
                     }
                 ]
             },
-            {
-                name: 'Social Link',
-                img: 'background-image: url("src/public/img/sociallink.png")',
-                description: 'Es un proyecto basado en el listado de enlace que ofrece la herramienta linktree.',
-                rol: 'Front-End',
-                demo:'',
-                code: false,
-                gh:'',
-                tag:[
-                    {
-                        name:'Front-End'
-                    }
-                ],
-                tools:[
-                    {
-                        name: "CSS-3",
-                        icon:'fab fa-css3-alt',
-                        style:'color:#0170ba; margin-right:3%;',
-                        img:''
-                    },
-                    {
-                        name: "html5",
-                        icon:'fab fa-html5',
-                        style:'color:#f16529; margin-right:3%;',
-                        img:''
-                    },
-                    {
-                        name:"Javascript",
-                        icon:'fab fa-js',
-                        style:'color:#ffe629; background-color: #2d2d2d; margin-right:3%;',
-                        img:''
-                    }
-                ]
-            },
         ],
 
         services: [
@@ -402,6 +402,10 @@ new Vue({
                     text: 'Existe algún campo vació. Llena todos los campos y vuelve a intentarlo.'
                 }); 
             }
+            this.name_contact = '',
+            this.phone_contact = '',
+            this.email_contact = '',
+            this.message_contact = '';
         },
         validEmail: function (p_email) {
             let patterEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
