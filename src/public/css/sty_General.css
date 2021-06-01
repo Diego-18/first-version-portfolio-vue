@@ -1053,7 +1053,7 @@ textarea {
 		display: flex;
 	}
 	.record, .service{
-		height: 16rem;
+		height: 20rem;
 	}
 
 	.record,.service, .blog-card{
@@ -1116,5 +1116,9 @@ textarea {
 
 	.content__form {
 		margin-left: 10px;
+	}
+
+	.text-stack{
+		margin: 0%;
 	}
 }
