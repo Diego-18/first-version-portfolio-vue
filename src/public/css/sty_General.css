@@ -810,6 +810,11 @@ textarea {
 	text-decoration: none;
 }
 
+.swal2-title {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
 @media (min-width:768px) and (max-width:991px){
 	
 	.record_wrap, .services_wrap {

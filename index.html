@@ -15,6 +15,7 @@
 
 		<link rel="shortcut icon" type="image/x-icon" href="src/public/img/favicon.ico">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<link rel="stylesheet" href="src/public/css/sty_General.css" />
 		<link rel="stylesheet" href="src/public/css/sty_Card.css" />
 		<link rel="stylesheet" href="src/public/css/sty_dark.css" />
@@ -567,28 +568,28 @@
                 				<div class="form">
                     				<div class="form__container">
                         				<div class="form__item">
-                            				<input class="input" type="text" required id="name" v-model="from_name"/>
+                            				<input class="input" type="text" required id="name" v-model="name_contact"/>
 				                            <label class="label" for="name"> 
 				                                <i class="fa fa-id-card-o" aria-hidden="true"></i>
 				                                Nombre y Apellido
 				                            </label>
                         				</div>
 				                        <div class="form__item">
-				                            <input class="input" type="email" required id="email" v-model="from_email"/>
+				                            <input class="input" type="email" required id="email" v-model="email_contact"/>
 				                            <label class="label" for="email"> 
 				                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
 				                                Correo
 				                            </label>
 				                        </div>
 				                        <div class="form__item">
-				                            <input class="input" type="phone" required id="phone" v-model="from_phone"/>
+				                            <input class="input" type="phone" required id="phone" v-model="phone_contact"/>
 				                            <label class="label" for="phone"> 
 				                                <i class="fa fa-mobile" aria-hidden="true"></i>
 				                                Telefono
 				                            </label>
 				                        </div>
 				                        <div class="form__item">
-				                            <textarea class="textarea" required id="textarea" v-model="message"> 
+				                            <textarea class="textarea" required id="message" v-model="message_contact"> 
 				                            </textarea>
 				                            <label class="label" for="textarea">  
 				                                <i class="fa fa-commenting-o" aria-hidden="true"></i>
@@ -596,7 +597,7 @@
 				                            </label>
 				                        </div>
 				                        <div class="form__item">
-				                            <button class="btn__send" @click="sendMessage">
+				                            <button class="btn__send" v-on:click="sendMessage">
 				                                Enviar Mensaje
 				                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 				                            </button>
@@ -614,12 +615,12 @@
 		<script src="src/public/js/info.js"></script>
 		<script src="https://kit.fontawesome.com/74a0a4aba0.js"></script>
 		<script src="src/public/js/main.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			(function(){
     			emailjs.init("user_Gki1y2uTpaE1X71KX5xko");
 			})();
 		</script>
+		<script src="src/public/js/sendMessage.js"></script>
 	</body>
 </html>
