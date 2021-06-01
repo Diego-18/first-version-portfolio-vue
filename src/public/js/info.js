@@ -402,6 +402,10 @@ new Vue({
                     text: 'Existe algún campo vació. Llena todos los campos y vuelve a intentarlo.'
                 }); 
             }
+            this.name_contact = '',
+            this.phone_contact = '',
+            this.email_contact = '',
+            this.message_contact = '';
         },
         validEmail: function (p_email) {
             let patterEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
