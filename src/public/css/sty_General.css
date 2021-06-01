@@ -810,6 +810,11 @@ textarea {
 	text-decoration: none;
 }
 
+.swal2-title {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
 @media (min-width:768px) and (max-width:991px){
 	
 	.record_wrap, .services_wrap {
@@ -894,14 +899,17 @@ textarea {
 	
 	.myself__data__info__fullname, .myself__data__info__role {
 		margin: 0;
-		letter-spacing: .8px
+		letter-spacing: .8px;
+		font-size: 1rem;
+	}
+	.myself__data__info__fullname{
+		padding-left: 15px;
 	}
 	.myself__data__info__role {
-		font-size: .8rem;
 		padding: 15px;
 	}
 	.myself__menu {
-		padding: 1.5rem 1rem;
+		padding: .5rem 1rem;
 		margin: 0;
 	}
 	.myself__menu__item {
@@ -917,7 +925,7 @@ textarea {
 	.myself__menu__link {
 		display: block;
 		font-size: 1rem;
-		padding: 1rem 0;
+		padding: .5rem 0.5rem 0rem 0rem;
 		text-decoration: none;
 		text-transform: uppercase;
 	}
@@ -997,13 +1005,13 @@ textarea {
 	.record, .service{
 		height: 16rem; 
 	}
-
+  
 	.welcome__stack__tool {
 		width: 15%;
 		margin: 0.5rem 0.5rem;
 		text-align: center;
 	}
-
+  
 	.welcome__stack {
 		align-items: flex-start;
 		flex-direction: column;
@@ -1015,7 +1023,7 @@ textarea {
 	}
 
 	.myself__container__menu {
-		width: 70%
+		width: 40%
 	}
 
 	.card_tools, .card_more {
@@ -1029,7 +1037,7 @@ textarea {
 	.card_tools{
 		width: 70%;
 	}
-
+  
 	.card_more{
 		width: 20%;
 	}
@@ -1053,7 +1061,7 @@ textarea {
 		display: flex;
 	}
 	.record, .service{
-		height: 16rem;
+		height: 20rem;
 	}
 
 	.record,.service, .blog-card{
@@ -1117,4 +1125,7 @@ textarea {
 	.content__form {
 		margin-left: 10px;
 	}
+  
+	.text-stack{
+		margin: 0%;
 }

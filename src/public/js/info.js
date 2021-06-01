@@ -21,13 +21,12 @@ new Vue({
         whatsapp: 'https://wa.link/9nyu80',
         url: 'www.dev.diegochavez-dc.com',
         phone: '+584125264207',
-
-        from_name: '',
-        from_email: '',
-        from_phone: '',
-        message: '',
-        subject: '',
         show: false,
+
+        name_contact: '',
+        email_contact: '',
+        phone_contact: '',
+        message_contact: '',
 
         description: `Hola, soy un desarrollador de software, apasionado por la creación y desarrollo de interfaces web. Capaz de utilizar herramientas y técnicas para recolectar datos, analizar, diseñar, desarrollar e implementar nuevos sistemas para automatizar procedimientos.`,
         objetives: [
@@ -318,37 +317,60 @@ new Vue({
                  y redes sociales para la promoción y venta de productos o servicios.`
             }
         ]
-    },
+    }, 
     methods: {
         sendMessage(){
-            let data = {
-                from_name: this.from_name,
-                from_email: this.from_email,
-                from_phone: this.from_phone,
-                message: this.message,
-                subject: this.subject,
-            };
-                        
-            emailjs.send("service_6o9pu4t","template_m2q5azs", data).then(function(response) {
-                if(response.text === 'OK'){
-                    // alert('El correo se ha enviado de forma exitosa');
+            let name_contact = this.name_contact;
+            let phone_contact = this.phone_contact;
+            let email_contact = this.email_contact;
+            let message_contact = this.message_contact;
+        
+            if (!name_contact=="" && !phone_contact=="" && !email_contact=="" && !message_contact==""){
+                if(!this.validEmail(this.email_contact)){
                     Swal.fire({
-                        position: 'center',
-                        icon: 'success',
-                        title: 'Tu mensaje fué enviado correctamente, pronto me pondré en contacto con usted.',
-                        showConfirmButton: false,
-                        timer: 2000
+                        icon: 'error',
+                        title: '',
+                        text: 'Introduzca un correo electronico valido.'
                     });
                 }
-            }, function(err) {
-                // alert('');
+                else{
+                    let data = {
+                        from_name: name_contact,
+                        from_email: email_contact,
+                        from_phone: phone_contact,
+                        from_message: message_contact,
+                    };
+                    
+                    emailjs.send("service_6o9pu4t","template_m2q5azs", data).then(function(response) {
+                        if(response.text === 'OK'){
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'Tu mensaje fué enviado correctamente, pronto me pondré en contacto con usted.',
+                                showConfirmButton: false
+                                // timer: 2000
+                            });
+                        }
+                    }, function(err) {
+                        Swal.fire({
+                          icon: 'error',
+                          title: '',
+                          text: 'Ocurrió un problema al enviar el mensaje. Vuelva a intentarlo.'
+                        });
+                    });
+                }
+            } 
+            else{
                 Swal.fire({
-                  icon: 'error',
-                  title: 'Oops...',
-                  text: 'Ocurrió un problema al enviar el mensaje. Vuelva a intentarlo.'
-                  // footer: '<a href>Why do I have this issue?</a>'
-                });
-            });
+                    icon: 'error',
+                    title: '',
+                    text: 'Existe algun campo vacio. Llena todos los campos y vuelve a intentarlo.'
+                }); 
+            }
+        },
+        validEmail: function (p_email) {
+            let patterEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return patterEmail.test(p_email);
         }
     }
 });
