@@ -3,7 +3,9 @@ new Vue({
     data: {
         name: 'Diego J.',
         lastName: 'Chavez Ch.',
-        profession: '💻 Ingeniero en Informatica | 💻 Desarrollador Web Fullstack | 💻 Analista Digital',
+        profession: `💻 Ingeniero en Informatica |
+                     👨🏻‍💻 Desarrollador Web Fullstack |
+                     📱 Analista Digital`,
         phrase: '"Vive cada día como si fuera el último, porque un día tendrás razón"',
         author: 'Steve Jobs', 
         years: '2021',
