@@ -15,8 +15,13 @@ p,.record-desc,
 .direction__web, .icon, .record__title,
 .service__title, .blog-card .details,
 .contact__value,.text-stack, 
-.menu__description, .portfolio__blockquote{
+.menu__description, .portfolio__blockquote,
+.swal2-title, .swal2-html-container{
 	color: #fff;
+}
+
+.swal2-html-container{
+	font-weight: bold;
 }
 
 a, .contact__label,
@@ -28,8 +33,14 @@ a, .contact__label,
 .blog-card, .icon-item,
 .menu-list__link:hover,
 .myself_lastname, .form__item .btn__send,
-.tagline, .welcome__community  {
+.tagline, .welcome__community,
+.swal2-styled.swal2-confirm,
+.swal2-icon.swal2-success {
 	color: #007BB5;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+    border: 0.25em solid #007BB5;
 }
 
 .myself__footer__social{
@@ -98,17 +109,19 @@ a, .contact__label,
 
 .loader, .record,
 .service, .contact__data,
-.card__description, .blog-card{
+.card__description, .blog-card,
+.swal2-popup{
 	background-color: #37474f;
 }
 
 .loader__hexagon, .form__item 
-.btn__send:hover {
+.btn__send:hover,
+.swal2-icon.swal2-success [class^="swal2-success-line"] {
 	background-color: #007BB5;
 }
 
 .form__item .btn__send,
- .description {
+ .description, .swal2-styled.swal2-confirm {
 	background-color: #fff;
 }
 
@@ -126,7 +139,11 @@ a, .contact__label,
 	background: rgb(55,71,79);
 }
 
-.myself__avatar, .myself__container__avatar {
+.swal2-icon.swal2-success .swal2-success-ring {
+    border: 0.25em solid #007BB5;
+}
+
+.myself__avatar, .myself__container__avatar{
 	border: 1.5px solid #007BB5;
 }
 
@@ -134,7 +151,8 @@ a, .contact__label,
 	border: 1px solid #f5f0f6;
 }
 
-.contact__data {
+.contact__data, 
+.swal2-popup{
 	border: 2px solid rgb(0, 123, 181);
 }
 
@@ -180,7 +198,7 @@ input, textarea,
     text-decoration: underline;
 }
 
-.myself__container__avatar {
+.myself__container__avatar, .swal2-styled {
 	box-shadow: 2px 1px 2px #fff;
 }
 

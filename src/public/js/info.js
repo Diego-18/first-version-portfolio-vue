@@ -347,8 +347,8 @@ new Vue({
                                 position: 'center',
                                 icon: 'success',
                                 title: 'Tu mensaje fué enviado correctamente, pronto me pondré en contacto con usted.',
-                                showConfirmButton: false,
-                                timer: 2000
+                                showConfirmButton: false
+                                // timer: 2000
                             });
                         }
                     }, function(err) {
