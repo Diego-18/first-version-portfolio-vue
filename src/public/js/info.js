@@ -205,9 +205,9 @@ new Vue({
                 img: 'background-image: url("src/public/img/sociallink.png")',
                 description: 'Es un proyecto basado en el listado de enlace que ofrece la herramienta linktree.',
                 rol: 'Front-End',
-                demo:'',
-                code: false,
-                gh:'',
+                demo:'https://social-link.diegochavez-dc.com/',
+                code: true,
+                gh:'https://github.com/Diego-18/social.link/',
                 tag:[
                     {
                         name:'Front-End'
