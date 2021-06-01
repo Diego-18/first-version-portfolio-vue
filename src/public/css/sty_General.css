@@ -1003,7 +1003,7 @@ textarea {
 		margin: 0.5rem 0.5rem;
 		text-align: center;
 	}
-
+  
 	.welcome__stack {
 		align-items: flex-start;
 		flex-direction: column;
@@ -1029,7 +1029,6 @@ textarea {
 	.card_tools{
 		width: 70%;
 	}
-
 	.card_more{
 		width: 20%;
 	}
@@ -1053,7 +1052,7 @@ textarea {
 		display: flex;
 	}
 	.record, .service{
-		height: 16rem;
+		height: 20rem;
 	}
 
 	.record,.service, .blog-card{
@@ -1116,5 +1115,9 @@ textarea {
 
 	.content__form {
 		margin-left: 10px;
+	}
+  
+	.text-stack{
+		margin: 0%;
 	}
 }
