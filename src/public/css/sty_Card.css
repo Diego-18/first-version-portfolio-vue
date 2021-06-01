@@ -7,7 +7,7 @@
 }
 
 .record__stack{
-	margin-left: 1%;
+	/* margin-left: 1%; */
 }
 
 .record:hover .record-arrow {
@@ -31,7 +31,6 @@
 .record__title,
 .service__title {
   text-align: center;
-  font-size: 1rem;
 }
 
 .record:hover .record-display{
@@ -50,7 +49,6 @@
 }
 
 .record-desc p {
-  font-size: 12px;
   line-height: 1.4em;
 }
 
@@ -68,7 +66,6 @@
 }
 
 .text-stack {
-  font-size: 12px;
   text-align: center;
 }
 
@@ -111,7 +108,6 @@
 
 .card__title{
 	text-align: center;
-	font-size: 1rem;
 	margin: 0 auto;
 	padding: 10%;
 	text-align: center;
@@ -126,10 +122,6 @@
 	width: 100%;
 }
 
-.card_tools, .card_more{
-	font-size: 1rem;
-}
-
 .card_tools{
 	padding-left: 1%;
 	text-align: left;
@@ -141,6 +133,7 @@
 
 .container__item{
 	padding: 5%;
+	padding-top: 2%;
 }
 
 
