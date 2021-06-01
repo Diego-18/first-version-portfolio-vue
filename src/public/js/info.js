@@ -201,6 +201,40 @@ new Vue({
         project: true,
         projects: [
             {
+                name: 'Social Link',
+                img: 'background-image: url("src/public/img/sociallink.png")',
+                description: 'Es un proyecto basado en el listado de enlace que ofrece la herramienta linktree.',
+                rol: 'Front-End',
+                demo:'',
+                code: false,
+                gh:'',
+                tag:[
+                    {
+                        name:'Front-End'
+                    }
+                ],
+                tools:[
+                    {
+                        name: "CSS-3",
+                        icon:'fab fa-css3-alt',
+                        style:'color:#0170ba; margin-right:3%;',
+                        img:''
+                    },
+                    {
+                        name: "html5",
+                        icon:'fab fa-html5',
+                        style:'color:#f16529; margin-right:3%;',
+                        img:''
+                    },
+                    {
+                        name:"Javascript",
+                        icon:'fab fa-js',
+                        style:'color:#ffe629; background-color: #2d2d2d; margin-right:3%;',
+                        img:''
+                    }
+                ]
+            },
+            {
                 name: 'KeyframesAnimations',
                 img: 'background-image: url("src/public/img/image-2.jpeg")',
                 description: 'Librería con animacionaciones usables en elementos de un portal web.',
@@ -293,40 +327,6 @@ new Vue({
                         name: "Bootstrap",
                         icon:'fab fa-bootstrap',
                         style:'color:#563d7c; margin-right:3%;',
-                        img:''
-                    },
-                    {
-                        name:"Javascript",
-                        icon:'fab fa-js',
-                        style:'color:#ffe629; background-color: #2d2d2d; margin-right:3%;',
-                        img:''
-                    }
-                ]
-            },
-            {
-                name: 'Social Link',
-                img: 'background-image: url("src/public/img/sociallink.png")',
-                description: 'Es un proyecto basado en el listado de enlace que ofrece la herramienta linktree.',
-                rol: 'Front-End',
-                demo:'',
-                code: false,
-                gh:'',
-                tag:[
-                    {
-                        name:'Front-End'
-                    }
-                ],
-                tools:[
-                    {
-                        name: "CSS-3",
-                        icon:'fab fa-css3-alt',
-                        style:'color:#0170ba; margin-right:3%;',
-                        img:''
-                    },
-                    {
-                        name: "html5",
-                        icon:'fab fa-html5',
-                        style:'color:#f16529; margin-right:3%;',
                         img:''
                     },
                     {
