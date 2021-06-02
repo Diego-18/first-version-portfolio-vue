@@ -36,6 +36,12 @@ new Vue({
             { objetive: 'Contribuir en el avance y desarrollo de la presencia digital y posicionamiento de empresas y StartUp.' }
         ],
 
+        stack: false,
+        academic: false,
+        work: false,
+        portfolio: false,
+        contact: false,
+
         stack_front: true,
         frontend: [
             {
@@ -117,8 +123,6 @@ new Vue({
                 img: 'src/public/img/logos/git.svg'
             }
         ],
-        stack_bd: true,
-        stack_cloud: false,
         stack_server: true,
         server: [
             {
@@ -146,6 +150,7 @@ new Vue({
                 img: 'src/public/img/logos/windows.svg'
             }
         ],
+        stack_bd: true,
         bd: [
             {
                 name: 'PostgreSQL',
@@ -157,7 +162,6 @@ new Vue({
             }
         ],
 
-        academic: true,
         stack_academic: true,
         study:[
             {
@@ -169,12 +173,9 @@ new Vue({
                 icon_country: 'https://image.flaticon.com/icons/png/512/2412/2412432.png'
             }
         ],
-
         stack_courses: false,
 
-        work: true,
-        stack_work: true,
-        work:[
+        works:[
             {
                 company_name:'DW Comercializadora ',
                 company_description: 'Galepso ERP',
@@ -198,7 +199,6 @@ new Vue({
         ],
 
         stack_project: true,
-        project: true,
         projects: [
             {
                 name: 'Social Link',

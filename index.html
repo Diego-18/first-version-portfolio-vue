@@ -212,7 +212,7 @@
 					        		<li class="menu-list__item">Acerca de Mi</li>
 					        	</div>
 					        </a>
-					        <a href="#stack" class="menu-list__link">
+					        <a href="#stack" @click="stack = true" class="menu-list__link">
 					        	<!-- <span class="fa-stack icon-item">
 									<i class="fas fa-square fa-stack-2x"></i>
 									<i class="fa fa-stack-exchange fa-stack-1x fa-inverse"></i>
@@ -221,7 +221,7 @@
 					        		<li class="menu-list__item">Stack</li>
 					        	</div>
 					        </a>
-					        <a href="#academic" class="menu-list__link">
+					        <a href="#academic" @click="academic = true" class="menu-list__link">
 					        	<!-- <span class="fa-stack icon-item">
 									<i class="fas fa-square fa-stack-2x"></i>
 									<i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
@@ -230,7 +230,7 @@
 									<li class="menu-list__item">Estudios</li>
 					        	</div>
 					        </a>
-					        <a href="#work" class="menu-list__link">
+					        <a href="#work" @click="work = true" class="menu-list__link">
 					        	<!-- <span class="fa-stack icon-item">
 									<i class="fas fa-square fa-stack-2x"></i>
 									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
@@ -239,7 +239,7 @@
 					        		<li class="menu-list__item">Trabajos</li>
 					        	</div>
 					        </a>
-					        <a href="#portfolio" class="menu-list__link">
+					        <a href="#portfolio" @click="portfolio = true" class="menu-list__link">
 					        	<!-- <span class="fa-stack icon-item">
 									<i class="fas fa-square fa-stack-2x"></i>
 									<i class="fa fa-folder-open fa-stack-1x fa-inverse"></i>
@@ -248,7 +248,7 @@
 					        		<li class="menu-list__item">Portafolio</li>
 					        	</div>
 					        </a>
-					        <a href="#contact" class="menu-list__link">
+					        <a href="#contact" @click="contact = true" class="menu-list__link">
 					        	<!-- <span class="fa-stack icon-item">
 									<i class="fas fa-square fa-stack-2x"></i>
 									<i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
@@ -293,137 +293,139 @@
 						STACK SECTION
 					-->
 					<article class="stack" id="stack">
-					    <h2 class="stack__title">Stack</h2>
-					    <p class="stack__description">A lo largo de los años en los que me he desempeñado como desarrollador he trabajado con diferentes tecnologías. A continuación quiero mostrarte mi stack de desarrollo actual y las herramientas con las que he trabajado.</p>
-					    <div class="record_wrap">
-					        <section class="record record__stack">
-					            <span class="record__title shadow-text">FRONT-END</span>
-					            <div id="record" class="record-display degraded">
-					                <i class="icon fa fa-desktop shadow-text" aria-hidden="true"></i>
-					            </div>
-					            <div class="record-desc container__description">
-					                <div class="welcome__stack__tool" v-for="tools in frontend" @mouseover="show = true" @mouseleave="show = false">
-					                	<img :src='tools.img' alt="tools.name" class="stack__log"/>
-					                    <p class="text-stack" v-show="show">{{tools.name}}</p> 
-					                </div>
-					            </div>
-					        </section>
-					        
-					        <section class="record record__stack">
-					            <span class="record__title shadow-text">BACK-END</span>
-					            <div id="record" class="record-display degraded">
-					                <i class="icon fa fa-file-code-o shadow-text" aria-hidden="true"></i>
-					            </div>
-					            <div class="record-desc container__description">
-					                <div class="welcome__stack__tool" v-for="tools in backend" @mouseover="show = true" @mouseleave="show = false">
-					                	<img :src='tools.img' alt="tools.name" class="stack__log"/>
-					                    <p class="text-stack" v-show="show">{{tools.name}}</p> 
-					                </div>
-					            </div>
-					        </section>
-						</div>
-					    <div class="record_wrap">    
-					        <section class="record record__stack">
-					            <span class="record__title shadow-text">HERRAMIENTAS</span>
-					            <div id="record" class="record-display degraded">
-					                <i class="icon fa fa-cogs shadow-text" aria-hidden="true"></i>
-					            </div>
-					            <div class="record-desc container__description">
-					            	<div class="welcome__stack__tool" v-for="tools in tools" @mouseover="show = true" @mouseleave="show = false">
-					                	<img :src='tools.img' alt="tools.name" class="stack__log"/>
-					                    <p class="text-stack" v-show="show">{{tools.name}}</p> 
-					                </div>
-					            </div>
-					        </section>
+						<template v-if="stack">
+							<h2 class="stack__title">Stack</h2>
+							<p class="stack__description">A lo largo de los años en los que me he desempeñado como desarrollador he trabajado con diferentes tecnologías. A continuación quiero mostrarte mi stack de desarrollo actual y las herramientas con las que he trabajado.</p>
+							<div class="record_wrap">
+								<section class="record record__stack">
+									<span class="record__title shadow-text">FRONT-END</span>
+									<div id="record" class="record-display degraded">
+										<i class="icon fa fa-desktop shadow-text" aria-hidden="true"></i>
+									</div>
+									<div class="record-desc container__description">
+										<div class="welcome__stack__tool" v-for="tools in frontend" @mouseover="show = true" @mouseleave="show = false">
+											<img :src='tools.img' alt="tools.name" class="stack__log"/>
+											<p class="text-stack" v-show="show">{{tools.name}}</p> 
+										</div>
+									</div>
+								</section>
+								
+								<section class="record record__stack">
+									<span class="record__title shadow-text">BACK-END</span>
+									<div id="record" class="record-display degraded">
+										<i class="icon fa fa-file-code-o shadow-text" aria-hidden="true"></i>
+									</div>
+									<div class="record-desc container__description">
+										<div class="welcome__stack__tool" v-for="tools in backend" @mouseover="show = true" @mouseleave="show = false">
+											<img :src='tools.img' alt="tools.name" class="stack__log"/>
+											<p class="text-stack" v-show="show">{{tools.name}}</p> 
+										</div>
+									</div>
+								</section>
+							</div>
+							<div class="record_wrap">    
+								<section class="record record__stack">
+									<span class="record__title shadow-text">HERRAMIENTAS</span>
+									<div id="record" class="record-display degraded">
+										<i class="icon fa fa-cogs shadow-text" aria-hidden="true"></i>
+									</div>
+									<div class="record-desc container__description">
+										<div class="welcome__stack__tool" v-for="tools in tools" @mouseover="show = true" @mouseleave="show = false">
+											<img :src='tools.img' alt="tools.name" class="stack__log"/>
+											<p class="text-stack" v-show="show">{{tools.name}}</p> 
+										</div>
+									</div>
+								</section>
 
-					        <section class="record record__stack">
-					            <span class="record__title shadow-text">BASE DE DATOS</span>
-					            <div id="record" class="record-display degraded">
-					                <i class="icon fa fa-database shadow-text" aria-hidden="true"></i>
-					            </div>
-					            <div class="record-desc container__description">
-					            	<div class="welcome__stack__tool" v-for="tools in bd" @mouseover="show = true" @mouseleave="show = false">
-					                	<img :src='tools.img' alt="tools.name" class="stack__log" />
-					                    <p class="text-stack" v-show="show">{{tools.name}}</p> 
-					                </div>
-					            </div>
-					        </section>
-						</div>
-						<div class="record_wrap">
-					        <section class="record record__stack">
-					            <span class="record__title shadow-text">SERVIDORES</span>
-					            <div id="record" class="record-display degraded">
-					                <i class="icon fa fa-tasks shadow-text" aria-hidden="true"></i>
-					            </div>
-					            <div class="record-desc container__description">
-					            	<div class="welcome__stack__tool" v-for="tools in server" @mouseover="show = true" @mouseleave="show = false">
-					                	<img :src='tools.img' alt="tools.name" class="stack__log" />
-					                    <p class="text-stack" v-show="show">{{tools.name}}</p> 
-					                </div>
-					            </div>
-					        </section>
-					    </div>
+								<section class="record record__stack">
+									<span class="record__title shadow-text">BASE DE DATOS</span>
+									<div id="record" class="record-display degraded">
+										<i class="icon fa fa-database shadow-text" aria-hidden="true"></i>
+									</div>
+									<div class="record-desc container__description">
+										<div class="welcome__stack__tool" v-for="tools in bd" @mouseover="show = true" @mouseleave="show = false">
+											<img :src='tools.img' alt="tools.name" class="stack__log" />
+											<p class="text-stack" v-show="show">{{tools.name}}</p> 
+										</div>
+									</div>
+								</section>
+							</div>
+							<div class="record_wrap">
+								<section class="record record__stack">
+									<span class="record__title shadow-text">SERVIDORES</span>
+									<div id="record" class="record-display degraded">
+										<i class="icon fa fa-tasks shadow-text" aria-hidden="true"></i>
+									</div>
+									<div class="record-desc container__description">
+										<div class="welcome__stack__tool" v-for="tools in server" @mouseover="show = true" @mouseleave="show = false">
+											<img :src='tools.img' alt="tools.name" class="stack__log" />
+											<p class="text-stack" v-show="show">{{tools.name}}</p> 
+										</div>
+									</div>
+								</section>
+							</div>
+						</template>
 					</article>
 
 					<!-- 
 						ACADEMY SECTION
 					-->
 					<article class="academic" id="academic">
-					    <div v-if="academic" class="academic_container">
-					        <h2 class="academic__title">Estudios Realizados</h2>
-					        					            
-					        <template v-if="stack_academic">
-								<div class="blog-card record" v-for="study in study">
-									<div id="record" class="record-display card_photo" :style="study.img">
-									</div>
-									
-									<div class="record-desc" >
-										<div class="card_description">
-											<span class="card__title shadow-text">{{ study.university }}</span>
-											<h2 class="shadow-text">{{ study.profession }}</h2>
-					                    	<p class="shadow-text"> {{ study.period }}</p>
+						<template v-if="academic">
+							<div  class="academic_container">
+								<h2 class="academic__title">Estudios Realizados</h2>
+																
+								<template v-if="stack_academic">
+									<div class="blog-card record" v-for="study in study">
+										<div id="record" class="record-display card_photo" :style="study.img">
 										</div>
-
-										<div class="card_link shadow-text">
-											<div class="card_tools">
-												<p> {{ study.study_country }}</p>
+										
+										<div class="record-desc" >
+											<div class="card_description">
+												<span class="card__title shadow-text">{{ study.university }}</span>
+												<h2 class="shadow-text">{{ study.profession }}</h2>
+												<p class="shadow-text"> {{ study.period }}</p>
 											</div>
-											<div class="card_more">
-												<img :src="study.icon_country" class="study_country">	
+
+											<div class="card_link shadow-text">
+												<div class="card_tools">
+													<p> {{ study.study_country }}</p>
+												</div>
+												<div class="card_more">
+													<img :src="study.icon_country" class="study_country">	
+												</div>
 											</div>
 										</div>
 									</div>
-					        	</div>
-					        </template>
-        				</div>
+								</template>
 
-        				<template v-else>
-                			<h2 class="portfolio__title">En Construcción</h2>
-                			<img src="public/img/programming.svg" class="img_construct">
-        				</template>
+								<template v-else>
+									<h2 class="portfolio__title">En Construcción</h2>
+									<img src="public/img/programming.svg" class="img_construct">
+								</template>
+							</div>
+						</template>
 					</article>
 
 					<!-- 
 						JOBS SECTION
 					-->
 					<article class="work" id="work">
-					    <div v-if="work" class="work_container">
-					        <h2 class="work__title">Experiencia Laboral</h2>
-					        <p class="work__description"></p>
-
-							<template v-if="stack_work">
-								<div class="blog-card record" v-for="work in work">
-									<div id="record" class="record-display card_photo" :style="work.company_img">
-									</div>
-									
+						<template v-if="work">
+							<div  class="work_container">
+								<h2 class="work__title">Experiencia Laboral</h2>
+								<p class="work__description"></p>
+	
+								<div class="blog-card record" v-for="work in works">
+									<div id="record" class="record-display card_photo" :style="work.company_img"></div>
 									<div class="record-desc" >
 										<div class="card_description">
 											<h3 class="shadow-text">{{ work.company_name }}</h3>
-					                    	<h4 class="shadow-text">{{ work.company_description }}</h4>
-					                    	<p class="shadow-text">{{ work.company_position }}</p>
-					                    	<p> {{ work.company_start }} -  {{ work.company_find }}</p>
+											<h4 class="shadow-text">{{ work.company_description }}</h4>
+											<p class="shadow-text">{{ work.company_position }}</p>
+											<p> {{ work.company_start }} -  {{ work.company_find }}</p>
 										</div>
-
+	
 										<div class="card_link shadow-text">
 											<div class="card_tools">
 												<p> {{ work.company_country }}</p>
@@ -433,179 +435,148 @@
 											</div>
 										</div>
 									</div>
-					        	</div>
-					        </template>
-					        					        					            
-					        <!-- <template v-if="stack_work">
-					            <div class="blog-card" v-for="">
-					                <div class="meta">
-					                    <div class="photo" :style=""></div>
-					                    <ul class="details">
-					                        
-					                    </ul>
-					                </div>
-					                <div class="card__description">
-					                    
-					                    <p class="read-more">
-						                    <span v-for="tools in work.tools">
-						                        <p> {{ work.company_country }}</p>
-						                       	<img :src="work.icon_country" class="work_country">
-						                    </span>
-					                	</p>
-					            	</div>
-					            </div>
-					        </template> -->
-
-					        <template v-else>
-                				<h2 class="portfolio__title">En Construcción</h2>
-                				<img src="public/img/programming.svg" class="img_construct">
-        					</template>
-        				</div>
+								</div>
+							</div>
+						</template>
 					</article>
 
 					<!-- 
 						PROJECTS SECTION
 					-->
 					<article class="portfolio" id="portfolio">
-					    <div class="container__portfolio" v-if="project">
-					        <h2 class="portfolio__title">Mi Portafolio</h2>
-					        <p class="portfolio__description">En esta sección encontrarás los proyectos en los que he trabajado, también encontrarás algunas pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
-					        <blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong>, <strong>GitLab</strong>, <strong>Dribble</strong> o <strong>
-								Behance</strong>.</blockquote>
-					            
-					        <div class="container__item" v-if="stack_project">
-					            <div class="blog-card record" v-for="project in projects">
-									      <div id="record" class="record-display card_photo effect-blur" :style="project.img">
-									      </div>
-									      <div class="container__title">
-										      <span class="card__title shadow-text project__title">{{ project.name }}</span>
-									      </div>
+						<template v-if="portfolio">
+							<div class="container__portfolio" >
+								<h2 class="portfolio__title">Mi Portafolio</h2>
+								<p class="portfolio__description">En esta sección encontrarás los proyectos en los que he trabajado, también encontrarás algunas pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
+								<blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong>, <strong>GitLab</strong>, <strong>Dribble</strong> o <strong>
+									Behance</strong>.</blockquote>
 									
-									       <div class="record-desc" >
-										      <div class="card_description">
-											      <p> {{ project.description }}</p>
-											      <p class="card_rol"> {{ project.rol }} </p>
-										      </div>
-
-										      <div class="card_link shadow-text">
-											      <div class="card_tools">
-												      <span v-for="tools in project.tools">
-													      <i :class="tools.icon" :style='tools.style' :title="tools.name"></i>
-												      </span>
-											      </div>
-											      <div class="card_more">
-												      <template v-if="project.code">
-													      <a :href="project.gh" title="Codigo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-												      </template>
-												      <a :href="project.demo" title="Demo" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
-											      </div>
-										      </div>
-									      </div>
-					        	</div>
-        					</div>
-
-	        				<template v-else>
-	                			<h2 class="portfolio__title">En Construcción</h2>
-	                			<img src="public/img/programming.svg" class="img_construct">
-	        				</template>
-	        			</div>
+								<div class="container__item" v-if="stack_project">
+									<div class="blog-card record" v-for="project in projects">
+										<div id="record" class="record-display card_photo effect-blur" :style="project.img"> </div>
+										<div class="container__title">
+											<span class="card__title shadow-text project__title">{{ project.name }}</span>
+										</div>
+										
+										<div class="record-desc" >
+									  		<div class="card_description">
+												<p> {{ project.description }}</p>
+												<p class="card_rol"> {{ project.rol }} </p>
+											</div>
+	
+											<div class="card_link shadow-text">
+												<div class="card_tools">
+													<span v-for="tools in project.tools">
+														<i :class="tools.icon" :style='tools.style' :title="tools.name"></i>
+													</span>
+												</div>
+												<div class="card_more">
+													<template v-if="project.code">
+														<a :href="project.gh" title="Codigo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+													</template>
+													<a :href="project.demo" title="Demo" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</template>
 					</article>
 
 					<!-- 
 						CONTACTS SECTION
 					-->
 					<article class="contact" id="contact">
-    					<h2 class="contact__title">CONTACTAME</h2>
-    					<p class="contact__description"> ¿Necesitas soluciones tecnológicas para ti o tu empresa?
-        					Has llegado al lugar indicado. No dudes en ponerte en contacto conmigo. 
-    					</p>
+						<template v-if="contact">
+							<h2 class="contact__title">CONTACTAME</h2>
+    						<p class="contact__description"> ¿Necesitas soluciones tecnológicas para ti o tu empresa?
+        						Has llegado al lugar indicado. No dudes en ponerte en contacto conmigo. 
+    						</p>
 
-        				<div class="contact__container">
-        					<div class="contact__info">
-        						<div class="contact__data">
-        							<p class="contact__label">
-        								<i class="fa fa-mobile" aria-hidden="true"></i>
-        								Teléfono:
-	        						</p>
-	        						<p class="contact__value">
-	        							{{ phone }}
-	        						</p>
+        					<div class="contact__container">
+        						<div class="contact__info">
+        							<div class="contact__data">
+        								<p class="contact__label">
+        									<i class="fa fa-mobile" aria-hidden="true"></i>
+        									Teléfono:
+	        							</p>
+	        							<p class="contact__value">{{ phone }}</p>
 
-									<p class="contact__label">
-	        							<i class="fa fa-envelope-o" aria-hidden="true"></i>
-	        							Email:
-	        						</p>
-	        						<p class="contact__value">
-	        							{{ email }}
-	        						</p>
+										<p class="contact__label">
+		        							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+	    	    							Email:
+	        							</p>
+	        							<p class="contact__value">{{ email }}</p>
 
-									<p class="contact__label">
-										<i class="fa fa-globe" aria-hidden="true"></i>
-	        							Sitio Web:
-	        				</p>
-	        				<p>
-								    <a :href="url" class="direction__web">
-										    {{ url }}
-										</a>
-	        				</p>
-									<p class="contact__label">
-										<i class="fa fa-comments-o" aria-hidden="true"></i>
-										Mensajería Instantánea:
-									</p>
-									<span class="contact__im">
-										<a class="contact__link" :href="whatsapp" target="_blank">
-											<span class="fa-stack fa-2x">
-												<i class="fas fa-square fa-stack-2x"></i>
-												<i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
-											</span>
-										</a>
-									</span>
+										<p class="contact__label">
+											<i class="fa fa-globe" aria-hidden="true"></i>
+	    	    							Sitio Web:
+	        							</p>
+	        							<p>
+											<a :href="url" class="direction__web">
+										    	{{ url }}
+											</a>
+	        							</p>
+										<p class="contact__label">
+											<i class="fa fa-comments-o" aria-hidden="true"></i>
+											Mensajería Instantánea:
+										</p>
+										<span class="contact__im">
+											<a class="contact__link" :href="whatsapp" target="_blank">
+												<span class="fa-stack fa-2x">
+													<i class="fas fa-square fa-stack-2x"></i>
+													<i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+												</span>
+											</a>
+										</span>
+        							</div>
         						</div>
-        					</div>
 
 
-            				<div class="content__form">
-                				<div class="form">
-                    				<div class="form__container">
-                        				<div class="form__item">
-                            				<input class="input" type="text" required id="name" v-model="name_contact"/>
-				                            <label class="label" for="name"> 
-				                                <i class="fa fa-id-card-o" aria-hidden="true"></i>
-				                                Nombre y Apellido
-				                            </label>
-                        				</div>
-				                        <div class="form__item">
-				                            <input class="input" type="email" required id="email" v-model="email_contact"/>
-				                            <label class="label" for="email"> 
-				                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-				                                Correo
-				                            </label>
-				                        </div>
-				                        <div class="form__item">
-				                            <input class="input" type="phone" required id="phone" v-model="phone_contact"/>
-				                            <label class="label" for="phone"> 
-				                                <i class="fa fa-mobile" aria-hidden="true"></i>
-				                                Teléfono
-				                            </label>
-				                        </div>
-				                        <div class="form__item">
-				                            <textarea class="textarea" required id="message" v-model="message_contact"> 
-				                            </textarea>
-				                            <label class="label" for="textarea">  
-				                                <i class="fa fa-commenting-o" aria-hidden="true"></i>
-				                                Mensaje
-				                            </label>
-				                        </div>
-				                        <div class="form__item">
-				                            <button class="btn__send" v-on:click="sendMessage">
-				                                Enviar Mensaje
-				                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-				                            </button>
-				                        </div>
-                    				</div>
-                				</div>
-            				</div>
-    					</div>   
+            					<div class="content__form">
+                					<div class="form">
+                    					<div class="form__container">
+                        					<div class="form__item">
+                            					<input class="input" type="text" required id="name" v-model="name_contact"/>
+				                            	<label class="label" for="name"> 
+				                                	<i class="fa fa-id-card-o" aria-hidden="true"></i>
+				                                	Nombre y Apellido
+				                            	</label>
+                        					</div>
+				                        	<div class="form__item">
+				                            	<input class="input" type="email" required id="email" v-model="email_contact"/>
+				                            	<label class="label" for="email"> 
+				                                	<i class="fa fa-envelope-o" aria-hidden="true"></i>
+				                                	Correo
+				                            	</label>
+				                        	</div>
+				                        	<div class="form__item">
+				                            	<input class="input" type="phone" required id="phone" v-model="phone_contact"/>
+				                            	<label class="label" for="phone"> 
+				                                	<i class="fa fa-mobile" aria-hidden="true"></i>
+				                                	Teléfono
+				                            	</label>
+				                        	</div>
+				                        	<div class="form__item">
+				                            	<textarea class="textarea" required id="message" v-model="message_contact"> 
+				                            	</textarea>
+				                            	<label class="label" for="textarea">  
+				                                	<i class="fa fa-commenting-o" aria-hidden="true"></i>
+				                                	Mensaje
+				                            	</label>
+				                        	</div>
+				                        	<div class="form__item">
+				                            	<button class="btn__send" v-on:click="sendMessage">
+				                                	Enviar Mensaje
+				                                	<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+				                            	</button>
+				                        	</div>
+                    					</div>
+                					</div>
+            					</div>
+    						</div>   
+						</template>
 					</article>
 				</section>
 			</div>
@@ -621,6 +592,5 @@
     			emailjs.init("user_Gki1y2uTpaE1X71KX5xko");
 			})();
 		</script>
-		<script src="src/public/js/sendMessage.js"></script>
 	</body>
 </html>
