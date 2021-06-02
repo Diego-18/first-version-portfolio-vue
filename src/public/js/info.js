@@ -170,7 +170,7 @@ new Vue({
                 period: '2013 - 2019',
                 img:'background-image: url("src/public/img/study/uptp.jpeg")',
                 study_country: 'Venezuela',
-                icon_country: 'https://image.flaticon.com/icons/png/512/2412/2412432.png'
+                icon_country: 'src/public/img/country/venezuela.svg'
             }
         ],
         stack_courses: false,
@@ -184,7 +184,7 @@ new Vue({
                 company_find: '2018',
                 company_img: 'background-image: url("src/public/img/work/galepso1.jpeg"); width: 100%;',
                 company_country: 'Venezuela',
-                icon_country: 'https://image.flaticon.com/icons/png/512/2412/2412432.png'
+                icon_country: 'src/public/img/country/venezuela.svg'
             },
             {
                 company_name:'Las Plumas y Asociados C.A',
@@ -194,7 +194,7 @@ new Vue({
                 company_find: 'Actualidad',
                 company_img: 'background-image: url("src/public/img/work/lpa.jpeg"); width: 100%;',
                 company_country: 'Venezuela',
-                icon_country: 'https://image.flaticon.com/icons/png/512/2412/2412432.png'
+                icon_country: 'src/public/img/country/venezuela.svg'
             },
         ],
 
