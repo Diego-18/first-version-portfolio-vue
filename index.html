@@ -15,7 +15,7 @@
 
 		<link rel="shortcut icon" type="image/x-icon" href="src/public/img/favicon.ico">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
 		<link rel="stylesheet" href="src/public/css/sty_General.css" />
 		<link rel="stylesheet" href="src/public/css/sty_Card.css" />
 		<link rel="stylesheet" href="src/public/css/sty_dark.css" />
@@ -392,7 +392,7 @@
 													<p> {{ study.study_country }}</p>
 												</div>
 												<div class="card_more">
-													<img :src="study.icon_country" class="study_country">	
+													<img :src="study.icon_country" alt="country" class="study_country">	
 												</div>
 											</div>
 										</div>
@@ -401,7 +401,7 @@
 
 								<template v-else>
 									<h2 class="portfolio__title">En Construcción</h2>
-									<img src="public/img/programming.svg" class="img_construct">
+									<img src="public/img/programming.svg" alt="construct" class="img_construct">
 								</template>
 							</div>
 						</template>
@@ -431,7 +431,7 @@
 												<p> {{ work.company_country }}</p>
 											</div>
 											<div class="card_more">
-												<img :src="work.icon_country" class="work_country">	
+												<img :src="work.icon_country" alt="country" class="work_country">	
 											</div>
 										</div>
 									</div>
