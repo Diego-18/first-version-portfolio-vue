@@ -36,37 +36,43 @@ new Vue({
             { objetive: 'Contribuir en el avance y desarrollo de la presencia digital y posicionamiento de empresas y StartUp.' }
         ],
 
+        stack: false,
+        academic: false,
+        work: false,
+        portfolio: false,
+        contact: false,
+
         stack_front: true,
         frontend: [
             {
                 name: 'html-5',
                 style: 'color:#f16529;',
                 icon: 'fab fa-html5',
-                img: 'https://image.flaticon.com/icons/png/512/1216/1216733.png'
+                img: 'src/public/img/logos/html5.svg'
             },
             {
                 name: 'CSS',
                 style: 'color:#0170ba;',
                 icon: 'fab fa-css3',
-                img: 'https://image.flaticon.com/icons/png/512/732/732190.png'
+                img: 'src/public/img/logos/css-3.svg'
             },
             {
                 name: 'Javascript',
                 style: 'color:#ffe629; background-color:#2d2d2d;',
                 icon: 'fab fa-js',
-                img: 'https://cdn.worldvectorlogo.com/logos/logo-javascript.svg'
+                img: 'src/public/img/logos/js.svg'
             },
             {
                 name: 'Bootstrap',
                 style: 'color:#563d7c;',
                 icon: 'fab fa-bootstrap',
-                img: 'https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg'
+                img: 'src/public/img/logos/bootstrap-4.svg'
             },
             {
                 name: 'Vue',
                 style: 'color:#4fc08d;',
                 icon: 'fab fa-vuejs',
-                img: 'https://cdn.worldvectorlogo.com/logos/vue-9.svg'
+                img: 'src/public/img/logos/vue.svg'
             },
         ],
         stack_back: true,
@@ -75,37 +81,37 @@ new Vue({
                 name: 'NodeJs',
                 style: 'color:#43853d;',
                 icon: 'fab fa-node',
-                img: 'https://image.flaticon.com/icons/png/512/919/919825.png'
+                img: 'src/public/img/logos/nodejs.svg'
             },
             {
                 name: 'npm',
                 style: 'color:#ED1C24;',
                 icon: 'fab fa-npm',
-                img: 'https://cdn.worldvectorlogo.com/logos/npm.svg'
+                img: 'src/public/img/logos/npm.svg'
             },
             {
                 name: 'yarn',
                 style: 'color:#25799f;',
                 icon: 'fab fa-yarn',
-                img: 'https://cdn.worldvectorlogo.com/logos/yarn.svg'
+                img: 'src/public/img/logos/yarn.svg'
             },
             {
                 name: 'docker',
                 style: 'color:#0091e2;',
                 icon: 'fab fa-docker',
-                img: 'https://cdn.worldvectorlogo.com/logos/docker.svg'
+                img: 'src/public/img/logos/docker.svg'
             },
             {
                 name: 'php',
                 style: 'color:#4f1379;',
                 icon: 'fab fa-php',
-                img: 'https://cdn.worldvectorlogo.com/logos/php.svg'
+                img: 'src/public/img/logos/php.svg'
             },
             {
                 name: 'Java',
                 style: 'color:#ED1C24;',
                 icon: 'fab fa-java',
-                img: 'https://cdn.worldvectorlogo.com/logos/java-14.svg'
+                img: 'src/public/img/logos/java.svg'
             }
         ],
         stack_tools: true,
@@ -114,74 +120,69 @@ new Vue({
                 name: 'Git',
                 style: 'color:#f64e27;',
                 icon: 'fab fa-git-alt',
-                img: 'https://cdn.worldvectorlogo.com/logos/git-icon.svg'
+                img: 'src/public/img/logos/git.svg'
             }
         ],
-        stack_bd: true,
-        stack_cloud: false,
         stack_server: true,
         server: [
             {
                 name: 'Linux',
                 style: 'color:#2d2d2d;',
                 icon: 'fab fa-linux',
-                img: 'https://cdn.worldvectorlogo.com/logos/linux-tux-2.svg'
+                img: 'src/public/img/logos/linux.svg'
             },
             {
                 name: 'Ubuntu',
                 style: 'color:#e95420;',
                 icon: 'fab fa-ubuntu',
-                img: 'https://cdn.worldvectorlogo.com/logos/ubuntu-4.svg'
+                img: 'src/public/img/logos/ubuntu.svg'
             },
             {
                 name: 'Fedora',
                 style: 'color:#0069ff;',
                 icon: 'fab fa-fedora',
-                img: 'https://cdn.worldvectorlogo.com/logos/fedora-1.svg'
+                img: 'src/public/img/logos/fedora.svg'
             },
             {
                 name: 'Windows',
                 style: 'color:#0069ff;',
                 icon: 'fab fa-windows',
-                img: 'https://cdn.worldvectorlogo.com/logos/microsoft-windows-22.svg'
+                img: 'src/public/img/logos/windows.svg'
             }
         ],
+        stack_bd: true,
         bd: [
             {
                 name: 'PostgreSQL',
-                img: 'https://cdn.worldvectorlogo.com/logos/postgresql.svg'
+                img: 'src/public/img/logos/postgresql.svg'
             },
             {
                 name: 'MySQL',
-                img: 'https://image.flaticon.com/icons/png/512/528/528260.png'
+                img: 'src/public/img/logos/mysql.svg'
             }
         ],
 
-        academic: true,
         stack_academic: true,
         study:[
             {
                 university: 'UPTP "Juan de Jesus Montilla"',
                 profession: 'Ing. en Informática',
                 period: '2013 - 2019',
-                img:'background-image: url("src/public/img/uptp.jpeg")',
+                img:'background-image: url("src/public/img/study/uptp.jpeg")',
                 study_country: 'Venezuela',
                 icon_country: 'https://image.flaticon.com/icons/png/512/2412/2412432.png'
             }
         ],
-
         stack_courses: false,
 
-        work: true,
-        stack_work: true,
-        work:[
+        works:[
             {
                 company_name:'DW Comercializadora ',
                 company_description: 'Galepso ERP',
                 company_position: 'Coordinador de Soporte Técnico',
                 company_start: '2017',
                 company_find: '2018',
-                company_img: 'background-image: url("src/public/img/galepso1.jpeg"); width: 100%;',
+                company_img: 'background-image: url("src/public/img/work/galepso1.jpeg"); width: 100%;',
                 company_country: 'Venezuela',
                 icon_country: 'https://image.flaticon.com/icons/png/512/2412/2412432.png'
             },
@@ -191,18 +192,17 @@ new Vue({
                 company_position: 'Especialista en Sistemas de Información',
                 company_start: '2018',
                 company_find: 'Actualidad',
-                company_img: 'background-image: url("src/public/img/lpa.jpeg"); width: 100%;',
+                company_img: 'background-image: url("src/public/img/work/lpa.jpeg"); width: 100%;',
                 company_country: 'Venezuela',
                 icon_country: 'https://image.flaticon.com/icons/png/512/2412/2412432.png'
             },
         ],
 
         stack_project: true,
-        project: true,
         projects: [
             {
                 name: 'Social Link',
-                img: 'background-image: url("src/public/img/sociallink.png")',
+                img: 'background-image: url("src/public/img/projects/sociallink.png")',
                 description: 'Es un proyecto basado en el listado de enlace que ofrece la herramienta linktree.',
                 rol: 'Front-End',
                 demo:'https://social-link.diegochavez-dc.com/',
@@ -236,7 +236,7 @@ new Vue({
             },
             {
                 name: 'KeyframesAnimations',
-                img: 'background-image: url("src/public/img/image-2.jpeg")',
+                img: 'background-image: url("src/public/img/projects/image-2.jpeg")',
                 description: 'Librería con animacionaciones usables en elementos de un portal web.',
                 rol: 'Front-End',
                 demo:'https://keyframes-animations.netlify.app',
@@ -265,7 +265,7 @@ new Vue({
 
             {
                 name: 'Photografic-Filter',
-                img: 'background-image: url("src/public/img/image-2.jpeg")',
+                img: 'background-image: url("src/public/img/projects/image-2.jpeg")',
                 description: 'Librería con filtros usados en fotografías aplicables para mejores efectos en tus imágenes en tu sitio web.',
                 rol: 'Front-End',
                 demo:'https://diego-18.github.io/photografic-filter/',
@@ -293,7 +293,7 @@ new Vue({
             },
             {
                 name: 'SISCAS',
-                img: 'background-image: url("src/public/img/sisca.png")',
+                img: 'background-image: url("src/public/img/projects/sisca.png")',
                 description: 'Sistema para el control y gestión de almacenes y suministros.',
                 rol: 'Full Stack',
                 demo:'https://siscas.diegochavez-dc.com/',
