@@ -6,7 +6,7 @@ new Vue({
         profession: `💻 Ingeniero en Informática |
                      👨🏻‍💻 Desarrollador Web Fullstack |
                      📱 Analista Digital`,
-        phrase: '"Vive cada día como si fuera el último, porque un día tendrás razón"',
+        phrase: '"La única forma de hacer un gran trabajo, es amar lo que haces."',
         author: 'Steve Jobs', 
         years: '2021',
         facebook: 'https://www.facebook.com/d.j.c.c.20',
