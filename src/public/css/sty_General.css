@@ -1130,6 +1130,7 @@ textarea {
 
 	.contact__container {
 		display: inherit;
+		margin-bottom: 2%;
 	}
 
 	.content__form {
