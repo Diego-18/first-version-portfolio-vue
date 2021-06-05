@@ -84,24 +84,6 @@ new Vue({
                 img: 'src/public/img/logos/nodejs.svg'
             },
             {
-                name: 'npm',
-                style: 'color:#ED1C24;',
-                icon: 'fab fa-npm',
-                img: 'src/public/img/logos/npm.svg'
-            },
-            {
-                name: 'yarn',
-                style: 'color:#25799f;',
-                icon: 'fab fa-yarn',
-                img: 'src/public/img/logos/yarn.svg'
-            },
-            {
-                name: 'docker',
-                style: 'color:#0091e2;',
-                icon: 'fab fa-docker',
-                img: 'src/public/img/logos/docker.svg'
-            },
-            {
                 name: 'php',
                 style: 'color:#4f1379;',
                 icon: 'fab fa-php',
@@ -121,16 +103,28 @@ new Vue({
                 style: 'color:#f64e27;',
                 icon: 'fab fa-git-alt',
                 img: 'src/public/img/logos/git.svg'
+            },
+            {
+                name: 'npm',
+                style: 'color:#ED1C24;',
+                icon: 'fab fa-npm',
+                img: 'src/public/img/logos/npm.svg'
+            },
+            {
+                name: 'yarn',
+                style: 'color:#25799f;',
+                icon: 'fab fa-yarn',
+                img: 'src/public/img/logos/yarn.svg'
+            },
+            {
+                name: 'docker',
+                style: 'color:#0091e2;',
+                icon: 'fab fa-docker',
+                img: 'src/public/img/logos/docker.svg'
             }
         ],
         stack_server: true,
         server: [
-            {
-                name: 'Linux',
-                style: 'color:#2d2d2d;',
-                icon: 'fab fa-linux',
-                img: 'src/public/img/logos/linux.svg'
-            },
             {
                 name: 'Ubuntu',
                 style: 'color:#e95420;',
@@ -177,8 +171,8 @@ new Vue({
 
         works:[
             {
-                company_name:'DW Comercializadora ',
-                company_description: 'Galepso ERP',
+                company_name:'DW Comercializadora C.A (Galepso ERP) ',
+                company_description: '',
                 company_position: 'Coordinador de Soporte Técnico',
                 company_start: '2017',
                 company_find: '2018',
@@ -199,6 +193,7 @@ new Vue({
         ],
 
         stack_project: true,
+        showModal: false,
         projects: [
             {
                 name: 'Social Link',

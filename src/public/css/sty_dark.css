@@ -6,6 +6,14 @@ body{
     text-shadow: 1px 1px 3px #fff;
 }
 
+.shadow-intro{
+	box-shadow: inset 4px 4px 6px 0;
+}
+
+.shadow-intro-front{
+	box-shadow: inset 4px 4px 6px 0;    /* I, A,  */
+}
+
 input, textarea, 
 p,.record-desc,
 .container-master,
@@ -51,12 +59,12 @@ a, .contact__label,
 	color: #b1cbcd
 }
 
-.portfolio__works__item__header__title__link {
-	color: #ffa500
-}
-
 .portfolio__works__tools__role, .stack__works__tools__role {
 	color: #777;
+}
+
+.project__title{
+	color: rgba(12,35,143,1);
 }
 
 .fa-linkedin:hover,
@@ -65,7 +73,7 @@ a, .contact__label,
 .fa-twitter-square:hover,
 .fa-facebook-square:hover,
 .fa-dribbble:hover,
-.fa-behance-square:hover {
+.fa-behance-square:hover{
 	color: #4392f1;
 }
 
@@ -81,16 +89,8 @@ a, .contact__label,
 	color: #f5f0f6
 }
 
-.stack__works__item__header__title__link {
-	color: #ffa500
-}
-
 .contact__link{
 	color: #25D366;
-}
-
-.blog-card .description h2 {
-	color: #a2a2a2;
 }
 
 .container-master .container__myself:after,
@@ -110,7 +110,7 @@ a, .contact__label,
 .loader, .record,
 .service, .contact__data,
 .card__description, .blog-card,
-.swal2-popup{
+.swal2-popup, .back{
 	background-color: #37474f;
 }
 
@@ -152,6 +152,7 @@ a, .contact__label,
 }
 
 .contact__data, 
+.front, .back,
 .swal2-popup{
 	border: 2px solid rgb(0, 123, 181);
 }
@@ -166,10 +167,6 @@ a, .contact__label,
 
 .portfolio__blockquote {
 	border-left: 4px solid #007BB5;
-}
-
-.menu-list__link:nth-child(n+0) {
-	border-right: 1px solid #dedede;
 }
 
 .welcome__title, .portfolio__title,
