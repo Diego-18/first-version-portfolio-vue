@@ -1,33 +1,17 @@
-.container__title{
-}
-
 .title__card {
   color: #fff;
   text-align: right;
   font-size: 25px;
 }
 
-.container__card {
-    display: inline-block;
-    width: 95%;
-    padding-bottom: 2em;
-    padding-left: 3rem;
-    margin: 0rem 0rem 2rem 2rem;
-}
-
 .card {
-  position: relative;
-  width: 20rem;
   height: 10rem;
   float: left;
   perspective: 500px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
   margin-top: 2.5rem;
   display: inline-block;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
-
 
 .content {
   position: absolute;
