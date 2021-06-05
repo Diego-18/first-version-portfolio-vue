@@ -198,12 +198,24 @@ body {
 .service__title,
 .academic__title,
 .work__title,
-.card__title {
-	font-family: 'Kalam', cursive;
+.card__title,
+.title,
+.card_rol,
+.profession__title,
+.position__title {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: .5rem;
 	text-align: center;
+}
+
+.title__font{
+	font-family: 'Kalam', cursive;
+}
+
+.company__info,
+.study__info{
+	font-size: 14px;
 }
 
 .welcome__description,
@@ -784,8 +796,7 @@ textarea {
 }
 
 .myself__data__info__fullname,
-.myself__fullname,
-.record__title {
+.myself__fullname{
 	font-family: 'Kalam', cursive;
 }
 
@@ -815,11 +826,6 @@ textarea {
 }
 
 @media (min-width:768px) and (max-width:991px){
-	
-	.record_wrap, .services_wrap {
-		width: 100%;
-	}
-
 	.contact__data {
 		width: 85%;
 	}
@@ -975,34 +981,8 @@ textarea {
 		display: none
 	}
 
-	.record_wrap,.services_wrap {
-      margin: 1rem auto;
-      margin-bottom: 1.6%;
-      line-height: 1.4;
-      font-family: sans-serif;
-      border-radius: 5px;
-      overflow: hidden;
-      z-index: 0;
-      display: inline-block;
-	  width: 100%;
-    }
-
-    .record,.service {
-      flex-direction: column;
-      margin: 1rem auto;
-      margin-bottom: 1.6%;
-      line-height: 1.4;
-      font-family: sans-serif;
-      border-radius: 5px;
-      z-index: 0;
-    }
-
 	.contact__container{
 		margin-bottom: 3%;
-	}
-
-	.record, .service{
-		height: 16rem; 
 	}
   
 	.welcome__stack__tool {
@@ -1049,33 +1029,8 @@ textarea {
 
 
 @media (min-width: 992px){
-	.record_wrap, .services_wrap {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		margin: 2%;
-	}
-
-	.blog-card {
-		display: inline-block;
-	}
-
 	.card_link{
 		display: flex;
-	}
-	.record, .service{
-		height: 20rem;
-	}
-
-	.blog-card{
-		width: 40%;
-		margin: 1%;
-	}
-
-	.record, .service {
-		width: 40%;
-		margin-left: 5%;
-		margin-right: 5%;
 	}
 
 	.contact__form{
@@ -1100,7 +1055,7 @@ textarea {
 
 	.welcome__stack__tool {
 		width: 20%;
-		margin: 0rem 0.5rem;
+		margin: 1rem 1rem;
 		text-align: center;
 	}
 
@@ -1119,10 +1074,6 @@ textarea {
 	.card_more{
 		width: 20%;
 	}
-
-	/* .blog-card {
-		margin: 0.6%;
-	} */
 	
 	.contact__info, .contact__form{
 		float: left;
