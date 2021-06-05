@@ -989,7 +989,8 @@ textarea {
 		width: 15%;
 		margin: 0.5rem 0.5rem;
 		text-align: center;
-	}
+		padding: .5rem;
+	}	
   
 	.welcome__stack {
 		align-items: flex-start;
@@ -1021,14 +1022,36 @@ textarea {
 		width: 20%;
 	}
 
-	.contact__container {
+	.contact__container,  .container__card {
 		width: 100%;
+	}
+
+  .container__card {
+		width: 100%;
+		padding-bottom: 1em;
+	}
+
+	.card {
+		width: 90%;
+		margin-left: 4%;
+		margin-right: 4%;
+	}
+
+	.container__portfolio {
+		margin-bottom: 10%;
 	}
 }
 
 
 
 @media (min-width: 992px){
+	.container__card {
+		width: 95%;
+		padding-bottom: 2em;
+		padding-left: 3rem;
+		margin: 0rem 0rem 2rem 2rem;
+	}
+  
 	.card_link{
 		display: flex;
 	}
@@ -1100,4 +1123,10 @@ textarea {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
+
+	.card {
+		width: 20rem;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+	  }
 }
