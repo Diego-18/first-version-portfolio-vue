@@ -1026,7 +1026,7 @@ textarea {
 		width: 100%;
 	}
 
-	.container__card {
+  .container__card {
 		width: 100%;
 		padding-bottom: 1em;
 	}
@@ -1051,7 +1051,7 @@ textarea {
 		padding-left: 3rem;
 		margin: 0rem 0rem 2rem 2rem;
 	}
-
+  
 	.card_link{
 		display: flex;
 	}
