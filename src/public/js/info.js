@@ -14,7 +14,7 @@ new Vue({
         instagram: 'https://www.instagram.com/djchvz18',
         github: 'https://github.com/Diego-18',
         gitlab: 'https://gitlab.com/Diego-18',
-        medium: 'https://diegochavez18.medium.com',
+        medium: 'https://diegochavez-dc.medium.com',
         hackerrank: 'https://www.hackerrank.com/ingdiegochavez18',
         email: 'ingdiegochavez18@gmail.com',
         linkedin: 'https://www.linkedin.com/in/diego-jose-chavez-chirinos-9a7034a6/',
