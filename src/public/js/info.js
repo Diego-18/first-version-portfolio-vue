@@ -193,7 +193,6 @@ new Vue({
         ],
 
         stack_project: true,
-        showModal: false,
         projects: [
             {
                 name: 'Social Link',
@@ -334,6 +333,7 @@ new Vue({
             },
         ],
 
+        form: false,
         services: [
             { 
                 name: 'Desarrollo Web',

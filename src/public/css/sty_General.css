@@ -1040,6 +1040,10 @@ textarea {
 	.container__portfolio {
 		margin-bottom: 10%;
 	}
+
+	.myself_footer_years {
+		text-align: left;
+	}
 }
 
 
