@@ -3,9 +3,9 @@ new Vue({
     data: {
         name: 'Diego J.',
         lastName: 'Chavez Ch.',
-        profession: `💻 Ingeniero en Informática |
-                     👨🏻‍💻 Desarrollador Web Fullstack |
-                     📱 Analista Digital`,
+        profession: `Ingeniero en Informática |
+                     Desarrollador Web Fullstack |
+                     Analista Digital`,
         phrase: '"La única forma de hacer un gran trabajo, es amar lo que haces."',
         author: 'Steve Jobs', 
         years: '2021',
