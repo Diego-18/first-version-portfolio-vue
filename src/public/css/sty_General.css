@@ -202,7 +202,7 @@ body {
 .title,
 .card_rol,
 .profession__title,
-.position__title {
+.position__title, .title__font {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: .5rem;
