@@ -30,11 +30,8 @@ new Vue({
         phone_contact: '',
         message_contact: '',
 
-        description: `Hola, soy un desarrollador de software, apasionado por la creación y desarrollo de interfaces web. Capaz de utilizar herramientas y técnicas para recolectar datos, analizar, diseñar, desarrollar e implementar nuevos sistemas para automatizar procedimientos.`,
-        objetives: [
-            { objetive: 'Usar mis conocimientos como herramienta para crear soluciones tecnológicas en la medida de cualquier necesidad.' },
-            { objetive: 'Contribuir en el avance y desarrollo de la presencia digital y posicionamiento de empresas y StartUp.' }
-        ],
+        p1: 'Hola, soy un desarrollador de software, apasionado por la creación y desarrollo de interfaces web. Capaz de utilizar herramientas y técnicas para recolectar datos, analizar, diseñar, desarrollar e implementar nuevos sistemas para automatizar procedimientos.',
+        p2: 'Aparte del desarrollo web me encanta crear contenido de valor en las redes sociales y contribuir en el avance y desarrollo de la presencia digital y posicionamiento de empresas y StartUp.',
 
         stack: false,
         academic: false,
@@ -185,7 +182,7 @@ new Vue({
                 company_description: '',
                 company_position: 'Especialista en Sistemas de Información',
                 company_start: '2018',
-                company_find: 'Actualidad',
+                company_find: '2021',
                 company_img: 'background-image: url("src/public/img/work/lpa.jpeg"); width: 100%;',
                 company_country: 'Venezuela',
                 icon_country: 'src/public/img/country/venezuela.svg'

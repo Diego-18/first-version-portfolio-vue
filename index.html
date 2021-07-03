@@ -16,10 +16,10 @@
 		<link rel="shortcut icon" type="image/x-icon" href="src/public/img/favicon.ico">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
-		<link rel="stylesheet" href="src/public/css/sty_General.css" />
+		<link rel="stylesheet" href="src/public/css/style.css" />
+		<link rel="stylesheet" href="src/public/css/animate.css" />
 		<link rel="stylesheet" href="src/public/css/sty_Card.css" />
-		<link rel="stylesheet" href="src/public/css/sty_Card_N.css" />
-		<link rel="stylesheet" href="src/public/css/sty_dark.css" />
+		<link rel="stylesheet" href="src/public/css/sty_Light.css" />
 		
 		<title>.: Diego | Chavez :.</title>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -47,9 +47,11 @@
 				PRELOADER
 			-->
 			<div class="loader">
-				<div class="loader__container title__font">
-					<div class="loader__hexagon"></div>
+				<div class="loader__container gfont">
+					<div class="loader__hexagon">
+					</div>
 					<p class="loader__message" >Cargando Portafolio...</p>
+					<img src="src/public/img/DC.png" alt="logo" class="logo_preloader">
 				</div>
 			</div>
 		
@@ -62,15 +64,15 @@
 			<!-- 
 					MENU FOR MOBILE AND TABLET
 			-->
-			<div class="container-master">
+			<div class="container__master">
 				<div class="myself__container__menu">
 					<div class="myself__data">
 						<div class="myself__data__container-avatar">
 							<div class="myself__data__avatar"></div>
 						</div>
 						<div class="myself__data__info">
-							<h4 class="myself__data__info__fullname">{{name}} | {{lastName}}</h4>
-							<p class="myself__data__info__role">{{ profession }}</p>
+							<h4 class="myself__data__info__fullname gfont">{{name}} | {{lastName}}</h4>
+							<p class="myself__data__info__role gfont">{{ profession }}</p>
 						</div>
 					</div>
 		
@@ -81,7 +83,7 @@
 									<i class="fas fa-square fa-stack-2x"></i>
 									<i class="fa fa-home fa-stack-1x fa-inverse"></i>
 								</span>
-								<p class="text__menu_item">Inicio</p>
+								<p class="text__menu_item gfont">Inicio</p>
 							</li>
 						</a>
 						<a href="#welcome" class="myself__menu__link">
@@ -90,7 +92,7 @@
 									<i class="fas fa-square fa-stack-2x"></i>
 									<i class="fa fa-lightbulb fa-stack-1x fa-inverse"></i>
 								</span>
-								<p class="text__menu_item">Acerca de Mi</p>
+								<p class="text__menu_item gfont">Acerca de Mi</p>
 							</li>
 						</a>
 						<a href="#stack" @click="stack = true" class="myself__menu__link">
@@ -99,38 +101,34 @@
 									<i class="fas fa-square fa-stack-2x"></i>
 									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
 								</span>
-								<p class="text__menu_item">Stack</p>
+								<p class="text__menu_item gfont">Stack</p>
 							</li>
 						</a>
-
-						<a href="#academic" @click="academic = true" class="myself__menu__link">
-							<li class="myself__menu__item">
-								<span class="fa-stack fa-2x">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
-								</span>
-								<p class="text__menu_item">Estudios</p>
-							</li>
-						</a>
-
-						<a href="#work" @click="work = true" class="myself__menu__link">
-							<li class="myself__menu__item">
-								<span class="fa-stack fa-2x">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
-								</span>
-								<p class="text__menu_item">Trabajos</p>
-							</li>
-						</a>
-
-
 						<a href="#portfolio" @click="portfolio = true" class="myself__menu__link">
 							<li class="myself__menu__item">
 								<span class="fa-stack fa-2x">
 									<i class="fas fa-square fa-stack-2x"></i>
 									<i class="fa fa-folder-open fa-stack-1x fa-inverse"></i>
 								</span>
-								<p class="text__menu_item">Portafolio</p>
+								<p class="text__menu_item gfont">Portafolio</p>
+							</li>
+						</a>
+						<a href="#academic" @click="academic = true" class="myself__menu__link">
+							<li class="myself__menu__item">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+								</span>
+								<p class="text__menu_item gfont">Estudios</p>
+							</li>
+						</a>
+						<a href="#work" @click="work = true" class="myself__menu__link">
+							<li class="myself__menu__item">
+								<span class="fa-stack fa-2x">
+									<i class="fas fa-square fa-stack-2x"></i>
+									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+								</span>
+								<p class="text__menu_item gfont">Trabajos</p>
 							</li>
 						</a>
 						<a href="#contact" @click="contact = true" class="myself__menu__link">
@@ -139,7 +137,7 @@
 									<i class="fas fa-square fa-stack-2x"></i>
 									<i class="fa fa-address-book fa-stack-1x fa-inverse"></i>
 								</span>
-								<p class="text__menu_item">Contáctame</p>
+								<p class="text__menu_item gfont">Contáctame</p>
 							</li>
 						</a>
 						<a :href="medium" target="_blank" class="myself__menu__link">
@@ -148,7 +146,7 @@
 									<i class="fas fa-square fa-stack-2x"></i>
 									<i class="fab fa-medium-m fa-stack-1x fa-inverse"></i>
 								</span>
-								<p class="text__menu_item">Blog</p>
+								<p class="text__menu_item gfont">Blog</p>
 							</li>
 						</a>
 					</ul>
@@ -162,14 +160,15 @@
 							<div class="myself__container__avatar">
 								<div class="myself__avatar"></div>
 							</div>
-							<h1 class="myself__fullname shadow-text"> {{name}} | <span class="myself_lastname">{{lastName}}</span></h1>
-							<p class="myself__description">{{ profession }}</p>
+							<img src="src/public/img/logo.png" alt="logos" class="logo__dc">
+							<!-- <h1 class="myself__fullname gfont shadow-text"> Diego J. | <span class="myself_lastname">Chavez Ch.</span></h1> -->
+							<p class="myself__description gfont">{{profession}}</p>
 						</div>
 						<div class="myself__footer">
 							<div class="myself__footer__by">
-								<p>{{ phrase }}</p>
-            					<p class="title__font"><em>{{ author }}</em></p>
-								<p class="myself_footer_years">© {{ years }}</p>
+								<p>{{phrase}}</p>
+            					<p class="gfont"><em>{{author}}</em></p>
+								<p class="myself_footer_years">© {{years}}</p>
 							</div>
 							<div class="myself__footer__social">
 								<a class="myself__footer__link" :href="linkedin" target="_blank">
@@ -205,65 +204,37 @@
 					<nav class="menu">
 					    <ul class="menu-list">
 					        <a href="#welcome" class="menu-list__link menu-list__link--active">
-					        	<!-- <span class="fa-stack icon-item">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<i class="fa fa-address-card fa-stack-1x fa-inverse"></i>
-								</span> -->
-					        	<div class="menu__description">
+					        	<div class="menu__description gfont">
 					        		<li class="menu-list__item">Acerca de Mi</li>
 					        	</div>
 					        </a>
 					        <a href="#stack" @click="stack = true" class="menu-list__link">
-					        	<!-- <span class="fa-stack icon-item">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<i class="fa fa-stack-exchange fa-stack-1x fa-inverse"></i>
-								</span> -->
-					        	<div class="menu__description">
+					        	<div class="menu__description gfont">
 					        		<li class="menu-list__item">Stack</li>
 					        	</div>
 					        </a>
+							<a href="#portfolio" @click="portfolio = true" class="menu-list__link">
+								<div class="menu__description gfont">
+					        		<li class="menu-list__item">Portafolio</li>
+					        	</div>
+					        </a>
 					        <a href="#academic" @click="academic = true" class="menu-list__link">
-					        	<!-- <span class="fa-stack icon-item">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-								</span> -->
-								<div class="menu__description">
+								<div class="menu__description gfont">
 									<li class="menu-list__item">Estudios</li>
 					        	</div>
 					        </a>
 					        <a href="#work" @click="work = true" class="menu-list__link">
-					        	<!-- <span class="fa-stack icon-item">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
-								</span> -->
-								<div class="menu__description">
+								<div class="menu__description gfont">
 					        		<li class="menu-list__item">Trabajos</li>
 					        	</div>
 					        </a>
-					        <a href="#portfolio" @click="portfolio = true" class="menu-list__link">
-					        	<!-- <span class="fa-stack icon-item">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<i class="fa fa-folder-open fa-stack-1x fa-inverse"></i>
-								</span> -->
-								<div class="menu__description">
-					        		<li class="menu-list__item">Portafolio</li>
-					        	</div>
-					        </a>
 					        <a href="#contact" @click="contact = true" class="menu-list__link">
-					        	<!-- <span class="fa-stack icon-item">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
-								</span> -->
-								<div class="menu__description">
+								<div class="menu__description gfont">
 					        		<li class="menu-list__item">Contáctame</li>
 					        	</div>
 					        </a>
 					        <a :href="medium" target="_blank" class="menu-list__link">
-					        	<!-- <span class="fa-stack icon-item">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<i class="fa fa-medium fa-stack-1x fa-inverse"></i>
-								</span> -->
-								<div class="menu__description">
+								<div class="menu__description gfont">
 					        		<li class="menu-list__item">Blog</li>
 					        	</div>
 					        </a>
@@ -271,19 +242,23 @@
 					</nav>
 
 					<article class="welcome article--show" id="welcome">
-					    <h2 class="welcome__title title__font">¡Bienvenido!</h2>
-					    <p class="welcome__description">{{ description }} 
+					    <h2 class="welcome__title gfont">¡Bienvenido!</h2>
+					    <p class="welcome__description">
+							{{ p1 }} 
+					    </p>
+						<p class="welcome__description">
+							{{ p2 }} 
 					    </p>
 						<div class="container__card">
 							<div class="card"  v-for="service in services">
 								<div class="content">
 									<div class="front degraded shadow-intro-front">
-										<p class="card__title shadow-text project__title title__font">{{ service.name }}</p>
 										<i :class="service.icon" aria-hidden="true"></i>
+										<p class="card__title shadow-text gfont stack__title">{{ service.name }}</p>
 									</div>
 									<div class="back shadow-intro">
 										<div class="container__description">
-											<span class="text-stack title__font">{{ service.description }}</span>
+											<span class="text-stack gfont">{{ service.description }}</span>
 									   </div>
 									</div>
 								</div>
@@ -296,20 +271,20 @@
 					-->
 					<article class="stack" id="stack">
 						<template v-if="stack">
-							<h2 class="stack__title title__font">Stack</h2>
+							<h2 class="stack__title gfont">Stack</h2>
 							<p class="stack__description">A lo largo de los años en los que me he desempeñado como desarrollador he trabajado con diferentes tecnologías. A continuación quiero mostrarte mi stack de desarrollo actual y las herramientas con las que he trabajado.</p>
 							
 							<div class="container__card">
 								<div class="card" >
 									<div class="content">
 										<div class="front degraded shadow-intro-front">
-											<p class="card__title shadow-text project__title title__font">Front-End</p>
 											<i class="icon fa fa-desktop shadow-text" aria-hidden="true"></i>
+											<p class="card__title shadow-text stack__title gfont">Front-End</p>
 										</div>
 										<div class="back shadow-intro">
 											<div class="welcome__stack__tool" v-for="tools in frontend" @mouseover="show = true" @mouseleave="show = false">
 												<img :src='tools.img' alt="tools.name" class="stack__log"/>
-												<p class="text-stack" v-show="show">{{tools.name}}</p> 
+												<p class="text-stack gfont" v-show="show">{{tools.name}}</p> 
 											</div>
 										</div>
 									</div>
@@ -318,13 +293,13 @@
 								<div class="card" >
 									<div class="content">
 										<div class="front degraded shadow-intro-front">
-											<p class="card__title shadow-text project__title title__font">Back-End</p>
 											<i class="icon fa fa-file-code-o shadow-text" aria-hidden="true"></i>
+											<p class="card__title shadow-text stack__title gfont">Back-End</p>
 										</div>
 										<div class="back shadow-intro">
 											<div class="welcome__stack__tool" v-for="tools in backend" @mouseover="show = true" @mouseleave="show = false">
 												<img :src='tools.img' alt="tools.name" class="stack__log"/>
-												<p class="text-stack" v-show="show">{{tools.name}}</p> 
+												<p class="text-stack gfont" v-show="show">{{tools.name}}</p> 
 											</div>
 										</div>
 									</div>
@@ -333,13 +308,13 @@
 								<div class="card" >
 									<div class="content">
 										<div class="front degraded shadow-intro-front">
-											<p class="card__title shadow-text project__title title__font">Base de Datos</p>
 											<i class="icon fa fa-database shadow-text" aria-hidden="true"></i>
+											<p class="card__title shadow-text stack__title gfont">Base de Datos</p>
 										</div>
 										<div class="back shadow-intro">
 											<div class="welcome__stack__tool" v-for="tools in bd" @mouseover="show = true" @mouseleave="show = false">
 												<img :src='tools.img' alt="tools.name" class="stack__log"/>
-												<p class="text-stack" v-show="show">{{tools.name}}</p> 
+												<p class="text-stack gfont" v-show="show">{{tools.name}}</p> 
 											</div>
 										</div>
 									</div>
@@ -348,13 +323,13 @@
 								<div class="card" >
 									<div class="content">
 										<div class="front degraded shadow-intro-front">
-											<p class="card__title shadow-text project__title title__font">Herramientas</p>
 											<i class="icon fa fa-cogs shadow-text" aria-hidden="true"></i>
+											<p class="card__title shadow-text stack__title gfont">Herramientas</p>
 										</div>
 										<div class="back shadow-intro">
 											<div class="welcome__stack__tool" v-for="tools in tools" @mouseover="show = true" @mouseleave="show = false">
 												<img :src='tools.img' alt="tools.name" class="stack__log"/>
-												<p class="text-stack" v-show="show">{{tools.name}}</p> 
+												<p class="text-stack gfont" v-show="show">{{tools.name}}</p> 
 											</div>
 										</div>
 									</div>
@@ -363,13 +338,13 @@
 								<div class="card" >
 									<div class="content">
 										<div class="front degraded shadow-intro-front">
-											<p class="card__title shadow-text project__title title__font">Servidores</p>
 											<i class="icon fa fa-tasks shadow-text" aria-hidden="true"></i>
+											<p class="card__title shadow-text stack__title gfont">Servidores</p>
 										</div>
 										<div class="back shadow-intro">
 											<div class="welcome__stack__tool" v-for="tools in server" @mouseover="show = true" @mouseleave="show = false">
 												<img :src='tools.img' alt="tools.name" class="stack__log"/>
-												<p class="text-stack" v-show="show">{{tools.name}}</p> 
+												<p class="text-stack gfont" v-show="show">{{tools.name}}</p> 
 											</div>
 										</div>
 									</div>
@@ -384,7 +359,7 @@
 					<article class="academic" id="academic">
 						<template v-if="academic">
 							<div  class="academic_container">
-								<h2 class="academic__title title__font">Estudios Realizados</h2>
+								<h2 class="academic__title gfont">Estudios Realizados</h2>
 																
 								<template v-if="stack_academic">
 									<div class="container__card">
@@ -393,9 +368,9 @@
 												<div class="front shadow-intro-front" :style="study.img">													
 												</div>
 												<div class="back shadow-intro-front study__info">
-													<p class="shadow-text title__font">{{ study.university }}</p>
-													<p class="shadow-text title__font profession__title">{{ study.profession }}</p>
-													<p class="shadow-text title__font"> {{ study.period }}</p>
+													<p class="shadow-text gfont">{{ study.university }}</p>
+													<p class="shadow-text gfont profession__title">{{ study.profession }}</p>
+													<p class="shadow-text gfont"> {{ study.period }}</p>
 
 													<div class="card_link shadow-text">
 														<div class="card_tools">
@@ -425,7 +400,7 @@
 					<article class="work" id="work">
 						<template v-if="work">
 							<div  class="work_container">
-								<h2 class="work__title title__font">Experiencia Laboral</h2>
+								<h2 class="work__title gfont">Experiencia Laboral</h2>
 								<p class="work__description"></p>
 
 								<div class="container__card">
@@ -433,9 +408,9 @@
 										<div class="content">
 											<div class="front shadow-intro-front" :style="work.company_img"></div>
 											<div class="back shadow-intro company__info">
-												<p class="shadow-text title__font">{{ work.company_name }}</p>
-												<p class="shadow-text title__font">{{ work.company_position }}</p>
-												<p class="title__font"> {{ work.company_start }} -  {{ work.company_find }}</p>
+												<p class="shadow-text gfont">{{ work.company_name }}</p>
+												<p class="shadow-text gfont">{{ work.company_position }}</p>
+												<p class="gfont"> {{ work.company_start }} -  {{ work.company_find }}</p>
 
 												<div class="card_link shadow-text">
 													<div class="card_tools">
@@ -459,22 +434,23 @@
 					<article class="portfolio" id="portfolio">
 						<template v-if="portfolio">
 							<div class="container__portfolio" >
-								<h2 class="portfolio__title title__font">Mi Portafolio</h2>
+								<h2 class="portfolio__title gfont">Mi Portafolio</h2>
 								<p class="portfolio__description">En esta sección encontrarás los proyectos en los que he trabajado, también encontrarás algunas pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
 								<blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong>, <strong>GitLab</strong>, <strong>Dribble</strong> o <strong>
 									Behance</strong>.</blockquote>
 									
 								<div class="container__item" v-if="stack_project">
 									<div class="container__card">
-										<span class="title title__font">Desarrollo Web</span>
+										<!-- <span class="title gfont">Desarrollo Web</span> -->
 										<div class="card" v-for="project in projects">
 											<div class="content">
 												<div class="front card_photo shadow-intro-front" :style="project.img">
-													<p class="card__title shadow-text project__title title__font">{{project.name}}</p>
+													<p class="card__title shadow-text project__title gfont">{{project.name}}</p>
 												</div>
 												<div class="back shadow-intro">
+													<p class="card_rol gfont"> {{ project.name }} </p>
 													<p> {{ project.description }}</p>
-													<p class="card_rol title__font"> {{ project.rol }} </p>
+													<p class="card_rol gfont"> {{ project.rol }} </p>
 	
 													<div class="card_link">
 														<div class="card_tools">
@@ -503,7 +479,7 @@
 					-->
 					<article class="contact" id="contact">
 						<template v-if="contact">
-							<h2 class="contact__title title__font">CONTACTAME</h2>
+							<h2 class="contact__title gfont">CONTACTAME</h2>
     						<p class="contact__description"> ¿Necesitas soluciones tecnológicas para ti o tu empresa?
         						Has llegado al lugar indicado. No dudes en ponerte en contacto conmigo. 
     						</p>
@@ -511,19 +487,19 @@
         					<div class="contact__container">
         						<div class="contact__info">
         							<div class="contact__data">
-        								<p class="contact__label title__font">
+        								<p class="contact__label gfont">
         									<i class="fa fa-mobile" aria-hidden="true"></i>
         									Teléfono:
 	        							</p>
 	        							<p class="contact__value">{{ phone }}</p>
 
-										<p class="contact__label title__font">
+										<p class="contact__label gfont">
 		        							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 	    	    							Email:
 	        							</p>
 	        							<p class="contact__value">{{ email }}</p>
 
-										<p class="contact__label title__font">
+										<p class="contact__label gfont">
 											<i class="fa fa-globe" aria-hidden="true"></i>
 	    	    							Sitio Web:
 	        							</p>
@@ -532,7 +508,7 @@
 										    	{{ url }}
 											</a>
 	        							</p>
-										<p class="contact__label title__font">
+										<p class="contact__label gfont">
 											<i class="fa fa-comments-o" aria-hidden="true"></i>
 											Mensajería Instantánea:
 										</p>
@@ -550,7 +526,7 @@
 								<template v-if="form">
 									<div class="content__form">
 										<div class="form">
-											<div class="form__container title__font">
+											<div class="form__container gfont">
 												<div class="form__item">
 													<input class="input" type="text" required id="name" v-model="name_contact"/>
 													<label class="label" for="name"> 
@@ -602,11 +578,11 @@
 		<script src="https://kit.fontawesome.com/74a0a4aba0.js"></script>
 		<script src="src/public/js/main.js"></script>
 		<script src="//code.tidio.co/c59sbszefpmzehgck1no2l1ej5wzljqh.js" async></script>
-		<script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
-		<script type="text/javascript">
+		<!-- <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script> -->
+		<!-- <script type="text/javascript">
 			(function(){
     			emailjs.init("user_Gki1y2uTpaE1X71KX5xko");
 			})();
-		</script>
+		</script> -->
 	</body>
 </html>

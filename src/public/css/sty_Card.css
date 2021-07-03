@@ -5,10 +5,10 @@
 }
 
 .card {
-  height: 10rem;
+  height: 12rem;
   float: left;
   perspective: 500px;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   display: inline-block;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
@@ -48,6 +48,7 @@
 .back {
   color: white;
   transform: rotateY( 180deg );
+  padding: .5em;
 }
 
 .title__card {
@@ -60,8 +61,8 @@
 .title {
     font-size: 20px;
     position: absolute;
-/*     padding-top: 0.5rem; */
-/*     padding-left: 2em; */
+    padding-top: 0.5rem;
+    padding-left: 2rem;
 }
 
 #icon{
@@ -86,7 +87,7 @@
 }
 
 .card_rol{
-	padding: 2%;
+	padding: 1%;
 	text-align: center;
 }
 
@@ -115,8 +116,8 @@
 }
 
 .container__item{
-/* 	padding: 5%; */
-	padding-top: 2%;
+	/* padding: 5%; */
+  padding-bottom: 2%;
 }
 
 .card_more a:after {

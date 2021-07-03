@@ -1,100 +1,71 @@
 body{
     background: #fff;
-    color: #2e3436;
 } 
 
 .shadow-text{
-    text-shadow: 2px 2px 5px #999;
+    text-shadow: 1px 1px 3px #fff;
 }
 
-.welcome__title, .portfolio__title,
-.contact__title,.stack__title,
-.service__title,.academic__title,
-.work__title {
-	border-bottom: 1px solid #f5f0f6;
-	color: rgba(0, 123, 181, 1);
+.shadow-intro{
+	box-shadow: inset 4px 4px 6px 0;
 }
 
-.container-master .container__myself,
-.myself_footer_phrase,
-.myself__footer__social .myself__footer__link{
+.shadow-intro-front{
+	box-shadow: inset 4px 4px 6px 0;    /* I, A,  */
+}
+
+input, textarea, a,
+.record-desc, .direction__web,
+.container__master, .icon,
+ .myself_footer_phrase,
+.myself__footer__social, .myself__footer__link,
+.swal2-title, .swal2-html-container, .text-stack,
+.contact__data, .contact__label, .contact__value, .contact__info{
 	color: #fff;
 }
 
-.container-master .container__myself:after,
-.menu-list__link, .portfolio__repos  {
-	background-color: #2e3436;
+.welcome__description, .portfolio__description,
+.stack__description, .contact__description,
+.contact__title,
+.menu-list__link--active, .form__item .label, .form__item .btn__send:hover,
+.record__title,
+.service__title, .blog-card .details,
+.menu__description, .portfolio__blockquote, .card__title,
+.welcome__title, .portfolio__title,
+.contact__title,.stack__title,
+.academic__title,
+.work__title, .blog-card, 
+.description, .read-more, 
+.blog-card, .menu-list__link:hover,
+.myself_lastname, .form__item .btn__send,
+.tagline, .welcome__community,
+.swal2-styled.swal2-confirm,
+.swal2-icon.swal2-success{
+	color: #0B2891;
 }
 
-.menu__description {
-	color: #02686f;
+.swal2-html-container{
+	font-weight: bold;
 }
 
-.menu-list__link:nth-child(n+0) {
-	border-right: 1px solid #dedede
-}
-
-.menu-list__link:hover, .myself_lastname {
-	color: #007BB5;
-}
-
-.menu-list__link--active .menu-list__item {
-	color: #4392f1;
-	color: #000;
-}
-
-.icon-item {
-	color: rgba(0, 123, 181, 1);
-}
-
-.myself__container__avatar {
-	border: 1.5px inset #007BB5;
-	box-shadow: 2px 1px 2px #002;
-}
-
-.myself__avatar {
-	border: 1.5px solid #007BB5;
-}
-
-.container__myself {
-	box-shadow: 1px 1px 5px #000;
+.swal2-icon.swal2-success .swal2-success-ring {
+    border: 0.25em solid #0B2891;
 }
 
 .myself__footer__social{
-	color: #37474f
-}
-
-.portfolio__blockquote {
-	border-left: 4px solid #007BB5;
-	color: #555;
-	background-color: rgba(17, 157, 164, 0.1);
+	color: #37474f;
 }
 
 .portfolio__repos:hover {
-	color: #119da4
+	color: #b1cbcd
 }
 
-.portfolio__works__item {
-	border: 1px solid #f5f0f6;
-	-webkit-box-shadow: 1px 1px 5px #f5f0f6;
-	box-shadow: 1px 1px 5px #f5f0f6;
-}
-
-.portfolio__works__item__header {
-	background-color: #f5f0f6;
-}
-
-.portfolio__works__item__header__title__link {
-	color: #ffa500
-}
-
-
-.portfolio__works__tools {
-	border-top: 1px solid #f5f0f6;
-}
-
-.portfolio__works__tools__role {
+.portfolio__works__tools__role, .stack__works__tools__role {
 	color: #777;
+}
+
+.project__title{
+	color: rgba(12,35,143,1);
 }
 
 .fa-linkedin:hover,
@@ -103,16 +74,11 @@ body{
 .fa-twitter-square:hover,
 .fa-facebook-square:hover,
 .fa-dribbble:hover,
-.fa-behance-square:hover {
-	color: #4392f1;
+.fa-behance-square:hover{
+	color: #0B2891;
 }
 
-
-.welcome__community {
-	color: #007BB5;
-}
-
-.welcome__community:hover {
+.welcome__community:hover, .stack__repos:hover {
 	color: #119da4
 }
 
@@ -120,16 +86,41 @@ body{
 	color: #878787;
 }
 
-.loader {
-	background-color: #37474f;
+.contact__link{
+	color: #25D366;
 }
 
-.loader__message {
-	color: #f5f0f6
+.container__master .container__myself:after,
+.portfolio__repos, .stack__repos {
+	background-color: #2e3436;
 }
 
-.loader__hexagon {
+.portfolio__blockquote{
+	background-color: rgba(17, 157, 164, 0.1);
+}
+
+.portfolio__works__item__header,
+.stack__works__item__header {
+	background-color: #f5f0f6;
+}
+
+.loader, .record,
+.service, .contact__data,
+.card__description, .blog-card,
+.swal2-popup, .back,
+.description{
+	background-color: #0B2891;
+}
+
+ .form__item 
+.btn__send:hover,
+.swal2-icon.swal2-success [class^="swal2-success-line"] {
+	background-color: #8d919c;
+}
+
+.loader__hexagon{
 	background-color: #007BB5;
+	border: solid #fff 2px;
 }
 
 .loader__hexagon:after {
@@ -140,167 +131,155 @@ body{
 	border-bottom: 28.87px solid #007BB5;
 }
 
-.stack__repos {
-	color: #2e3436;
+.loader__message {
+	color: #f5f0f6
 }
 
-.stack__repos:hover {
-	color: #119da4
+.form__item .btn__send,
+ .description, .swal2-styled.swal2-confirm {
+	background-color: #fff;
 }
 
-.stack__works__item {
+.degraded, #service,
+.form{
+    background: rgb(55,71,79);
+    background: linear-gradient(35deg, rgba(55,71,79,1) 0%, rgba(0,123,181,1) 50%, rgba(12,35,143,1) 100%);
+}
+
+.details {
+	background: rgba(0, 0, 0, .6);
+}
+
+.blog-card p:first-of-type:before {
+	background: #0B2891;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+    border: 0.25em solid #007BB5;
+}
+
+.myself__avatar, .myself__container__avatar{
+	border: 1.5px solid #007BB5;
+}
+
+.portfolio__works__item, .stack__works__item {
 	border: 1px solid #f5f0f6;
+}
+
+.contact__data, 
+.front, .back,
+.swal2-popup{
+	border: 2px solid rgb(0, 123, 181);
+}
+
+.portfolio__works__tools, .stack__works__tools {
+	border-top: 1px solid #f5f0f6;
+}
+
+
+
+.portfolio__blockquote {
+	border-left: 4px solid #007BB5;
+}
+
+.welcome__title, .portfolio__title,
+.contact__title,.stack__title,
+.service__title,.academic__title,
+.work__title {
+    border-bottom: 1px solid #f5f0f6;
+}
+
+
+input, textarea,
+.form__item .input, .form__item .textarea  {
+	border-bottom: 2px solid #fff;
+}
+
+.form__item .input:focus, .form__item .textarea:focus 
+.form__item .input:valid, .form__item .textarea:valid{
+	border-bottom: 2px solid #00c9db;
+}
+
+.menu-list__link--active{
+    text-shadow: 2px 2px 5px #8e9192;
+    text-decoration: underline;
+}
+
+.myself__container__avatar, .swal2-styled {
+	box-shadow: 2px 1px 2px #fff;
+}
+
+.container__myself {
+	box-shadow: 1px 1px 5px #fff;
+}
+
+.portfolio__works__item, .stack__works__item{
 	-webkit-box-shadow: 1px 1px 5px #f5f0f6;
 	box-shadow: 1px 1px 5px #f5f0f6;
 }
 
-.stack__works__item__header {
-	background-color: #f5f0f6;
-}
-
-.stack__works__item__header__title__link {
-	color: #ffa500
-}
-
-.stack__works__tools {
-	border-top: 1px solid #f5f0f6;
-}
-
-.stack__works__tools__role {
-	color: #777;
-}
-
-input,
-textarea {
-	border-bottom: 2px solid #fff;
-	color: #000;
-}
-
-.form {
+.form, .contact__data {
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-	background: rgb(0, 123, 181);
-	background: linear-gradient(180deg, #007BB5 0%, rgba(0, 123, 181, 1) 35%, rgba(255, 255, 255, 1) 100%);
 }
 
-.form__item .input,
-.form__item .textarea {
-	border-bottom: 2px solid #fff;
-}
-
-.form__item .input:focus,
-.form__item .textarea:focus {
-	border-bottom: 2px solid #00c9db;
-}
-
-.form__item .input:valid,
-.form__item .textarea:valid {
-	border-bottom: 2px solid #00c9db;
-}
-
-.form__item .label {
-	color: #fff;
+.blog-card {
+	box-shadow: 0 3px 7px -1px rgba(0, 0, 0, .1);
 }
 
 .form__item .btn__send {
-	background-color: #fff;
 	box-shadow: 0 0 0 2px #fff;
-	color: #007BB5;
 }
 
 .form__item .btn__send:hover {
-	background: #007BB5;
-	color: white;
 	box-shadow: 0 0 0 0 transparent;
 }
 
-.form__item .btn__send:active {
-	background: #007BB5;
-}
-
-.contact__data {
-	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-	border: 2px solid rgb(0, 123, 181);
-}
-
-.contact__label {
-	color: rgb(0, 123, 181);
-}
-
-.contact__link{
-	color: #25D366;
-}
-
-.direction__web{
-	color: #000;
+.card{
+	box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 
-
-/* CARDS */
-.record,
-.service {
-  background-color: #fff;
-}
-
-.record-display {
-    background: rgb(0, 123, 181);
-    background: linear-gradient(180deg, #007BB5 0%, rgba(0, 123, 181, 1) 35%, rgba(255, 255, 255, 1) 100%);
-}
-
-.icon {
-    color: #fff;
-}
-
-.record-desc p {
-    color: #666;
-}
-
-#service {
-    background: rgb(0, 123, 181);
-    background: linear-gradient(180deg, #007BB5 0%, rgba(0, 123, 181, 1) 35%, rgba(255, 255, 255, 1) 100%);
-}
-
-.tagline {
-    color: #007BB5;
-}
-
-@media screen and (max-width:950px) {
-    .blanketBody {
-		background: #2e3436;
+@media screen and (max-width:991px) {
+    .blanketBody,
+    .myself__container__menu {
+		background: #fff;
 	}
 
-	.control-actions , .myself__data__info {
-		color: #fff;
+    .myself__data__info,
+    .text__menu_item{
+		color: #0B2891;
 	}
 
-  .control-actions {
-		background-color: #007BB5;
-		-webkit-box-shadow: 0 1px 7px #454545;
-		box-shadow: 0 1px 7px #454545;
-		color: #fff;
+    .control-actions {
+		background-color: #0B2891;
+		-webkit-box-shadow: 0 1px 7px #fff;
+		box-shadow: 0 1px 7px #fff;
 	}
 
     .myself__container__menu {
-		background: #fff;
 		-webkit-box-shadow: 2px 0 15px #333;
 		box-shadow: 2px 0 15px #333;
 	}
-  .myself__data {
-		background-color: #007BB5;
+    
+    .myself__data {
+        background: rgb(55,71,79);
+        background: linear-gradient(35deg, rgba(55,71,79,1) 0%, rgba(0,123,181,1) 50%, rgba(12,35,143,1) 100%);    
 		border-bottom: 1px solid #f5f0f6;
 	}
 
-    .myself__data__info__role {
-		color: #e3e3e3;
+    .myself__data__info__role, .control-actions{
+		color: #fff;
 	}
-    .myself__menu__link {
-		color: #545454;
+
+	.myself__menu__link{
+		color: rgb(55,71,79);
 	}
+
     .myself__menu__link--active {
-		color: #007BB5;
+		color: #0B2891;
 	}
     .myself__menu__link--active__soon {
-		background-color: #007BB5;
-		color: #f5f0f6;
+		background-color: #0B2891;
+		color: #0B2891;
 	}
 }
