@@ -42,7 +42,7 @@ new Vue({
         stack_front: true,
         frontend: [
             {
-                name: 'html-5',
+                name: 'html',
                 style: 'color:#f16529;',
                 icon: 'fab fa-html5',
                 img: 'src/public/img/logos/html5.svg'
@@ -144,7 +144,7 @@ new Vue({
         stack_bd: true,
         bd: [
             {
-                name: 'PostgreSQL',
+                name: 'Postgres',
                 img: 'src/public/img/logos/postgresql.svg'
             },
             {
