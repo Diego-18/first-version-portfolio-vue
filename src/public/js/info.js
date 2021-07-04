@@ -168,12 +168,12 @@ new Vue({
 
         works:[
             {
-                company_name:'DW Comercializadora C.A (Galepso ERP) ',
+                company_name:'Freelancer',
                 company_description: '',
-                company_position: 'Coordinador de Soporte Técnico',
-                company_start: '2017',
-                company_find: '2018',
-                company_img: 'background-image: url("src/public/img/work/galepso1.jpeg"); width: 100%;',
+                company_position: 'Desarrollador Web | Analista Digital',
+                company_start: '2021',
+                company_find: 'Actualidad',
+                company_img: 'background-image: url("src/public/img/work/freelancer.jpg"); width: 100%;',
                 company_country: 'Venezuela',
                 icon_country: 'src/public/img/country/venezuela.svg'
             },
@@ -187,6 +187,17 @@ new Vue({
                 company_country: 'Venezuela',
                 icon_country: 'src/public/img/country/venezuela.svg'
             },
+            {
+                company_name:'DW Comercializadora C.A (Galepso ERP) ',
+                company_description: '',
+                company_position: 'Coordinador de Soporte Técnico',
+                company_start: '2017',
+                company_find: '2018',
+                company_img: 'background-image: url("src/public/img/work/galepso1.jpeg"); width: 100%;',
+                company_country: 'Venezuela',
+                icon_country: 'src/public/img/country/venezuela.svg'
+            },
+           
         ],
 
         stack_project: true,
