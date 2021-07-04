@@ -460,9 +460,12 @@
 														</div>
 														<div class="card_more">
 															<template v-if="project.code">
-																<a :href="project.gh" title="Codigo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+																<a :href="project.gh" title="Código" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
 															</template>
-															<a :href="project.demo" title="Demo" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+															<template v-if="project.demo_verify">
+																<a :href="project.demo" title="Demo" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+															</template>
+															
 														</div>
 													</div>
 												</div>

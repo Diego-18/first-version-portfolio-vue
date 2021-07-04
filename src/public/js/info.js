@@ -167,16 +167,16 @@ new Vue({
         stack_courses: false,
 
         works:[
-            {
-                company_name:'Freelancer',
-                company_description: '',
-                company_position: 'Desarrollador Web | Analista Digital',
-                company_start: '2021',
-                company_find: 'Actualidad',
-                company_img: 'background-image: url("src/public/img/work/freelancer.jpg"); width: 100%;',
-                company_country: 'Venezuela',
-                icon_country: 'src/public/img/country/venezuela.svg'
-            },
+            // {
+            //     company_name:'Freelancer',
+            //     company_description: '',
+            //     company_position: 'Desarrollador Web | Analista Digital',
+            //     company_start: '2021',
+            //     company_find: 'Actualidad',
+            //     company_img: 'background-image: url("src/public/img/work/freelancer.jpg"); width: 100%;',
+            //     company_country: 'Venezuela',
+            //     icon_country: 'src/public/img/country/venezuela.svg'
+            // },
             {
                 company_name:'Las Plumas y Asociados C.A',
                 company_description: '',
@@ -203,10 +203,50 @@ new Vue({
         stack_project: true,
         projects: [
             {
+                name: 'Favorite Links',
+                img: 'background-image: url("src/public/img/projects/FL.png")',
+                description: 'Es una aplicación que te permite gestionar tus links favoritos para acceder a ellos cuando lo necesites.',
+                rol: 'Fullstack',
+                code: true,
+                gh:'https://github.com/Diego-18/FavoriteLinks',
+                tag:[
+                    {
+                        name:'Aplicación Web'
+                    }
+                ],
+                tools:[
+                    {
+                        name: "CSS-3",
+                        icon:'fab fa-css3-alt',
+                        style:'color:#0170ba; margin-right:3%;',
+                        img:''
+                    },
+                    {
+                        name: "Bootstrap",
+                        icon:'fab fa-bootstrap',
+                        style:'color:#563d7c; margin-right:3%;',
+                        img:''
+                    },
+                    {
+                        name: "html5",
+                        icon:'fab fa-html5',
+                        style:'color:#f16529; margin-right:3%;',
+                        img:''
+                    },
+                    {
+                        name:"NodeJS",
+                        icon:'fab fa-node-js',
+                        style:'color:#68a063; margin-right:3%;',
+                        img:''
+                    }
+                ]
+            },
+            {
                 name: 'Social Link',
                 img: 'background-image: url("src/public/img/projects/sociallink.png")',
                 description: 'Es un proyecto basado en el listado de enlace que ofrece la herramienta linktree.',
                 rol: 'Front-End',
+                demo_verify: true,
                 demo:'https://social-link.diegochavez-dc.com/',
                 code: true,
                 gh:'https://github.com/Diego-18/social.link/',
@@ -229,9 +269,9 @@ new Vue({
                         img:''
                     },
                     {
-                        name:"Javascript",
-                        icon:'fab fa-js',
-                        style:'color:#ffe629; background-color: #2d2d2d; margin-right:3%;',
+                        name:"VueJS",
+                        icon:'fab fa-vuejs',
+                        style:'color:#42b883; margin-right:3%;',
                         img:''
                     }
                 ]
@@ -239,8 +279,9 @@ new Vue({
             {
                 name: 'KeyframesAnimations',
                 img: 'background-image: url("src/public/img/projects/image-2.jpeg")',
-                description: 'Librería con animacionaciones usables en elementos de un portal web.',
+                description: 'Librería con animacionaciones usables para elementos de un portal web.',
                 rol: 'Front-End',
+                demo_verify: true,
                 demo:'https://keyframes-animations.netlify.app',
                 code: true,
                 gh:'https://github.com/Diego-18/KeyframesAnimations',
@@ -268,8 +309,9 @@ new Vue({
             {
                 name: 'Photografic-Filter',
                 img: 'background-image: url("src/public/img/projects/image-2.jpeg")',
-                description: 'Librería con filtros usados en fotografías aplicables para mejores efectos en tus imágenes en tu sitio web.',
+                description: 'Librería con filtros usados en fotografías aplicables para mejores efectos a tus imágenes en tu sitio web.',
                 rol: 'Front-End',
+                demo_verify: true,
                 demo:'https://diego-18.github.io/photografic-filter/',
                 code: true,
                 gh:'https://github.com/Diego-18/photografic-filter',
@@ -298,6 +340,7 @@ new Vue({
                 img: 'background-image: url("src/public/img/projects/sisca.png")',
                 description: 'Sistema para el control y gestión de almacenes y suministros.',
                 rol: 'Full Stack',
+                demo_verify: true,
                 demo:'https://siscas.diegochavez-dc.com/',
                 code: false,
                 gh:'',
@@ -346,7 +389,7 @@ new Vue({
             { 
                 name: 'Desarrollo Web',
                 icon: 'icon fa fa-desktop',
-                description: 'Desarrollo de páginas y sistemas web para cualquier persona, empresa o estudiante.' 
+                description: 'Desarrollo de páginas y sistemas web para todo tipo de empresa, persona o estudiante.' 
             },
             { 
                 name: 'Marketing Digital',
