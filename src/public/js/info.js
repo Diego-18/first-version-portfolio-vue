@@ -336,6 +336,53 @@ new Vue({
                 ]
             },
             {
+                name: 'SYS-HUMAN',
+                img: 'background-image: url("src/public/img/projects/syshuman.png")',
+                description: 'Sistema para el control de procesos en el área de RRHH',
+                rol: 'Full Stack',
+                demo_verify: true,
+                demo:'https://sys-human.diegochavez-dc.com/',
+                code: false,
+                gh:'',
+                tag:[
+                    {
+                        name:'Sistema'
+                    }
+                ],
+                tools:[
+                    {
+                        name:"php",
+                        icon:'fab fa-php',
+                        style:'color:#fff; margin-right:3%;',
+                        img:''
+                    },
+                    {
+                        name: "CSS-3",
+                        icon:'fab fa-css3-alt',
+                        style:'color:#0170ba; margin-right:3%;',
+                        img:''
+                    },
+                    {
+                        name: "html5",
+                        icon:'fab fa-html5',
+                        style:'color:#f16529; margin-right:3%;',
+                        img:''
+                    },
+                    {
+                        name: "Bootstrap",
+                        icon:'fab fa-bootstrap',
+                        style:'color:#563d7c; margin-right:3%;',
+                        img:''
+                    },
+                    {
+                        name:"Javascript",
+                        icon:'fab fa-js',
+                        style:'color:#ffe629; background-color: #2d2d2d; margin-right:3%;',
+                        img:''
+                    }
+                ]
+            },
+            {
                 name: 'SISCAS',
                 img: 'background-image: url("src/public/img/projects/sisca.png")',
                 description: 'Sistema para el control y gestión de almacenes y suministros.',
@@ -353,7 +400,7 @@ new Vue({
                     {
                         name:"php",
                         icon:'fab fa-php',
-                        style:'color:#4f1379; margin-right:3%;',
+                        style:'color:#fff; margin-right:3%;',
                         img:''
                     },
                     {
