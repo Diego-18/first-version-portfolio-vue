@@ -167,16 +167,16 @@ new Vue({
         stack_courses: false,
 
         works:[
-            // {
-            //     company_name:'Freelancer',
-            //     company_description: '',
-            //     company_position: 'Desarrollador Web | Analista Digital',
-            //     company_start: '2021',
-            //     company_find: 'Actualidad',
-            //     company_img: 'background-image: url("src/public/img/work/freelancer.jpg"); width: 100%;',
-            //     company_country: 'Venezuela',
-            //     icon_country: 'src/public/img/country/venezuela.svg'
-            // },
+            {
+                company_name:'Freelancer',
+                company_description: '',
+                company_position: 'Desarrollador Web | Analista Digital',
+                company_start: '2021',
+                company_find: 'Actualidad',
+                company_img: 'background-image: url("src/public/img/work/freelancer.jpg"); width: 100%;',
+                company_country: 'Venezuela',
+                icon_country: 'src/public/img/country/venezuela.svg'
+            },
             {
                 company_name:'Las Plumas y Asociados C.A',
                 company_description: '',
