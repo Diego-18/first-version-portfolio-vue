@@ -338,7 +338,7 @@ new Vue({
             {
                 name: 'SYS-HUMAN',
                 img: 'background-image: url("src/public/img/projects/syshuman.png")',
-                description: 'Sistema para el control de procesos en el área de RRHH',
+                description: 'Sistema para el control y cálculos de procesos en el área de RRHH',
                 rol: 'Full Stack',
                 demo_verify: true,
                 demo:'https://sys-human.diegochavez-dc.com/',
