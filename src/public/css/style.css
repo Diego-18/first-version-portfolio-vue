@@ -868,7 +868,7 @@ textarea {
 @media (min-width: 992px){
 	.container__card {
 		width: 95%;
-		padding-bottom: 2em;
+		padding-bottom: 14em;
 		padding-left: 3rem;
 		margin: 0rem 0rem 2rem 2rem;
 	}
