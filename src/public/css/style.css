@@ -442,6 +442,7 @@ CONTAINER MYSLEF
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
+	padding-bottom: 2rem;
 }
 
 .myself__footer__by {
@@ -450,7 +451,7 @@ CONTAINER MYSLEF
 }
 
 .myself__footer__by p {
-	margin: .4rem 0
+	margin: .4rem .4rem;
 }
 
 .myself_footer_phrase {
@@ -641,13 +642,13 @@ textarea {
 }
 
 
-@media (min-width:768px) and (max-width:991px){
+@media (min-width:768px) and (max-width:1023px){
 	.contact__data {
 		width: 85%;
 	}
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:1023px) {
 	body{
 		overflow: hidden;
 		position: relative
@@ -736,7 +737,7 @@ textarea {
 	.myself__menu__item {
 		display: flex;
 		align-items: center;
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 	.myself__menu__item:hover {
 		-moz-animation: 1.0s flash 1;
@@ -865,7 +866,7 @@ textarea {
 
 
 
-@media (min-width: 992px){
+@media (min-width: 1024px){
 	.container__card {
 		width: 95%;
 		padding-bottom: 14em;
