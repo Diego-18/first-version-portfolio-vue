@@ -40,7 +40,7 @@ input, textarea, a,
 .myself_lastname, .form__item .btn__send,
 .tagline, .welcome__community,
 .swal2-styled.swal2-confirm,
-.swal2-icon.swal2-success{
+.swal2-icon.swal2-success, .course__title{
 	color: #0B2891;
 }
 

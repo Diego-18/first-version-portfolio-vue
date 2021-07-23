@@ -359,7 +359,7 @@
 					<article class="academic" id="academic">
 						<template v-if="academic">
 							<div  class="academic_container">
-								<h2 class="academic__title gfont">Estudios Realizados</h2>
+								<h2 class="academic__title gfont">Fomación Académica</h2>
 																
 								<template v-if="stack_academic">
 									<div class="container__card">
@@ -383,6 +383,22 @@
 												</div>
 											</div>
 										</div>	 
+									</div>
+
+									<div class="container__small" style="color: #000;">
+										<h3 class="gfont course__title">Cursos Realizados</h3>
+										<div class="card__small" v-for="courses in courses">
+											<div class="content">
+												<div class="front shadow-intro-front" :style="courses.institute_img">													
+												</div>
+												<div class="back shadow-intro-front study__info">
+													<p class="gfont course__name">{{ courses.name }} - ({{courses.year}})</p>
+													<a :href="courses.certificate" class="gfont" target="__blank">
+														<i class="fa fa-address-card-o fa-6" aria-hidden="true"></i>
+													</a>
+												</div>
+											</div>
+										</div>
 									</div>
 								</template>
 

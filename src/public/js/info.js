@@ -164,7 +164,23 @@ new Vue({
                 icon_country: 'src/public/img/country/venezuela.svg'
             }
         ],
+
         stack_courses: false,
+        courses:[
+            {
+                name: 'Fundamentos del desarrollo web: Full Stack o Front-end',
+                year: '2021',
+                institute_img: 'background-image: url("src/public/img/study/in.jpg")',
+                certificate: 'src/doc/courses/1.pdf'
+            },
+            {
+                name: 'Aprende SCRUM',
+                year: '2021',
+                institute_img: 'background-image: url("src/public/img/study/in.jpg")',
+                certificate: 'src/doc/courses/2.pdf'
+            },
+        ],
+        
 
         works:[
             {
