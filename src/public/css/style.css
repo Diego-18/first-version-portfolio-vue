@@ -442,7 +442,7 @@ CONTAINER MYSLEF
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
-	padding-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .myself__footer__by {
@@ -763,6 +763,10 @@ textarea {
 	}
 	.myself__menu__link--active .material-icons {
 		padding-right: .5rem;
+	}
+
+	.myself__footer {
+		margin-bottom: 5rem;
 	}
 
 	.control-actions {
