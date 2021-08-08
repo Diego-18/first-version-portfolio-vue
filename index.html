@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-
-		<meta property="og:title" content="Diego Chavez"/>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta property="og:title" content="Diego Chavez"/>
     	<meta property="og:description" content="Personal Site"/>
-		<meta property="og:url" content="https://www.dev.diegochavez-dc.com" />
+        <meta property="og:url" content="https://www.dev.diegochavez-dc.com" />
 		<meta property="og:image" content="https://avatars.githubusercontent.com/u/40433474?v=4"/>
+        <meta name="description" content="Soy un desarrollador de software y analista digital, apasionado por la creación y desarrollo de interfaces web y marketing digital.">
+        <link rel="canonical" href="https://dev.diegochavez-dc.com">
 
-		<meta name="description" content="Soy un desarrollador de software y analista digital, apasionado por la creación y desarrollo de interfaces web y marketing digital.">
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="canonical" href="https://dev.diegochavez-dc.com">
+        <link rel="shortcut icon" type="image/x-icon" href="src/public/img/favicon.ico">
+		<link rel="stylesheet" href="src/public/css/keyframes.css">
+        <link rel="stylesheet" href="src/public/css/style.css">
+        <link rel="stylesheet" href="src/public/css/light.css">
 
-		<link rel="shortcut icon" type="image/x-icon" href="src/public/img/favicon.ico">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
-		<link rel="stylesheet" href="src/public/css/style.css" />
-		<link rel="stylesheet" href="src/public/css/animate.css" />
-		<link rel="stylesheet" href="src/public/css/sty_Card.css" />
-		<link rel="stylesheet" href="src/public/css/sty_Light.css" />
-		
-		<title>.: Diego | Chavez :.</title>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
+        <title>Diego Chavez | Desarrollador Web </title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJ8VHN3Y3G"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -31,12 +27,11 @@
 
 			gtag('config', 'G-GJ8VHN3Y3G');
 		</script>
-	</head>
-
-	<body >
+    </head>
+    <body >
 		<div id="app">
 			<div style="display: none;" itemscope itemtype="https://schema.org/Person">
-				<img src="src/public/img/profile.jpeg" alt="photo" itemprop="image">
+				<img src="src/public/img/profile.jpg" alt="photo" itemprop="image">
 				<span itemprop="name"> Diego Jose Chavez Chirinos </span>
 				<span itemprop="jobTitle">💻 Ingeniero en Informatica | 💻 Desarrollador Web Fullstack | 💻 Analista Digital</span>
 				<span itemprop="telephone"> +58412-5264207</span>
@@ -61,10 +56,10 @@
 				<span class="control-actions__menu"><i class="fas fa-align-justify"></i></span>
 			</div>
 		
-			<!-- 
-					MENU FOR MOBILE AND TABLET
-			-->
 			<div class="container__master">
+                <!-- 
+					MENU FOR MOBILE AND TABLET
+			    -->
 				<div class="myself__container__menu">
 					<div class="myself__data">
 						<div class="myself__data__container-avatar">
@@ -95,15 +90,6 @@
 								<p class="text__menu_item gfont">Acerca de Mi</p>
 							</li>
 						</a>
-						<a href="#stack" @click="stack = true" class="myself__menu__link">
-							<li class="myself__menu__item">
-								<span class="fa-stack fa-2x">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
-								</span>
-								<p class="text__menu_item gfont">Stack</p>
-							</li>
-						</a>
 						<a href="#portfolio" @click="portfolio = true" class="myself__menu__link">
 							<li class="myself__menu__item">
 								<span class="fa-stack fa-2x">
@@ -113,22 +99,13 @@
 								<p class="text__menu_item gfont">Portafolio</p>
 							</li>
 						</a>
-						<a href="#academic" @click="academic = true" class="myself__menu__link">
+						<a href="#stack" @click="stack = true" class="myself__menu__link">
 							<li class="myself__menu__item">
 								<span class="fa-stack fa-2x">
 									<i class="fas fa-square fa-stack-2x"></i>
 									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
 								</span>
-								<p class="text__menu_item gfont">Estudios</p>
-							</li>
-						</a>
-						<a href="#work" @click="work = true" class="myself__menu__link">
-							<li class="myself__menu__item">
-								<span class="fa-stack fa-2x">
-									<i class="fas fa-square fa-stack-2x"></i>
-									<i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
-								</span>
-								<p class="text__menu_item gfont">Trabajos</p>
+								<p class="text__menu_item gfont">Habilidades</p>
 							</li>
 						</a>
 						<a href="#contact" @click="contact = true" class="myself__menu__link">
@@ -205,27 +182,17 @@
 					    <ul class="menu-list">
 					        <a href="#welcome" class="menu-list__link menu-list__link--active">
 					        	<div class="menu__description gfont">
-					        		<li class="menu-list__item">Acerca de Mi</li>
+					        		<li class="menu-list__item">Acerca de mi</li>
 					        	</div>
 					        </a>
-					        <a href="#stack" @click="stack = true" class="menu-list__link">
-					        	<div class="menu__description gfont">
-					        		<li class="menu-list__item">Stack</li>
-					        	</div>
-					        </a>
-							<a href="#portfolio" @click="portfolio = true" class="menu-list__link">
+                            <a href="#portfolio" @click="portfolio = true" class="menu-list__link">
 								<div class="menu__description gfont">
 					        		<li class="menu-list__item">Portafolio</li>
 					        	</div>
 					        </a>
-					        <a href="#academic" @click="academic = true" class="menu-list__link">
-								<div class="menu__description gfont">
-									<li class="menu-list__item">Estudios</li>
-					        	</div>
-					        </a>
-					        <a href="#work" @click="work = true" class="menu-list__link">
-								<div class="menu__description gfont">
-					        		<li class="menu-list__item">Trabajos</li>
+					        <a href="#stack" @click="stack = true" class="menu-list__link">
+					        	<div class="menu__description gfont">
+					        		<li class="menu-list__item">Habilidades</li>
 					        	</div>
 					        </a>
 					        <a href="#contact" @click="contact = true" class="menu-list__link">
@@ -244,26 +211,42 @@
 					<article class="welcome article--show" id="welcome">
 					    <h2 class="welcome__title gfont">¡Bienvenido!</h2>
 					    <p class="welcome__description">
+							<i class="fas fa-arrow-circle-right"></i>
 							{{ p1 }} 
 					    </p>
 						<p class="welcome__description">
-							{{ p2 }} 
+							<i class="fas fa-arrow-circle-right"></i>
+							{{ p2 }}
+						</p>
+						<p class="welcome__description">
+							<i class="fas fa-arrow-circle-right"></i>	 
+							{{ p3 }} 
 					    </p>
 						<div class="container__card">
 							<div class="card"  v-for="service in services">
 								<div class="content">
 									<div class="front degraded shadow-intro-front">
 										<i :class="service.icon" aria-hidden="true"></i>
-										<p class="card__title shadow-text gfont stack__title">{{ service.name }}</p>
+										<p class="card__title shadow-text gfont service__title">{{ service.name }}</p>
 									</div>
 									<div class="back shadow-intro">
 										<div class="container__description">
-											<span class="text-stack gfont">{{ service.description }}</span>
+											<span class="text-service gfont">{{ service.description }}</span>
 									   </div>
 									</div>
 								</div>
 							</div>
 						</div>
+
+                        <div class="welcome__buttons">
+                            <a href="src/doc/CV-Español.pdf" target="__blank" class="cstm__button gfont shadow-intro-front shadow-text">
+                                Descargar CV <i class="fas fa-file-download"></i>
+                            </a>
+
+                            <a :href="linkedin" target="__blank" class="cstm__button gfont shadow-intro-front shadow-text">
+                                Perfil de <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
 					</article>
 
 					<!-- 
@@ -271,174 +254,50 @@
 					-->
 					<article class="stack" id="stack">
 						<template v-if="stack">
-							<h2 class="stack__title gfont">Stack</h2>
-							<p class="stack__description">A lo largo de los años en los que me he desempeñado como desarrollador he trabajado con diferentes tecnologías. A continuación quiero mostrarte mi stack de desarrollo actual y las herramientas con las que he trabajado.</p>
+							<h2 class="stack__title gfont">Habilidades</h2>
+							<p class="stack__description">Me caracterizo por ser una persona autodidacta, me encanta y disfruto de aprender herramientas  nuevas que me lleven a nuevos retos y a dar solución de algún problema o necesidad, lo que me ha ayudado a lo largo de todos estos años a fortalecer y mejorar mis habilidades en diferentes tecnologias y herramientas. </p>
 							
-							<div class="container__card">
-								<div class="card" >
-									<div class="content">
-										<div class="front degraded shadow-intro-front">
-											<i class="icon fa fa-desktop shadow-text" aria-hidden="true"></i>
-											<p class="card__title shadow-text stack__title gfont">Front-End</p>
-										</div>
-										<div class="back shadow-intro">
-											<div class="welcome__stack__tool" v-for="tools in frontend" @mouseover="show = true" @mouseleave="show = false">
-												<img :src='tools.img' alt="tools.name" class="stack__log"/>
-												<p class="text-stack gfont" v-show="show">{{tools.name}}</p> 
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="card" >
-									<div class="content">
-										<div class="front degraded shadow-intro-front">
-											<i class="icon fa fa-file-code-o shadow-text" aria-hidden="true"></i>
-											<p class="card__title shadow-text stack__title gfont">Back-End</p>
-										</div>
-										<div class="back shadow-intro">
-											<div class="welcome__stack__tool" v-for="tools in backend" @mouseover="show = true" @mouseleave="show = false">
-												<img :src='tools.img' alt="tools.name" class="stack__log"/>
-												<p class="text-stack gfont" v-show="show">{{tools.name}}</p> 
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="card" >
-									<div class="content">
-										<div class="front degraded shadow-intro-front">
-											<i class="icon fa fa-database shadow-text" aria-hidden="true"></i>
-											<p class="card__title shadow-text stack__title gfont">Base de Datos</p>
-										</div>
-										<div class="back shadow-intro">
-											<div class="welcome__stack__tool" v-for="tools in bd" @mouseover="show = true" @mouseleave="show = false">
-												<img :src='tools.img' alt="tools.name" class="stack__log"/>
-												<p class="text-stack gfont" v-show="show">{{tools.name}}</p> 
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="card" >
-									<div class="content">
-										<div class="front degraded shadow-intro-front">
-											<i class="icon fa fa-cogs shadow-text" aria-hidden="true"></i>
-											<p class="card__title shadow-text stack__title gfont">Herramientas</p>
-										</div>
-										<div class="back shadow-intro">
-											<div class="welcome__stack__tool" v-for="tools in tools" @mouseover="show = true" @mouseleave="show = false">
-												<img :src='tools.img' alt="tools.name" class="stack__log"/>
-												<p class="text-stack gfont" v-show="show">{{tools.name}}</p> 
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="card" >
-									<div class="content">
-										<div class="front degraded shadow-intro-front">
-											<i class="icon fa fa-tasks shadow-text" aria-hidden="true"></i>
-											<p class="card__title shadow-text stack__title gfont">Servidores</p>
-										</div>
-										<div class="back shadow-intro">
-											<div class="welcome__stack__tool" v-for="tools in server" @mouseover="show = true" @mouseleave="show = false">
-												<img :src='tools.img' alt="tools.name" class="stack__log"/>
-												<p class="text-stack gfont" v-show="show">{{tools.name}}</p> 
-											</div>
-										</div>
-									</div>
+							<p class="text__skill skill__title gfont shadow-text shadow degraded">Front - End</p>
+							<div class="skill_content">
+								<div v-for="tools in frontend" class="skill__item">
+									<img :src='tools.img' alt="tools.name" class="skill__log shadow"/>
+									<span class="text__skill gfont" >{{tools.name}}</span> 
 								</div>
 							</div>
-						</template>
-					</article>
+							
+							<!--@mouseover="show[] = true" @mouseleave="show[] = false"
+								
+								v-show="show" -->
 
-					<!-- 
-						ACADEMY SECTION
-					-->
-					<article class="academic" id="academic">
-						<template v-if="academic">
-							<div  class="academic_container">
-								<h2 class="academic__title gfont">Fomación Académica</h2>
-																
-								<template v-if="stack_academic">
-									<div class="container__card">
-										<div class="card" v-for="study in study">
-											<div class="content">
-												<div class="front shadow-intro-front" :style="study.img">													
-												</div>
-												<div class="back shadow-intro-front study__info">
-													<p class="shadow-text gfont">{{ study.university }}</p>
-													<p class="shadow-text gfont profession__title">{{ study.profession }}</p>
-													<p class="shadow-text gfont"> {{ study.period }}</p>
-
-													<div class="card_link shadow-text">
-														<div class="card_tools">
-															<p> {{ study.study_country }}</p>
-														</div>
-														<div class="card_more">
-															<img :src="study.icon_country" alt="country" class="study_country">	
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>	 
-									</div>
-
-									<div class="container__small" style="color: #000;">
-										<h3 class="gfont course__title">Cursos Realizados</h3>
-										<div class="card__small" v-for="courses in courses">
-											<div class="content">
-												<div class="front shadow-intro-front" :style="courses.institute_img">													
-												</div>
-												<div class="back shadow-intro-front study__info">
-													<p class="gfont course__name">{{ courses.name }} - ({{courses.year}})</p>
-													<a :href="courses.certificate" class="gfont" target="__blank">
-														<i class="fa fa-address-card-o fa-6" aria-hidden="true"></i>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</template>
-
-								<template v-else>
-									<h2 class="portfolio__title">En Construcción</h2>
-									<img src="public/img/programming.svg" alt="construct" class="img_construct">
-								</template>
+							<p class="text__skill skill__title gfont shadow-text shadow degraded">Back - End</p>
+							<div class="skill_content">
+								<div v-for="tools in backend" class="skill__item">
+									<img :src='tools.img' alt="tools.name" class="skill__log shadow"/>
+									<span class="text__skill gfont" >{{tools.name}}</span> 
+								</div>
 							</div>
-						</template>
-					</article>
 
-					<!-- 
-						JOBS SECTION
-					-->
-					<article class="work" id="work">
-						<template v-if="work">
-							<div  class="work_container">
-								<h2 class="work__title gfont">Experiencia Laboral</h2>
-								<p class="work__description"></p>
+							<p class="text__skill skill__title gfont shadow-text shadow degraded">Base de Datos</p>
+							<div class="skill_content">
+								<div v-for="tools in bd" class="skill__item">
+									<img :src='tools.img' alt="tools.name" class="skill__log shadow"/>
+									<span class="text__skill gfont" >{{tools.name}}</span> 
+								</div>
+							</div>
 
-								<div class="container__card">
-									<div class="card" v-for="work in works">
-										<div class="content">
-											<div class="front shadow-intro-front" :style="work.company_img"></div>
-											<div class="back shadow-intro company__info">
-												<p class="shadow-text gfont">{{ work.company_name }}</p>
-												<p class="shadow-text gfont">{{ work.company_position }}</p>
-												<p class="gfont"> {{ work.company_start }} -  {{ work.company_find }}</p>
+							<p class="text__skill skill__title gfont shadow-text shadow degraded">Herramientas</p>
+							<div class="skill_content">
+								<div v-for="tools in tools" class="skill__item">
+									<img :src='tools.img' alt="tools.name" class="skill__log shadow"/>
+									<span class="text__skill gfont" >{{tools.name}}</span> 
+								</div>
+							</div>
 
-												<div class="card_link shadow-text">
-													<div class="card_tools">
-														<p> {{ work.company_country }}</p>
-													</div>
-													<div class="card_more">
-														<img :src="work.icon_country" alt="country" class="work_country">	
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>	 
+							<p class="text__skill skill__title gfont shadow-text shadow degraded">Servidores</p>
+							<div class="skill_content">
+								<div v-for="tools in server" class="skill__item">
+									<img :src='tools.img' alt="tools.name" class="skill__log shadow"/>
+									<span class="text__skill gfont" >{{tools.name}}</span> 
 								</div>
 							</div>
 						</template>
@@ -454,41 +313,69 @@
 								<p class="portfolio__description">En esta sección encontrarás los proyectos en los que he trabajado, también encontrarás algunas pruebas e inventos. Todo lo que sé hacer con las herramientas que uso.</p>
 								<blockquote class="portfolio__blockquote">Puedes encontrar más información sobre mis proyectos en mis perfiles de <strong>Github</strong>, <strong>GitLab</strong>, <strong>Dribble</strong> o <strong>
 									Behance</strong>.</blockquote>
-									
-								<div class="container__item" v-if="stack_project">
-									<div class="container__card">
-										<!-- <span class="title gfont">Desarrollo Web</span> -->
-										<div class="card" v-for="project in projects">
-											<div class="content">
-												<div class="front card_photo shadow-intro-front" :style="project.img">
-													<p class="card__title shadow-text project__title gfont">{{project.name}}</p>
-												</div>
-												<div class="back shadow-intro">
-													<p class="card_rol gfont"> {{ project.name }} </p>
-													<p> {{ project.description }}</p>
-													<p class="card_rol gfont"> {{ project.rol }} </p>
-	
-													<div class="card_link">
-														<div class="card_tools">
-															<span v-for="tools in project.tools">
-																<i id="icon" :class="tools.icon" :style='tools.style' :title="tools.name"></i>
-															</span>
-														</div>
-														<div class="card_more">
-															<template v-if="project.code">
-																<a :href="project.gh" title="Código" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-															</template>
-															<template v-if="project.demo_verify">
-																<a :href="project.demo" title="Demo" target="_blank"><i class="fa fa-laptop" aria-hidden="true"></i></a>
-															</template>
-															
-														</div>
-													</div>
-												</div>
+
+								<div class="port__menu shadow">
+									<ul class="port__list">
+										<a @click="filterByTools='nodejs'" class="port-list__link port-list__link--active">
+											<div class="port__description gfont">
+												<li class="port-list__item">
+													<img src="src/public/img/logos/nodejs.svg" class="lenguage__log" alt="nodejs">
+												</li>
 											</div>
-										</div>	 
-									</div>
+										</a>
+										<a @click="filterByTools='php'" class="port-list__link">
+											<div class="gfont">
+												<li class="port-list__item">
+													<img src="src/public/img/logos/php.png" class="cstm__log" alt="php">
+												</li>
+											</div>
+										</a>
+										<a @click="filterByTools='css'" class="port-list__link">
+											<div class="gfont">
+												<li class="port-list__item">
+													<img src="src/public/img/logos/css-3.svg" class="lenguage__log" alt="css">
+												</li>
+											</div>
+										</a>
+										<a @click="filterByTools='bootstrap'" class="port-list__link">
+											<div class="gfont">
+												<li class="port-list__item">
+													<img src="src/public/img/logos/bootstrap-4.svg" class="lenguage__log" alt="bootstrap">
+												</li>
+											</div>
+										</a>
+										<a @click="filterByTools='vuejs'" class="port-list__link">
+											<div class="gfont">
+												<li class="port-list__item">
+													<img src="src/public/img/logos/vue.svg" class="lenguage__log" alt="vuejs">
+												</li>
+											</div>
+										</a>
+									</ul>
 								</div>
+
+								<div class="container__item" >
+									<div class="card-container degraded shadow" v-for="project in filterTools">
+										<img class="round" :src="project.img" alt="tools" />
+										<h3 class="project__name gfont shadow-text">{{project.name}}</h3>
+										<h4 class="project__rol">{{ project.rol }}</h4>
+										<p class="project__descripcion">{{project.description}}</p>
+										<div class="buttons">
+											<template v-if="project.code">
+												<a :href="project.gh" title="Código" target="_blank" class="btn__code"><i class="fa fa-github" aria-hidden="true"></i></a>
+											</template>
+											<template v-if="project.demo_verify">
+												<a :href="project.demo" title="Demo" target="_blank" class="btn__code bg"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+											</template>
+										</div>
+										<!-- <div class="skills">
+											<h6 class="project__skill">Skills</h6>
+											<ul  v-for="tools in project.tools" class="skills__project__item">
+												<li><i id="icon" :class="tools.icon" :style='tools.style' :title="tools.name"></i></li>
+											</ul>
+										</div> -->
+									</div>
+								</div>								
 							</div>	
 						</template>
 					</article>
@@ -592,7 +479,8 @@
 			</div>
 		</div>
 		
-		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <!-- <script src="src/public/js/vue@2.6.12.js"></script> -->
 		<script src="src/public/js/info.js"></script>
 		<script src="https://kit.fontawesome.com/74a0a4aba0.js"></script>
 		<script src="src/public/js/main.js"></script>

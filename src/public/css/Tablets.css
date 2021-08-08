@@ -1,0 +1,100 @@
+/*
+ * TABLET
+*/
+@media screen and (min-width:750px) and (max-width:1023px) {
+	.container__item, .container__card {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	.card-container {
+		width: 40%;
+	}
+
+    .card{
+        width: 60%;
+    }
+
+    .logo__dc {
+        width: 15rem;
+        height: 8rem;
+    }
+
+
+    .myself__menu__item {
+		font-size: 1.5em;
+	}
+
+    .myself__data__container-avatar {
+		margin: .5rem .5rem 0 0;
+		height: 4rem;
+		width: 4rem
+	}
+
+    /**
+     * ABOUT ME
+    */
+    .container__description {
+        padding: 3rem;
+    }
+
+    /**
+    * PORTFOLIO
+    **/
+    .round {
+        width: 25%;
+    }
+
+    
+    /**
+    * INFO
+    **/
+    .contact__container{
+		width: 50%;
+	}
+
+
+    /**
+     * FONTS
+    */
+    .myself__description {
+        margin: 0 1rem;
+        font-size: 1.5rem;
+    }
+
+    .myself__footer__by p {
+        font-size: 1rem;
+    }
+
+    .myself__footer__social .myself__footer__link, 
+    .myself__menu__action {
+        font-size: 2.5rem;
+    }
+
+    .myself__footer__by {
+        margin: 2rem 0rem;
+    }
+
+    .myself__menu__item {
+        font-size: 2em;
+    }
+
+    .control-actions__menu {
+        font-size: 1.6rem;
+    }
+
+
+    /**
+    *  SKILL
+    **/
+    .skill__log {
+        width: 4rem;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+	.contact__data {
+		width: 85%;
+	}
+}

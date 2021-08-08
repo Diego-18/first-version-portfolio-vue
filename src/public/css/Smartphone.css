@@ -1,0 +1,90 @@
+/*
+ * SMARTPHONE
+*/
+@media screen and (max-width: 749px) {
+	.container__item, .container__card {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+        align-content: center;
+	}
+
+	.card-container, .card {
+		width: 90%;
+	}
+
+    .card{
+        width: 80%;
+    }
+
+    .welcome__buttons {
+        align-content: center;
+    }
+
+
+    .logo__dc {
+        width: 15rem;
+        height: 8rem;
+    }
+
+    .myself__data__container-avatar {
+        margin: 0.5rem 1rem 0 0;
+        height: 6rem;
+        width: 8rem;
+    }
+
+
+
+    /**
+     * ABOUT ME
+    */
+    .container__description {
+        padding: 3rem;
+    }
+
+    /**
+    * PORTFOLIO
+    **/
+    .round {
+        width: 10%;
+    }
+
+     /**
+    * INFO
+    **/
+    .contact__container{
+		width: 50%;
+	}
+
+    /**
+     * FONTS
+    */
+    .myself__description {
+        margin: 0 1rem;
+        font-size: 1.5rem;
+    }
+
+    .myself__footer__by p {
+        font-size: 1rem;
+    }
+
+    .myself__footer__social .myself__footer__link, 
+    .myself__menu__action {
+        font-size: 2.5rem;
+    }
+
+    .myself__footer__by {
+        margin: 2rem 0rem;
+    }
+
+    .myself__menu__item {
+        font-size: 2em;
+    }
+
+    /**
+    *  SKILL
+    **/
+    .skill__log {
+        width: 3rem;
+    }
+}
