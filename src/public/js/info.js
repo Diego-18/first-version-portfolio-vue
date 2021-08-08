@@ -32,8 +32,9 @@ new Vue({
         filterByTools: '',
 
         p1: 'Hola, trabajo como freelancer en desarrollos de software, apasionado por la creación de interfaces web. Capaz de utilizar herramientas y técnicas para recolectar datos, analizar, diseñar, desarrollar e implementar nuevos sistemas para automatizar procedimientos.',
-        p2:'Asesoro a empresas a tener una mejor presencia digital y como mejorar su posicionamiento a nivel digital.',
-        p3:'Aparte del desarrollo web tengo un blog donde disfruto el compartir contenido de valor en el área de programación, freelancer y marketing, utiles para desarrolladores, emprendedores.',
+        p2:'Asesoro a empresas y startUp a tener una mejor presencia digital y como mejorar su posicionamiento a nivel digital.',
+        p3:'Aparte del desarrollo web tengo un blog donde disfruto el compartir contenido de valor en el área de programación, freelancer y marketing, útiles para desarrolladores, emprendedores.',
+        stack_info: 'Me caracterizo por ser una persona autodidacta, me encanta y disfruto de aprender herramientas  nuevas que me lleven a nuevos retos y a dar solución de algún problema o necesidad, lo que me ha ayudado a lo largo de todos estos años a fortalecer y mejorar mis habilidades en diferentes tecnologías y herramientas.',
         stack: false,
         portfolio: false,
         contact: false,
