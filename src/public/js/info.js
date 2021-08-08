@@ -21,7 +21,7 @@ new Vue({
         dribble: 'https://dribbble.com/diegochavez20',
         behance: 'https://www.behance.net/ingdiegoch1a44',
         whatsapp: 'https://wa.link/9nyu80',
-        url: 'www.dev.diegochavez-dc.com',
+        url: 'www.diegochavez-dc.com',
         phone: '+584125264207',
         show: false,
 
@@ -29,13 +29,12 @@ new Vue({
         email_contact: '',
         phone_contact: '',
         message_contact: '',
+        filterByTools: '',
 
-        p1: 'Hola, soy un desarrollador de software, apasionado por la creación y desarrollo de interfaces web. Capaz de utilizar herramientas y técnicas para recolectar datos, analizar, diseñar, desarrollar e implementar nuevos sistemas para automatizar procedimientos.',
-        p2: 'Aparte del desarrollo web me encanta crear contenido de valor en las redes sociales y contribuir en el avance y desarrollo de la presencia digital y posicionamiento de empresas y StartUp.',
-
+        p1: 'Hola, trabajo como freelancer en desarrollos de software, apasionado por la creación de interfaces web. Capaz de utilizar herramientas y técnicas para recolectar datos, analizar, diseñar, desarrollar e implementar nuevos sistemas para automatizar procedimientos.',
+        p2:'Asesoro a empresas a tener una mejor presencia digital y como mejorar su posicionamiento a nivel digital.',
+        p3:'Aparte del desarrollo web tengo un blog donde disfruto el compartir contenido de valor en el área de programación, freelancer y marketing, utiles para desarrolladores, emprendedores.',
         stack: false,
-        academic: false,
-        work: false,
         portfolio: false,
         contact: false,
 
@@ -118,6 +117,18 @@ new Vue({
                 style: 'color:#0091e2;',
                 icon: 'fab fa-docker',
                 img: 'src/public/img/logos/docker.svg'
+            },
+            {
+                name: 'Illustrator',
+                style: 'color:#0091e2;',
+                icon: 'fab fa-docker',
+                img: 'src/public/img/logos/illustrator.svg'
+            },
+            {
+                name: 'Photoshop',
+                style: 'color:#0091e2;',
+                icon: 'fab fa-docker',
+                img: 'src/public/img/logos/photoshop.svg'
             }
         ],
         stack_server: true,
@@ -153,78 +164,19 @@ new Vue({
             }
         ],
 
-        stack_academic: true,
-        study:[
-            {
-                university: 'UPTP "Juan de Jesus Montilla"',
-                profession: 'Ing. en Informática',
-                period: '2013 - 2019',
-                img:'background-image: url("src/public/img/study/uptp.jpeg")',
-                study_country: 'Venezuela',
-                icon_country: 'src/public/img/country/venezuela.svg'
-            }
-        ],
-
-        stack_courses: false,
-        courses:[
-            {
-                name: 'Fundamentos del desarrollo web: Full Stack o Front-end',
-                year: '2021',
-                institute_img: 'background-image: url("src/public/img/study/in.jpg")',
-                certificate: 'src/doc/courses/1.pdf'
-            },
-            {
-                name: 'Aprende SCRUM',
-                year: '2021',
-                institute_img: 'background-image: url("src/public/img/study/in.jpg")',
-                certificate: 'src/doc/courses/2.pdf'
-            },
-        ],
-        
-
-        works:[
-            {
-                company_name:'Freelancer',
-                company_description: '',
-                company_position: 'Desarrollador Web | Analista Digital',
-                company_start: '2021',
-                company_find: 'Actualidad',
-                company_img: 'background-image: url("src/public/img/work/freelancer.jpg"); width: 100%;',
-                company_country: 'Venezuela',
-                icon_country: 'src/public/img/country/venezuela.svg'
-            },
-            {
-                company_name:'Las Plumas y Asociados C.A',
-                company_description: '',
-                company_position: 'Especialista en Sistemas de Información',
-                company_start: '2018',
-                company_find: '2021',
-                company_img: 'background-image: url("src/public/img/work/lpa.jpeg"); width: 100%;',
-                company_country: 'Venezuela',
-                icon_country: 'src/public/img/country/venezuela.svg'
-            },
-            {
-                company_name:'DW Comercializadora C.A (Galepso ERP) ',
-                company_description: '',
-                company_position: 'Coordinador de Soporte Técnico',
-                company_start: '2017',
-                company_find: '2018',
-                company_img: 'background-image: url("src/public/img/work/galepso1.jpeg"); width: 100%;',
-                company_country: 'Venezuela',
-                icon_country: 'src/public/img/country/venezuela.svg'
-            },
-           
-        ],
-
         stack_project: true,
         projects: [
             {
                 name: 'Favorite Links',
-                img: 'background-image: url("src/public/img/projects/FL.png")',
+                // img: 'background-image: url("src/public/img/projects/FL.png")',
+                // img: 'src/public/img/projects/FL.png',
+                img: 'src/public/img/logos/nodejs.svg',
                 description: 'Es una aplicación que te permite gestionar tus links favoritos para acceder a ellos cuando lo necesites.',
                 rol: 'Fullstack',
                 code: true,
                 gh:'https://github.com/Diego-18/FavoriteLinks',
+                tools1: 'nodejs',
+                tools2: '',
                 tag:[
                     {
                         name:'Aplicación Web'
@@ -259,13 +211,17 @@ new Vue({
             },
             {
                 name: 'Social Link',
-                img: 'background-image: url("src/public/img/projects/sociallink.png")',
+                // img: 'background-image: url("src/public/img/projects/sociallink.png")',
+                // img: 'src/public/img/projects/sociallink.png',
+                img: 'src/public/img/logos/vue.svg',
                 description: 'Es un proyecto basado en el listado de enlace que ofrece la herramienta linktree.',
                 rol: 'Front-End',
                 demo_verify: true,
                 demo:'https://social-link.diegochavez-dc.com/',
                 code: true,
                 gh:'https://github.com/Diego-18/social.link/',
+                tools1: 'vuejs',
+                tools2: '',
                 tag:[
                     {
                         name:'Front-End'
@@ -294,13 +250,17 @@ new Vue({
             },
             {
                 name: 'KeyframesAnimations',
-                img: 'background-image: url("src/public/img/projects/image-2.jpeg")',
+                // img: 'background-image: url("src/public/img/projects/image-2.jpeg")',
+                // img: 'src/public/img/projects/image-2.jpeg',
+                img: 'src/public/img/logos/css-3.svg',
                 description: 'Librería con animacionaciones usables para elementos de un portal web.',
                 rol: 'Front-End',
                 demo_verify: true,
                 demo:'https://keyframes-animations.netlify.app',
                 code: true,
                 gh:'https://github.com/Diego-18/KeyframesAnimations',
+                tools1: 'css',
+                tools2: '',
                 tag:[
                     {
                         name:'Librería'
@@ -321,16 +281,19 @@ new Vue({
                     }
                 ]
             },
-
             {
                 name: 'Photografic-Filter',
-                img: 'background-image: url("src/public/img/projects/image-2.jpeg")',
+                // img: 'background-image: url("src/public/img/projects/image-2.jpeg")',
+                // img: 'src/public/img/projects/image-2.jpeg',
+                img: 'src/public/img/logos/css-3.svg',
                 description: 'Librería con filtros usados en fotografías aplicables para mejores efectos a tus imágenes en tu sitio web.',
                 rol: 'Front-End',
                 demo_verify: true,
                 demo:'https://diego-18.github.io/photografic-filter/',
                 code: true,
                 gh:'https://github.com/Diego-18/photografic-filter',
+                tools1: 'css',
+                tools2: '',
                 tag:[
                     {
                         name:'Librería'
@@ -353,13 +316,17 @@ new Vue({
             },
             {
                 name: 'SYS-HUMAN',
-                img: 'background-image: url("src/public/img/projects/syshuman.png")',
+                // img: 'background-image: url("src/public/img/projects/syshuman.png")',
+                // img: 'src/public/img/projects/syshuman.png',
+                img: 'src/public/img/logos/php.svg',
                 description: 'Sistema para el control y cálculos de procesos en el área de RRHH.',
                 rol: 'Full Stack',
                 demo_verify: true,
                 demo:'https://sys-human.diegochavez-dc.com/',
                 code: false,
                 gh:'',
+                tools1: 'php',
+                tools2: 'bootstrap',
                 tag:[
                     {
                         name:'Sistema'
@@ -400,13 +367,17 @@ new Vue({
             },
             {
                 name: 'SISCAS',
-                img: 'background-image: url("src/public/img/projects/sisca.png")',
+                // img: 'background-image: url("src/public/img/projects/syshuman.png")',
+                // img: 'src/public/img/projects/sisca.png',
+                img: 'src/public/img/logos/php.svg',
                 description: 'Sistema para el control y gestión de almacenes y suministros.',
                 rol: 'Full Stack',
                 demo_verify: true,
                 demo:'https://siscas.diegochavez-dc.com/',
                 code: false,
                 gh:'',
+                tools1: 'php',
+                tools2: 'bootstrap',
                 tag:[
                     {
                         name:'Sistema'
@@ -452,7 +423,7 @@ new Vue({
             { 
                 name: 'Desarrollo Web',
                 icon: 'icon fa fa-desktop',
-                description: 'Desarrollo de páginas y sistemas web para todo tipo de empresa, persona o estudiante.' 
+                description: 'Desarrollo de páginas y sistemas web para todo tipo de empresa o persona.' 
             },
             { 
                 name: 'Marketing Digital',
@@ -519,6 +490,11 @@ new Vue({
         validEmail: function (p_email) {
             let patterEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             return patterEmail.test(p_email);
+        }
+    },
+    computed:{
+        filterTools(){
+            return this.projects.filter(u => u.tools1.includes(this.filterByTools) || u.tools2.includes(this.filterByTools) )
         }
     }
 });

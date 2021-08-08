@@ -174,3 +174,30 @@
 	-moz-transition: 0.5s ease all;
 	transition: 0.5s ease all;
 }
+
+@-moz-keyframes click{
+	25%, 75%{
+		-moz-transform: scale(0.8);
+	}
+	50%{
+		-moz-transform: scale(1.1);
+	}
+}
+
+@-webkit-keyframes click{
+	25%, 75%{
+		-webkit-transform: scale(0.8);
+	}
+	50%{
+		-webkit-transform: scale(1.1);
+	}
+}
+
+@-o-keyframes click{
+	25%, 75%{
+		-o-transform: scale(0.8);
+	}
+	50%{
+		-o-transform: scale(1.1);
+	}
+}

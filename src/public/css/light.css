@@ -2,26 +2,26 @@ body{
     background: #fff;
 } 
 
+.container__master .container__myself,
+.cstm__button{
+    background: rgb(55,71,79);
+    background: linear-gradient(35deg, rgba(55,71,79,1) 0%, rgba(0,123,181,1) 50%, rgba(12,35,143,1) 100%);
+}
+
 .shadow-text{
-    text-shadow: 1px 1px 3px #fff;
+    text-shadow: 1px 1px 3px #333;
 }
 
 .shadow-intro{
 	box-shadow: inset 4px 4px 6px 0;
 }
 
-.shadow-intro-front{
-	box-shadow: inset 4px 4px 6px 0;    /* I, A,  */
+.shadow{
+	box-shadow: 4px 4px 6px 0 #c4c4c4;
 }
 
-input, textarea, a,
-.record-desc, .direction__web,
-.container__master, .icon,
- .myself_footer_phrase,
-.myself__footer__social, .myself__footer__link,
-.swal2-title, .swal2-html-container, .text-stack,
-.contact__data, .contact__label, .contact__value, .contact__info{
-	color: #fff;
+.shadow-intro-front{
+	box-shadow: inset 4px 4px 6px 0;    /* I, A,  */
 }
 
 .welcome__description, .portfolio__description,
@@ -40,8 +40,24 @@ input, textarea, a,
 .myself_lastname, .form__item .btn__send,
 .tagline, .welcome__community,
 .swal2-styled.swal2-confirm,
-.swal2-icon.swal2-success, .course__title{
+.swal2-icon.swal2-success, .course__title, .pfont{
 	color: #0B2891;
+}
+
+.text__skill{
+	color: #0379B0;
+}
+
+input, textarea, a,
+.record-desc, .direction__web,
+.container__master, .icon,
+ .myself_footer_phrase,
+.myself__footer__social, .myself__footer__link,
+.swal2-title, .swal2-html-container,
+.contact__data, .contact__label, .contact__value, .contact__info,
+.text-service, .service__title, .skill__title, 
+.card-container {
+	color: #fff;
 }
 
 .swal2-html-container{
@@ -168,7 +184,8 @@ input, textarea, a,
 
 .contact__data, 
 .front, .back,
-.swal2-popup{
+.swal2-popup, 
+.cstm__button{
 	border: 2px solid rgb(0, 123, 181);
 }
 
@@ -234,7 +251,7 @@ input, textarea,
 	box-shadow: 0 0 0 0 transparent;
 }
 
-.card{
+.card, .cstm__button{
 	box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
@@ -282,4 +299,8 @@ input, textarea,
 		background-color: #0B2891;
 		color: #0B2891;
 	}
+}
+
+.pfont{
+	background-color: #007BB5;
 }

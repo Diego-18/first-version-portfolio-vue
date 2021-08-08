@@ -1,0 +1,135 @@
+@media (min-width: 1024px){
+	.container__card {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 90%;
+    }
+  
+	.card_link{
+		display: flex;
+	}
+
+	.contact__form{
+		padding-left: 10px;
+		margin-bottom: 3%;
+	}
+
+	.menu-list {
+		width: 100%;
+	}
+
+	.welcome__stack__tool {
+		width: 20%;
+		margin: 1rem 1rem;
+		text-align: center;
+	}
+
+	.card_tools, .card_more {
+		width: 80%;
+	}
+
+	.card_link{
+		display: inline-flex;
+	}
+
+	.card_tools{
+		width: 70%;
+	}
+
+	.card_more{
+		width: 20%;
+	}
+	
+	.contact__info, .contact__form{
+		float: left;
+	}
+
+	.contact__container {
+		display: inherit;
+		margin-bottom: 2%;
+	}
+
+	.content__form {
+		margin-left: 10px;
+	}
+
+	.welcome__description,
+	.portfolio__description,
+	.contact__description,
+	.stack__description,
+	.work__description {
+        padding: 0% 5%;
+	}
+
+	.card {
+		width: 20rem;
+        margin: 1rem 1.5rem;
+	}
+
+
+
+    .container__item{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .card-container {
+        width: 28%; 
+    }
+
+    /**
+    * MY SELF 
+    */
+    .logo__dc{
+        width: 10rem;
+        height: 5rem;
+    }
+
+    .myself__footer__social .myself__footer__link {
+        font-size: 1.6rem;
+    }
+
+    /**
+     * ABOUT ME
+    */
+    .container__description{
+        padding: 1rem;
+    }
+
+     /**
+    * PORTFOLIO
+    **/
+    .round{
+        width: 15%;
+    }
+
+
+    /**
+     * FONTS
+    */
+    .myself__description {
+        margin: 0 0 .5rem;
+        font-size: .9rem;
+    }
+
+
+    /**
+    *  SKILL
+    **/
+    .skill__log{
+        width: 2rem;
+    }
+
+    .menu{
+        width: 70%;
+        z-index: 1;
+        position: fixed;
+        background: #fff;
+    }
+
+    .welcome, .portfolio, .contact, .stack, .academic, .work {
+        padding: 3rem 1rem;
+    }
+}
