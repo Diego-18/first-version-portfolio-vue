@@ -39,7 +39,7 @@
      * ABOUT ME
     */
     .container__description {
-        padding: 3rem;
+        padding: 2rem;
     }
 
     /**
@@ -53,8 +53,8 @@
     * INFO
     **/
     .contact__container{
-		width: 50%;
-	}
+		  width: 70%;
+	  }
 
     /**
      * FONTS
